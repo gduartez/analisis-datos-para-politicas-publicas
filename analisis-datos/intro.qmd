@@ -1,0 +1,17 @@
+# Preliminares {.unnumbered}
+
+Este libro es el resultado de una recopilación y síntesis de diversos recursos y textos que han sido fundamentales para aprender a programar en el lenguaje `R`, con un enfoque particular en sus aplicaciones a datos relevantes para abordar preguntas analíticas en el ámbito de las políticas públicas.
+
+Gran parte del contenido se inspira en una simplificación del libro [R for Data Science (2e)](https://r4ds.hadley.nz/). Por lo tanto, este recurso debe considerarse como un complemento a la bibliografía principal de cursos de estadística o análisis de datos, más que como un reemplazo. Su propósito es facilitar el aprendizaje mediante ejemplos prácticos y dirigidos.
+
+El enfoque adoptado en este libro combina dos objetivos principales: Por un lado, enseñar la ejecución de tareas básicas en R, y por otro, guiar la resolución de preguntas analíticas de manera estructurada. El contenido está dividido en cuatro grandes secciones:
+
+1.  **Introducción a R:** En esta sección se revisa una guía paso a paso para la instalación del software y la ejecución de comandos básicos, constituyendo así un primer acercamiento a `R`.
+
+2.  **Nivelación estadística:** En esta sección, los fundamentos esenciales de estadística para el análisis de datos tales como la estadística descriptiva, variables aleatorias e inferencia estadística.
+
+3.  **Herramientas para la Ciencia de Datos:** Aquí, el enfoque está en dominar las tareas clave de cada etapa del análisis exploratorio de datos: importar, ordenar, transformar, visualizar y comunicar información de manera efectiva.
+
+4.  **Estadística Aplicada:** La última sección profundiza en aspectos de estadística inferencial, abarcando pruebas de hipótesis y modelos de regresión lineal, con aplicaciones prácticas orientadas al análisis de políticas públicas.
+
+Cada capítulo concluye con una serie de ejercicios prácticos diseñados para consolidar los contenidos abordados. Además, al final de cada sección, se incluye un capítulo dedicado a la documentación de un portafolio de soluciones a problemas o tareas específicas, funcionando como un *cookbook* de aplicaciones prácticas.

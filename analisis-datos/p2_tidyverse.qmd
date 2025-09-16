@@ -1,0 +1,21 @@
+# Herramientas para la Ciencia de Datos {#sec-tidyverse}
+
+Si bien no hay una definición única sobre qué se entiende por Ciencia de Datos, sí existen ciertas acciones que todo analista de datos debe saber realizar.
+
+Antes de poder analizar los datos para extraer conclusiones y tomar decisiones informadas, es importante procesar la información en un formato que nos permita aplicar algún algoritmo o realizar algun procedimiento estadístico que nos ayude a conseguir nuestro objetivo.
+
+Este proceso, conocido como *data wranglign*, puede significar una parte importante del tiempo del proyecto de ciencia de datos que se busque desarrollar. Si bien es cierto que cada vez la tecnología nos ofrece múltiples formas de disponibilizar información, muchas veces vamos a requerir importarla a nuestro software de análisis, ordenarla en un formato que sea adecuado y transformar o crear variables nuevas a partir de las ya existentes o vincular la información con otras bases de datos.
+
+Por último y no menos importante, debemos ser capaces de encontrar hallazgos de manera clara y comunicable a una audiencia objetivo. Muchas veces los gráficos e imágenes nos ayudarán en esta tarea que algunas veces pasa desapercibida, pero que es una parte necesaria para conseguir la atención y comprensión de nuestras contrapartes.
+
+En los siguientes 4 capítulos, revisaremos en detalle el flujo estándar del trabajo con datos y necesario para poder desarrollar un análisis exploratorio de los mismos.
+
+### Librerías a utilizar
+
+In this chapter, you'll learn how to load flat files in R with the **readr** package, which is part of the core tidyverse.
+
+## Resumen
+
+In this chapter, you've learned how to load CSV files with `read_csv()` and to do your own data entry with `tibble()` and `tribble()`. You've learned how csv files work, some of the problems you might encounter, and how to overcome them. We'll come to data import a few times in this book: @sec-import-spreadsheets from Excel and Google Sheets, @sec-import-databases will show you how to load data from databases, @sec-arrow from parquet files, @sec-rectangling from JSON, and @sec-scraping from websites.
+
+We're just about at the end of this section of the book, but there's one important last topic to cover: how to get help. So in the next chapter, you'll learn some good places to look for help, how to create a reprex to maximize your chances of getting good help, and some general advice on keeping up with the world of R.

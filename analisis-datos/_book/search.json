@@ -1,0 +1,1484 @@
+[
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "Introducción",
+    "section": "",
+    "text": "Este libro es el resultado de la recopilación y síntesis de diversos recursos y textos que han sido fundamentales para aprender a programar en el lenguaje R, con un enfoque particular en sus aplicaciones a datos relevantes para abordar preguntas analíticas en el ámbito de las políticas públicas.\nGran parte del contenido se inspira en una simplificación del libro R for Data Science (2e). Por lo tanto, este libro debe considerarse como un complemento a la bibliografía principal del curso, más que como un reemplazo. Su propósito es facilitar el aprendizaje mediante ejemplos prácticos y dirigidos.\nEl enfoque adoptado en este libro combina dos objetivos principales: por un lado, enseñar la ejecución de tareas básicas en R, y por otro, guiar la resolución de preguntas analíticas de manera estructurada. En línea con el curso impartido en el Diplomado en Ciencia de Datos para Políticas Públicas de la Universidad Adolfo Ibáñez, el contenido está dividido en tres grandes secciones:\n\nNivelación estadística: En esta sección, se revisan los conceptos básicos del lenguaje R, incluyendo su instalación y uso en diferentes interfaces, así como los fundamentos de estadística básica esenciales para el análisis de datos.\nHerramientas para la Ciencia de Datos: Aquí, el enfoque está en dominar las tareas clave de cada etapa del análisis exploratorio de datos: importar, ordenar, transformar, visualizar y comunicar información de manera efectiva.\nEstadística Aplicada: La última sección profundiza en aspectos de estadística inferencial, abarcando pruebas de hipótesis y modelos de regresión lineal, con aplicaciones prácticas orientadas al análisis de políticas públicas.\n\nCada capítulo concluye con una serie de ejercicios prácticos diseñados para consolidar los contenidos abordados. Además, al final de cada sección, se incluye un capítulo dedicado a la documentación de un portafolio de soluciones a problemas o tareas específicas, funcionando como un cookbook de aplicaciones prácticas.",
+    "crumbs": [
+      "Preliminares"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Análisis de Datos con R Aplicado a Políticas Públicas",
+    "section": "",
+    "text": "¡Bienvenid@!\nBienvenid@ a este recurso en línea gratuito en el que aprenderás a usar el software R desde cero. El valor agregado de este recurso frente a otros libros físicos y online que enseñan cómo programar en este lenguaje radica en que:\nCuando empecé a escribir este libro tenía dos objetivos principales en mente. En primer lugar, buscaba un medio digital y abierto para enseñar los fundamentos de la ciencia de datos desde un enfoque práctico, utilizando R y datos relevantes para el análisis de políticas públicas.\nEn segundo lugar, buscaba algo un poco más ambicioso: Enriquecer la variedad de recursos en línea y de libre acceso para aprender R, pero desde una perspectiva orientada a la resolución de problemas concretos y con foco en temáticas prioritarias para las políticas públicas, con el fin de formar a futuros analistas en políticas públicas, o enriquecer el capital humano y conocimiento de quienes ya se encuentren insertos en el mundo público.\nDesde que conocí el lenguaje de programación R en el año 2020, he estado en una constante búsqueda de soluciones concretas que puedan dar respuesta a las preguntas de investigación o solicitudes emergentes que surgen cuando uno trabaja en el sector público.\nSi bien en este largo y constante camino de aprendizaje he encontrado una amplia variedad de recursos que me han orientado hacia una respuesta concreta, o bien, me han hecho pensar en modelos o esquemas mentales sobre cómo resolverlos, los investigadores y analistas del sector público muchas veces se encuentran con problemas que requieren una respuesta inmediata pero fundada.\nQuienes comparten mi experiencia, es muy probable de que hayan presenciado que muchas de estas decisiones relevantes se toman en base a información que implica un nivel importante de precisión y procesamiento; y esto, al realizarse mediante programas clásicos como Excel, implica un riesgo para su reproducibilidad, trazabilidad, e incluso la precisión de los análisis realizados.\nSiendo transparente, estoy lejos de creer que R es el medio correcto a emplear para resolver todas estas preguntas o problemáticas los empleados púbicos enfrentan. Muchas veces, la gestión pública y el rol del analista que insuma la toma decisiones en la materia requiere simplemente de habilidades como la redacción de informes o producción de tablas, las cuales pueden realizarse de manera más eficientemente directamente desde un documento de Microsoft Word o Excel.\nSin embargo, estoy convencido de que muchas de las tareas y la producción de conocimiento basado en información, así como la evaluación de los programas públicos, puede eficientarse mediante el uso de softwares avanzados de análisis de datos como R o Python. En este sentido, si buscamos mejorar el bien común mediante la implementación de políticas públicas pertinentes y bien diseñadas, considero menester que quienes trabajamos con información pública podamos perfeccionar nuestras habilidades para surfear las olas en las que navega el quehacer público.\nPor ejemplo, pensemos en la siguiente y aparentemente sencilla pregunta en el marco de un proyecto de instalación de cámaras con un presupuesto predefinido:\nAntes dede responder esta pregunta, considero que es fundamental definir cuál es el objetivo del proyecto ¿Disminuir los delitos? ¿Contar con medios probatorios frente a un eventual delitos?¿Aumentar la percepción de seguridad de los vecinos? Evidentemente, para hacer preguntas correctas o diseñar buenas políticas públicas no es necesario contar con habilidades de programación.\nDependiendo del objetivo, los criterios para responder a esta pregunta (dónde instalar las cámaras) puede llevar a respuestas totalmente distintas, que por lo demás, generarán diferentes impactos en la población. Sin embargo, una vez que tengamos definido el objetivo, podemos utilizar R u otro software similar para responder a la pregunta inicial de la mejor manera posible, por ejemplo, analizando los lugares con mayor concentración del delito y a partir de este criterio definir su ubicación.\nEl mensaje detrás de este ejemplo es que no basta con analizar datos y encontrar los mejores modelos estadísticos, sino que importa mucho definir la pregunta correcta y los objetivos del análisis. En sentido, R sería nuestra tabla que nos permite surfear la ola (la pregunta), pero no nos dirá cuál ola debiésemos tomar y cuál dejar pasar.\nSi bien no hay respuestas únicas y el criterio experto del analista o del equipo que esté involucrado en la toma de decisión es sumamente relevante, aprender mediante ejemplos aplicados con datos reales puede promover la toma de decisiones basada en evidencia, al mismo tiempo que se puede dar una respuesta rápida a la premura que exige la gestión pública. Del mismo modo, exponer los criterios fundados que guiaron el análisis y la toma de decisión puede fomentar el uso de herramientas concretas para mejorar el bienestar de la población mediante métodos robustos.\nA medida que los estudiantes se adentren en el uso de R, se darán cuenta de que detrás de este software hay una extensa comunidad que impulsa su desarrollo. Consecuentemente, existen muchos recursos gratuitos y en línea para aprender R. Sin embargo, esa misma abundancia puede resultar abrumadora para quienes recién comienzan, pues surgen preguntas como:\n¿Qué recurso debería elegir? ¿Por qué no entiendo todo lo que hace este código? ¿Cómo sé si este material es adecuado para mi nivel? ¿En qué momento voy a poder aplicar esto a mi trabajo?\nEstas mismas inquietudes me acompañaron cuando inicié mi camino en la programación, y, a decir verdad, aún me acompañan cuando busco bibliografía o recursos online en nuevas áreas de aprendizaje.\nPor eso, en este libro he optado por un enfoque centrado en la resolución de tareas y problemas. Así, el aprendizaje no solo se basa en ejecutar código, sino también en encontrar soluciones y responder preguntas reales que los estudiantes probablemente enfrentarán al trabajar con datos. Muchos textos similares argumentan que la mejor manera de aprender a programar es simplemente programando. Si bien, personalmente comparto esta idea, estoy convencido de que ese camino se hace más efectivo cuando le encontramos un por qué o un para qué a nuestras acciones.\nEn un mundo donde la información abunda pero el tiempo escasea debido a nuestras múltiples responsabilidades laborales y personales, contar con un recurso que facilite resultados prácticos y aplicables es invaluable. Mi intención es que este material no solo sea útil en proyectos académicos, sino también en distintos entornos de trabajo, promoviendo soluciones eficientes y basadas en datos.\nAsí, este libro es el resultado de más de cinco años de aprendizaje adquirido a partir de mi interés en abordar desafíos laborales y de investigación. En el primer año en que aprendí a usar R, recuerdo las intensas horas de dedicación intentando solucionar errores a los que no lograba encontrar su origen. Sin duda, la curva de aprendizaje para alguien que no es programador es bastante inclinada y requiere de un tiempo importante de adaptación.\nPero como todas las disciplinas, la práctica permite sortear tales dificultades y afinar el ojo de los errores que, sin lugar a duda, ocurrirán en este camino de aprendizaje. Y ese proceso se hace mucho más llevadero si es que contamos con recursos que nos den luces sobre cómo enfrentar tales complicaciones.\nDe este modo, el propósito final de este libro es ofrecer un recurso didáctico que permita a profesionales, estudiantes y futuros analistas o investigadores, motivados por contribuir al bien común, contar con una herramienta que mejore su capacidad para tomar decisiones informadas en el ámbito de las políticas públicas, aprovechando el poder de los datos de manera inteligente y estratégica.",
+    "crumbs": [
+      "¡Bienvenid\\@!"
+    ]
+  },
+  {
+    "objectID": "c1_importar.html",
+    "href": "c1_importar.html",
+    "title": "2  Data import",
+    "section": "",
+    "text": "2.1 Introducción\nWorking with data provided by R packages is a great way to learn data science tools, but you want to apply what you’ve learned to your own data at some point. In this chapter, you’ll learn the basics of reading data files into R.\nSpecifically, this chapter will focus on reading plain-text rectangular files. We’ll start with practical advice for handling features like column names, types, and missing data. You will then learn about reading data from multiple files at once and writing data from R to a file. Finally, you’ll learn how to handcraft data frames in R.",
+    "crumbs": [
+      "Herramientas para la Ciencia de Datos",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Data import</span>"
+    ]
+  },
+  {
+    "objectID": "c1_importar.html#introducción",
+    "href": "c1_importar.html#introducción",
+    "title": "2  Data import",
+    "section": "",
+    "text": "2.1.1 Librerías a utilizar\nIn this chapter, you’ll learn how to load flat files in R with the readr package, which is part of the core tidyverse.\n\nlibrary(tidyverse)",
+    "crumbs": [
+      "Herramientas para la Ciencia de Datos",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Data import</span>"
+    ]
+  },
+  {
+    "objectID": "c1_importar.html#resumen",
+    "href": "c1_importar.html#resumen",
+    "title": "2  Data import",
+    "section": "2.2 Resumen",
+    "text": "2.2 Resumen\nIn this chapter, you’ve learned how to load CSV files with read_csv() and to do your own data entry with tibble() and tribble(). You’ve learned how csv files work, some of the problems you might encounter, and how to overcome them. We’ll come to data import a few times in this book: ?sec-import-spreadsheets from Excel and Google Sheets, ?sec-import-databases will show you how to load data from databases, ?sec-arrow from parquet files, ?sec-rectangling from JSON, and ?sec-scraping from websites.\nWe’re just about at the end of this section of the book, but there’s one important last topic to cover: how to get help. So in the next chapter, you’ll learn some good places to look for help, how to create a reprex to maximize your chances of getting good help, and some general advice on keeping up with the world of R.",
+    "crumbs": [
+      "Herramientas para la Ciencia de Datos",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Data import</span>"
+    ]
+  },
+  {
+    "objectID": "c2_transformar.html",
+    "href": "c2_transformar.html",
+    "title": "3  Transformar",
+    "section": "",
+    "text": "3.1 Introducción\nWorking with data provided by R packages is a great way to learn data science tools, but you want to apply what you’ve learned to your own data at some point. In this chapter, you’ll learn the basics of reading data files into R.\nSpecifically, this chapter will focus on reading plain-text rectangular files. We’ll start with practical advice for handling features like column names, types, and missing data. You will then learn about reading data from multiple files at once and writing data from R to a file. Finally, you’ll learn how to handcraft data frames in R.",
+    "crumbs": [
+      "Herramientas para la Ciencia de Datos",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Transformar</span>"
+    ]
+  },
+  {
+    "objectID": "c2_transformar.html#introducción",
+    "href": "c2_transformar.html#introducción",
+    "title": "3  Transformar",
+    "section": "",
+    "text": "3.1.1 Librerías a utilizar\nIn this chapter, you’ll learn how to load flat files in R with the readr package, which is part of the core tidyverse.\n\nlibrary(tidyverse)",
+    "crumbs": [
+      "Herramientas para la Ciencia de Datos",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Transformar</span>"
+    ]
+  },
+  {
+    "objectID": "c2_transformar.html#resumen",
+    "href": "c2_transformar.html#resumen",
+    "title": "3  Transformar",
+    "section": "3.2 Resumen",
+    "text": "3.2 Resumen\nIn this chapter, you’ve learned how to load CSV files with read_csv() and to do your own data entry with tibble() and tribble(). You’ve learned how csv files work, some of the problems you might encounter, and how to overcome them. We’ll come to data import a few times in this book: ?sec-import-spreadsheets from Excel and Google Sheets, ?sec-import-databases will show you how to load data from databases, ?sec-arrow from parquet files, ?sec-rectangling from JSON, and ?sec-scraping from websites.\nWe’re just about at the end of this section of the book, but there’s one important last topic to cover: how to get help. So in the next chapter, you’ll learn some good places to look for help, how to create a reprex to maximize your chances of getting good help, and some general advice on keeping up with the world of R.",
+    "crumbs": [
+      "Herramientas para la Ciencia de Datos",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Transformar</span>"
+    ]
+  },
+  {
+    "objectID": "c3_visualizar.html",
+    "href": "c3_visualizar.html",
+    "title": "4  Visualizar",
+    "section": "",
+    "text": "4.1 Introducción\nWorking with data provided by R packages is a great way to learn data science tools, but you want to apply what you’ve learned to your own data at some point. In this chapter, you’ll learn the basics of reading data files into R.\nSpecifically, this chapter will focus on reading plain-text rectangular files. We’ll start with practical advice for handling features like column names, types, and missing data. You will then learn about reading data from multiple files at once and writing data from R to a file. Finally, you’ll learn how to handcraft data frames in R.",
+    "crumbs": [
+      "tidyverse.qmd",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Visualizar</span>"
+    ]
+  },
+  {
+    "objectID": "c3_visualizar.html#introducción",
+    "href": "c3_visualizar.html#introducción",
+    "title": "4  Visualizar",
+    "section": "",
+    "text": "4.1.1 Librerías a utilizar\nIn this chapter, you’ll learn how to load flat files in R with the readr package, which is part of the core tidyverse.\n\nlibrary(tidyverse)",
+    "crumbs": [
+      "tidyverse.qmd",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Visualizar</span>"
+    ]
+  },
+  {
+    "objectID": "c3_visualizar.html#resumen",
+    "href": "c3_visualizar.html#resumen",
+    "title": "4  Visualizar",
+    "section": "4.2 Resumen",
+    "text": "4.2 Resumen\nIn this chapter, you’ve learned how to load CSV files with read_csv() and to do your own data entry with tibble() and tribble(). You’ve learned how csv files work, some of the problems you might encounter, and how to overcome them. We’ll come to data import a few times in this book: ?sec-import-spreadsheets from Excel and Google Sheets, ?sec-import-databases will show you how to load data from databases, ?sec-arrow from parquet files, ?sec-rectangling from JSON, and ?sec-scraping from websites.\nWe’re just about at the end of this section of the book, but there’s one important last topic to cover: how to get help. So in the next chapter, you’ll learn some good places to look for help, how to create a reprex to maximize your chances of getting good help, and some general advice on keeping up with the world of R.",
+    "crumbs": [
+      "tidyverse.qmd",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Visualizar</span>"
+    ]
+  },
+  {
+    "objectID": "c4_comunicar.html",
+    "href": "c4_comunicar.html",
+    "title": "5  Comunicar",
+    "section": "",
+    "text": "5.1 Introducción\nWorking with data provided by R packages is a great way to learn data science tools, but you want to apply what you’ve learned to your own data at some point. In this chapter, you’ll learn the basics of reading data files into R.\nSpecifically, this chapter will focus on reading plain-text rectangular files. We’ll start with practical advice for handling features like column names, types, and missing data. You will then learn about reading data from multiple files at once and writing data from R to a file. Finally, you’ll learn how to handcraft data frames in R.",
+    "crumbs": [
+      "tidyverse.qmd",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Comunicar</span>"
+    ]
+  },
+  {
+    "objectID": "c4_comunicar.html#introducción",
+    "href": "c4_comunicar.html#introducción",
+    "title": "5  Comunicar",
+    "section": "",
+    "text": "5.1.1 Librerías a utilizar\nIn this chapter, you’ll learn how to load flat files in R with the readr package, which is part of the core tidyverse.\n\nlibrary(tidyverse)",
+    "crumbs": [
+      "tidyverse.qmd",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Comunicar</span>"
+    ]
+  },
+  {
+    "objectID": "c4_comunicar.html#resumen",
+    "href": "c4_comunicar.html#resumen",
+    "title": "5  Comunicar",
+    "section": "5.2 Resumen",
+    "text": "5.2 Resumen\nIn this chapter, you’ve learned how to load CSV files with read_csv() and to do your own data entry with tibble() and tribble(). You’ve learned how csv files work, some of the problems you might encounter, and how to overcome them. We’ll come to data import a few times in this book: ?sec-import-spreadsheets from Excel and Google Sheets, ?sec-import-databases will show you how to load data from databases, ?sec-arrow from parquet files, ?sec-rectangling from JSON, and ?sec-scraping from websites.\nWe’re just about at the end of this section of the book, but there’s one important last topic to cover: how to get help. So in the next chapter, you’ll learn some good places to look for help, how to create a reprex to maximize your chances of getting good help, and some general advice on keeping up with the world of R.",
+    "crumbs": [
+      "tidyverse.qmd",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Comunicar</span>"
+    ]
+  },
+  {
+    "objectID": "c5_bootstrap.html",
+    "href": "c5_bootstrap.html",
+    "title": "5  Inferencia Estadística",
+    "section": "",
+    "text": "5.1 Introducción\nWorking with data provided by R packages is a great way to learn data science tools, but you want to apply what you’ve learned to your own data at some point. In this chapter, you’ll learn the basics of reading data files into R.\nSpecifically, this chapter will focus on reading plain-text rectangular files. We’ll start with practical advice for handling features like column names, types, and missing data. You will then learn about reading data from multiple files at once and writing data from R to a file. Finally, you’ll learn how to handcraft data frames in R.",
+    "crumbs": [
+      "estadistica-aplicada.qmd",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Inferencia Estadística</span>"
+    ]
+  },
+  {
+    "objectID": "c5_bootstrap.html#introducción",
+    "href": "c5_bootstrap.html#introducción",
+    "title": "5  Inferencia Estadística",
+    "section": "",
+    "text": "5.1.1 Librerías a utilizar\nIn this chapter, you’ll learn how to load flat files in R with the readr package, which is part of the core tidyverse.\n\nlibrary(tidyverse)",
+    "crumbs": [
+      "estadistica-aplicada.qmd",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Inferencia Estadística</span>"
+    ]
+  },
+  {
+    "objectID": "c5_bootstrap.html#resumen",
+    "href": "c5_bootstrap.html#resumen",
+    "title": "5  Inferencia Estadística",
+    "section": "5.2 Resumen",
+    "text": "5.2 Resumen\nIn this chapter, you’ve learned how to load CSV files with read_csv() and to do your own data entry with tibble() and tribble(). You’ve learned how csv files work, some of the problems you might encounter, and how to overcome them. We’ll come to data import a few times in this book: ?sec-import-spreadsheets from Excel and Google Sheets, ?sec-import-databases will show you how to load data from databases, ?sec-arrow from parquet files, ?sec-rectangling from JSON, and ?sec-scraping from websites.\nWe’re just about at the end of this section of the book, but there’s one important last topic to cover: how to get help. So in the next chapter, you’ll learn some good places to look for help, how to create a reprex to maximize your chances of getting good help, and some general advice on keeping up with the world of R.",
+    "crumbs": [
+      "estadistica-aplicada.qmd",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Inferencia Estadística</span>"
+    ]
+  },
+  {
+    "objectID": "c6_inferencia.html",
+    "href": "c6_inferencia.html",
+    "title": "7  Test de Hipótesis",
+    "section": "",
+    "text": "7.1 Introducción\nWorking with data provided by R packages is a great way to learn data science tools, but you want to apply what you’ve learned to your own data at some point. In this chapter, you’ll learn the basics of reading data files into R.\nSpecifically, this chapter will focus on reading plain-text rectangular files. We’ll start with practical advice for handling features like column names, types, and missing data. You will then learn about reading data from multiple files at once and writing data from R to a file. Finally, you’ll learn how to handcraft data frames in R.",
+    "crumbs": [
+      "estadistica-aplicada.qmd",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Test de Hipótesis</span>"
+    ]
+  },
+  {
+    "objectID": "c6_inferencia.html#introducción",
+    "href": "c6_inferencia.html#introducción",
+    "title": "7  Test de Hipótesis",
+    "section": "",
+    "text": "7.1.1 Librerías a utilizar\nIn this chapter, you’ll learn how to load flat files in R with the readr package, which is part of the core tidyverse.\n\nlibrary(tidyverse)",
+    "crumbs": [
+      "estadistica-aplicada.qmd",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Test de Hipótesis</span>"
+    ]
+  },
+  {
+    "objectID": "c6_inferencia.html#resumen",
+    "href": "c6_inferencia.html#resumen",
+    "title": "7  Test de Hipótesis",
+    "section": "7.2 Resumen",
+    "text": "7.2 Resumen\nIn this chapter, you’ve learned how to load CSV files with read_csv() and to do your own data entry with tibble() and tribble(). You’ve learned how csv files work, some of the problems you might encounter, and how to overcome them. We’ll come to data import a few times in this book: ?sec-import-spreadsheets from Excel and Google Sheets, ?sec-import-databases will show you how to load data from databases, ?sec-arrow from parquet files, ?sec-rectangling from JSON, and ?sec-scraping from websites.\nWe’re just about at the end of this section of the book, but there’s one important last topic to cover: how to get help. So in the next chapter, you’ll learn some good places to look for help, how to create a reprex to maximize your chances of getting good help, and some general advice on keeping up with the world of R.",
+    "crumbs": [
+      "estadistica-aplicada.qmd",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Test de Hipótesis</span>"
+    ]
+  },
+  {
+    "objectID": "c7_regresion1.html",
+    "href": "c7_regresion1.html",
+    "title": "8  Regresión Lineal",
+    "section": "",
+    "text": "8.1 Introducción\nWorking with data provided by R packages is a great way to learn data science tools, but you want to apply what you’ve learned to your own data at some point. In this chapter, you’ll learn the basics of reading data files into R.\nSpecifically, this chapter will focus on reading plain-text rectangular files. We’ll start with practical advice for handling features like column names, types, and missing data. You will then learn about reading data from multiple files at once and writing data from R to a file. Finally, you’ll learn how to handcraft data frames in R.",
+    "crumbs": [
+      "estadistica-aplicada.qmd",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Regresión Lineal</span>"
+    ]
+  },
+  {
+    "objectID": "c7_regresion1.html#introducción",
+    "href": "c7_regresion1.html#introducción",
+    "title": "8  Regresión Lineal",
+    "section": "",
+    "text": "8.1.1 Librerías a utilizar\nIn this chapter, you’ll learn how to load flat files in R with the readr package, which is part of the core tidyverse.\n\nlibrary(tidyverse)",
+    "crumbs": [
+      "estadistica-aplicada.qmd",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Regresión Lineal</span>"
+    ]
+  },
+  {
+    "objectID": "c7_regresion1.html#resumen",
+    "href": "c7_regresion1.html#resumen",
+    "title": "8  Regresión Lineal",
+    "section": "8.2 Resumen",
+    "text": "8.2 Resumen\nIn this chapter, you’ve learned how to load CSV files with read_csv() and to do your own data entry with tibble() and tribble(). You’ve learned how csv files work, some of the problems you might encounter, and how to overcome them. We’ll come to data import a few times in this book: ?sec-import-spreadsheets from Excel and Google Sheets, ?sec-import-databases will show you how to load data from databases, ?sec-arrow from parquet files, ?sec-rectangling from JSON, and ?sec-scraping from websites.\nWe’re just about at the end of this section of the book, but there’s one important last topic to cover: how to get help. So in the next chapter, you’ll learn some good places to look for help, how to create a reprex to maximize your chances of getting good help, and some general advice on keeping up with the world of R.",
+    "crumbs": [
+      "estadistica-aplicada.qmd",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Regresión Lineal</span>"
+    ]
+  },
+  {
+    "objectID": "c8_regresion2.html",
+    "href": "c8_regresion2.html",
+    "title": "9  Regresiones Logit y Probit",
+    "section": "",
+    "text": "9.1 Introducción\nWorking with data provided by R packages is a great way to learn data science tools, but you want to apply what you’ve learned to your own data at some point. In this chapter, you’ll learn the basics of reading data files into R.\nSpecifically, this chapter will focus on reading plain-text rectangular files. We’ll start with practical advice for handling features like column names, types, and missing data. You will then learn about reading data from multiple files at once and writing data from R to a file. Finally, you’ll learn how to handcraft data frames in R.",
+    "crumbs": [
+      "estadistica-aplicada.qmd",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Regresiones Logit y Probit</span>"
+    ]
+  },
+  {
+    "objectID": "c8_regresion2.html#introducción",
+    "href": "c8_regresion2.html#introducción",
+    "title": "9  Regresiones Logit y Probit",
+    "section": "",
+    "text": "9.1.1 Librerías a utilizar\nIn this chapter, you’ll learn how to load flat files in R with the readr package, which is part of the core tidyverse.\n\nlibrary(tidyverse)",
+    "crumbs": [
+      "estadistica-aplicada.qmd",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Regresiones Logit y Probit</span>"
+    ]
+  },
+  {
+    "objectID": "c8_regresion2.html#resumen",
+    "href": "c8_regresion2.html#resumen",
+    "title": "9  Regresiones Logit y Probit",
+    "section": "9.2 Resumen",
+    "text": "9.2 Resumen\nIn this chapter, you’ve learned how to load CSV files with read_csv() and to do your own data entry with tibble() and tribble(). You’ve learned how csv files work, some of the problems you might encounter, and how to overcome them. We’ll come to data import a few times in this book: ?sec-import-spreadsheets from Excel and Google Sheets, ?sec-import-databases will show you how to load data from databases, ?sec-arrow from parquet files, ?sec-rectangling from JSON, and ?sec-scraping from websites.\nWe’re just about at the end of this section of the book, but there’s one important last topic to cover: how to get help. So in the next chapter, you’ll learn some good places to look for help, how to create a reprex to maximize your chances of getting good help, and some general advice on keeping up with the world of R.",
+    "crumbs": [
+      "estadistica-aplicada.qmd",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Regresiones Logit y Probit</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#agradecimientos",
+    "href": "index.html#agradecimientos",
+    "title": "Análisis de Datos con R Aplicado a Políticas Públicas",
+    "section": "Agradecimientos",
+    "text": "Agradecimientos\nQuiero agradecer a todas las personas que hicieron posible este proyecto. Son muchas, ya que cada experiencia e interacción ha enriquecido mi camino. Sin embargo, quisiera empezar por mi familia. Sin el apoyo incondicional de mis padres, el investigador curioso que soy hoy probablemente nunca habría existido. Su amor, su estímulo constante y su enseñanza para preocuparme por los demás y por aprender cosas nuevas son el núcleo de esta iniciativa.\nA mi pareja, por su apoyo incondicional, quien siempre encuentra la manera de elevar mi ánimo y reforzar mi confianza cuando más lo necesito, además de generar en mi admiración por su talento y contribución las temáticas ligadas al desempleo nacional.\nA mis jefes y compañeros de trabajo, especialmente aquellos del Departamento de Evaluación de Políticas Públicas de la Subsecretaría de Prevención del Delito: Cristian Crespo y Gabriel Moraga, quienes fueron fundamentales en mi formación como investigador.\nA mis profesores del Diplomado en Ciencia de Datos para Políticas Públicas, del cual ahora soy parte como docente, y en particular a Pablo Aguirre, quien confió en mis capacidades y me dio la oportunidad de ser su ayudante.\nY, finalmente, a todas las personas que han dejado una huella positiva en mi vida, incluso con una breve conversación de pasillo. Cada una de esas personas ha contribuido, de alguna manera, a que este proyecto sea una realidad.",
+    "crumbs": [
+      "¡Bienvenid\\@!"
+    ]
+  },
+  {
+    "objectID": "p1_tidyverse.html",
+    "href": "p1_tidyverse.html",
+    "title": "Herramientas para la Ciencia de Datos",
+    "section": "",
+    "text": "Librerías a utilizar\nSi bien no hay una definición única sobre qué se entiende por Ciencia de Datos, sí existen ciertas acciones que todo analista de datos debe saber realizar.\nAntes de poder analizar los datos para extraer conclusiones y tomar decisiones informadas, es importante procesar la información en un formato que nos permita aplicar algún algoritmo o realizar algun procedimiento estadístico que nos ayude a conseguir nuestro objetivo.\nEste proceso, conocido como data wranglign, puede significar una parte importante del tiempo del proyecto de ciencia de datos que se busque desarrollar. Si bien es cierto que cada vez la tecnología nos ofrece múltiples formas de disponibilizar información, muchas veces vamos a requerir importarla a nuestro software de análisis, ordenarla en un formato que sea adecuado y transformar o crear variables nuevas a partir de las ya existentes o vincular la información con otras bases de datos.\nPor último y no menos importante, debemos ser capaces de encontrar hallazgos de manera clara y comunicable a una audiencia objetivo. Muchas veces los gráficos e imágenes nos ayudarán en esta tarea que algunas veces pasa desapercibida, pero que es una parte necesaria para conseguir la atención y comprensión de nuestras contrapartes.\nEn los siguientes 4 capítulos, revisaremos en detalle el flujo estándar del trabajo con datos y necesario para poder desarrollar un análisis exploratorio de los mismos.\nIn this chapter, you’ll learn how to load flat files in R with the readr package, which is part of the core tidyverse.",
+    "crumbs": [
+      "Herramientas para la Ciencia de Datos"
+    ]
+  },
+  {
+    "objectID": "p1_tidyverse.html#resumen",
+    "href": "p1_tidyverse.html#resumen",
+    "title": "Herramientas para la Ciencia de Datos",
+    "section": "Resumen",
+    "text": "Resumen\nIn this chapter, you’ve learned how to load CSV files with read_csv() and to do your own data entry with tibble() and tribble(). You’ve learned how csv files work, some of the problems you might encounter, and how to overcome them. We’ll come to data import a few times in this book: ?sec-import-spreadsheets from Excel and Google Sheets, ?sec-import-databases will show you how to load data from databases, ?sec-arrow from parquet files, ?sec-rectangling from JSON, and ?sec-scraping from websites.\nWe’re just about at the end of this section of the book, but there’s one important last topic to cover: how to get help. So in the next chapter, you’ll learn some good places to look for help, how to create a reprex to maximize your chances of getting good help, and some general advice on keeping up with the world of R.",
+    "crumbs": [
+      "Herramientas para la Ciencia de Datos"
+    ]
+  },
+  {
+    "objectID": "c0_R.html",
+    "href": "c0_R.html",
+    "title": "Instalación de R",
+    "section": "",
+    "text": "Paso 1: Descargar R\nSi esta es la primera vez que interactúas con R, lo primero que debes hacer es seguir los siguientes pasos para la correcta instalación del software y la interfaz de trabajo Rstudio (también llamado IDE o Entorno de Desarrollo Integrado).\nEl primer paso es descargar e instalar R. R es un lenguaje de programación diseñado para realizar analisís estadísticos, visualizar datos, crear mapas y muchas otras funciones más relacionadas con el tratamiento de información.\nPara instalar R, debes visitar el sitio web oficial de R y descargar la versión correspondiente a tu sistema operativo (Windows o Mac):\nUna vez descargado el archivo de instalación, debes seguir las instrucciones que vienen por defecto y esperar a que se instala el software.",
+    "crumbs": [
+      "Nivelación Estadística",
+      "Instalación de R"
+    ]
+  },
+  {
+    "objectID": "c0_R.html#introducción",
+    "href": "c0_R.html#introducción",
+    "title": "1  Data import",
+    "section": "",
+    "text": "1.1.1 Librerías a utilizar\nIn this chapter, you’ll learn how to load flat files in R with the readr package, which is part of the core tidyverse.\n\nlibrary(tidyverse)",
+    "crumbs": [
+      "Herramientas para la Ciencia de Datos",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Preliminares</span>"
+    ]
+  },
+  {
+    "objectID": "c0_R.html#resumen",
+    "href": "c0_R.html#resumen",
+    "title": "1  Data import",
+    "section": "1.2 Resumen",
+    "text": "1.2 Resumen\nIn this chapter, you’ve learned how to load CSV files with read_csv() and to do your own data entry with tibble() and tribble(). You’ve learned how csv files work, some of the problems you might encounter, and how to overcome them. We’ll come to data import a few times in this book: ?sec-import-spreadsheets from Excel and Google Sheets, ?sec-import-databases will show you how to load data from databases, ?sec-arrow from parquet files, ?sec-rectangling from JSON, and ?sec-scraping from websites.\nWe’re just about at the end of this section of the book, but there’s one important last topic to cover: how to get help. So in the next chapter, you’ll learn some good places to look for help, how to create a reprex to maximize your chances of getting good help, and some general advice on keeping up with the world of R.",
+    "crumbs": [
+      "Herramientas para la Ciencia de Datos",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Preliminares</span>"
+    ]
+  },
+  {
+    "objectID": "c0_repaso_estadistico.html",
+    "href": "c0_repaso_estadistico.html",
+    "title": "1  Operaciones Básicas",
+    "section": "",
+    "text": "1.1 Introducción\nR debe entenderse como un lenguaje y ambiente de programación. A lo largo de esta capacitación, se enfocará el trabajo con R como un proceso de exploración de Datos:",
+    "crumbs": [
+      "Nivelación Estadística",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Operaciones Básicas</span>"
+    ]
+  },
+  {
+    "objectID": "c0_repaso_estadistico.html#introducción",
+    "href": "c0_repaso_estadistico.html#introducción",
+    "title": "1  Operaciones Básicas",
+    "section": "",
+    "text": "Fuente: [@wickham2023]",
+    "crumbs": [
+      "Nivelación Estadística",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Operaciones Básicas</span>"
+    ]
+  },
+  {
+    "objectID": "c0_repaso_estadistico.html#resumen",
+    "href": "c0_repaso_estadistico.html#resumen",
+    "title": "2  Data import",
+    "section": "2.2 Resumen",
+    "text": "2.2 Resumen\nIn this chapter, you’ve learned how to load CSV files with read_csv() and to do your own data entry with tibble() and tribble(). You’ve learned how csv files work, some of the problems you might encounter, and how to overcome them. We’ll come to data import a few times in this book: ?sec-import-spreadsheets from Excel and Google Sheets, ?sec-import-databases will show you how to load data from databases, ?sec-arrow from parquet files, ?sec-rectangling from JSON, and ?sec-scraping from websites.\nWe’re just about at the end of this section of the book, but there’s one important last topic to cover: how to get help. So in the next chapter, you’ll learn some good places to look for help, how to create a reprex to maximize your chances of getting good help, and some general advice on keeping up with the world of R.",
+    "crumbs": [
+      "p0_nivelación.qmd",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Data import</span>"
+    ]
+  },
+  {
+    "objectID": "p0_nivelacion.html",
+    "href": "p0_nivelacion.html",
+    "title": "Nivelación Estadística",
+    "section": "",
+    "text": "En la actualidad, cada vez es más intensivo el uso de los datos para la toma de decisiones, ya sea para describir, explicar o predecir un fenómeno. Específicamente, los algoritmos de Machine Learning se basan en gran medida en modelos estadísticos. Por lo tanto, tener conocimiento sobre los fundamentos de la probabilidad y la estadística es esencial dentro de la labor de cualquier analista de datos que busque utilizar la información disponible de manera fiable, independientemente de si están involucrados en un análisis exploratorio de datos o en la creación de modelos de predicción más sofisticados.\nEn este apartado, se enseñarán de forma resumida, conceptos normalmente cubiertos en un curso universitario introductorio de probabilidad y estadística. Esto, con el fin de asegurar un nivel base de conocimientos para todas/os las/os estudiantes del programa.\nLa nivelación se realizará con el fin entregar los conocimientos fundamentales que servirán de base para la segunda unidad del módulo 2 del Diplomado de Ciencia de Datos para Políticas Públicas, en el que se abordarán los conceptos de inferencia estadística y modelos de regresión lineal (entre otros).\nCada uno de los conceptos será revisado tanto desde una perspectiva teórica como práctica, con un énfasis particular en esta última. Cuando sea posible, se empleará el lenguaje de programación R para las demostraciones y ejercicios\nComo objetivos específicos de este apartado se busca:\n\nFortalecer la comprensión de los fundamentos teóricos de probabilidad y la estadística entre las y los estudiantes, permitiéndoles aplicar conceptos clave en la resolución de problemas prácticos.\nFomentar la integración de la teoría estadística con la práctica mediante el uso de R, facilitando así la aplicación de métodos estadísticos en un lenguaje común que sirva de base para el resto de los cursos del diplomado.",
+    "crumbs": [
+      "Nivelación Estadística"
+    ]
+  },
+  {
+    "objectID": "p0_nivelacion.html#resumen",
+    "href": "p0_nivelacion.html#resumen",
+    "title": "Herramientas para la Ciencia de Datos",
+    "section": "Resumen",
+    "text": "Resumen\nIn this chapter, you’ve learned how to load CSV files with read_csv() and to do your own data entry with tibble() and tribble(). You’ve learned how csv files work, some of the problems you might encounter, and how to overcome them. We’ll come to data import a few times in this book: ?sec-import-spreadsheets from Excel and Google Sheets, ?sec-import-databases will show you how to load data from databases, ?sec-arrow from parquet files, ?sec-rectangling from JSON, and ?sec-scraping from websites.\nWe’re just about at the end of this section of the book, but there’s one important last topic to cover: how to get help. So in the next chapter, you’ll learn some good places to look for help, how to create a reprex to maximize your chances of getting good help, and some general advice on keeping up with the world of R.",
+    "crumbs": [
+      "Nivelación Estadística"
+    ]
+  },
+  {
+    "objectID": "c0_R.html#instalación-de-r",
+    "href": "c0_R.html#instalación-de-r",
+    "title": "1  Preliminares",
+    "section": "",
+    "text": "1.1.1 Paso 1: Descargar R\nEl primer paso es descargar e instalar R. R es un lenguaje de programación diseñado para realizar analisís estadísticos, visualizar datos, crear mapas y muchas otras funciones más relacionadas con el tratamiento de información.\nPara instalar R, debe visitar el sitio web oficial de R y descargar la versión correspondiente a tu sistema operativo (Windows o Mac). Si ya tienes R instalado en tu computador, asegúrate de actualizarlo a la última versión disponible:\n\nR para Windows\nR para macOS\n\nUna vez descargado el archivo de instalación, debes seguir las instrucciones que vienen por defecto y esperar a que se instala el software.\n\n\n1.1.2 Paso 2: Descargar Rstudio\nEl segundo paso para poder trabajar con R es descargar el entorno de trabajo. Si bien hay varias alternativas, en el caso de R el IDE más utilizado y diseñado para explotar de manera más versatil el potencial de R es Rstudio. Para descargarlo, basta con acceder al siguiente link y seguir las instrucciones de instalación que vienen por defecto\n\nRstudio Desktop\n\n\n\n1.1.3 Paso 3: Abrir Rstudio\nSi seguiste correctamente los pasos anteriores ¡Felicitaciones! ya estás habilitado para utilizar R en tu computador. Desde ahora en adelante, la recomendación es utilizar solamente la aplicación de Rstudio cuando quieras trabajar con R, ya que el software estará integrado directamente al IDE.\nAl abrir Rstudio por primera vez, veras el siguiente panel, el cual puede sonar un poco intimidante en un inicio, pero con el tiempo ya te irás famialirizando con él.\nEn el siguiente capítulo, veremos algunas operaciones básicas que puedes realizar con R, tales como sumar o restar valores, crear vectores o conjuntos de datos y otros procesos básicos.",
+    "crumbs": [
+      "Herramientas para la Ciencia de Datos",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Preliminares</span>"
+    ]
+  },
+  {
+    "objectID": "c0_R.html#paso-1-descargar-r",
+    "href": "c0_R.html#paso-1-descargar-r",
+    "title": "Instalación de R",
+    "section": "",
+    "text": "R para Windows\nR para macOS\n\n\n\n\n\n\n\n\nNota\n\n\n\nSi ya tienes R instalado en tu computador, asegúrate de actualizarlo a la última versión disponible.",
+    "crumbs": [
+      "Nivelación Estadística",
+      "Instalación de R"
+    ]
+  },
+  {
+    "objectID": "c0_R.html#paso-2-descargar-rstudio",
+    "href": "c0_R.html#paso-2-descargar-rstudio",
+    "title": "Instalación de R",
+    "section": "Paso 2: Descargar Rstudio",
+    "text": "Paso 2: Descargar Rstudio\nEl segundo paso para poder trabajar con R es descargar el entorno de trabajo (IDE). Un IDE es una aplicación de software que ayuda a los programadores a desarrollar código de software de manera eficiente. Aumenta la productividad de los desarrolladores al combinar capacidades como editar, crear, probar y empaquetar software en una aplicación fácil de usar.\nSi bien existen varias alternativas, en el caso de R el IDE más utilizado y diseñado para explotar de manera más versatil su potencial es Rstudio1.\nPara descargarlo, basta con acceder al siguiente link y seguir las instrucciones de instalación que vienen por defecto\n\nRstudio Desktop\n\n\n\n\n\n\n\nNota\n\n\n\nSi has trabajado con otro lenguaje de programación, probablemente hayas usado Visual Studio Code  u otra IDE en donde escribir código. Si bien tal interfaz también puede ser utilizada para programar en lenguaje R, más adelante veremos varias ventajas que entrega Rstudio. Así como un escritor puede utilizar una hoja de cuaderno, un bloc de notas o Microsoft Word para escribir sus libros; un programador de R puede escribir código directamente desde el software, usar Visual Studio Code, o bien, Rstudio para realizar sus proyectos de análisis de datos.",
+    "crumbs": [
+      "Nivelación Estadística",
+      "Instalación de R"
+    ]
+  },
+  {
+    "objectID": "c0_R.html#paso-3-abrir-rstudio",
+    "href": "c0_R.html#paso-3-abrir-rstudio",
+    "title": "Instalación de R",
+    "section": "Paso 3: Abrir Rstudio",
+    "text": "Paso 3: Abrir Rstudio\nSi seguiste correctamente los pasos anteriores ¡Felicitaciones! ya tienes todo para empezar tus primeros proyectos con datos mediante R y de manera local en tu computador. Desde ahora en adelante, la recomendación es utilizar solamente la aplicación de  cuando quieras trabajar con R, ya que el software estará integrado directamente al IDE.\nAl abrir Rstudio por primera vez, verás el panel que se muestra a continuación, el cual puede sonar un poco intimidante en un inicio, pero con el tiempo ya te irás famialirizando con él.\nEn el siguiente capítulo, veremos algunas operaciones básicas que puedes realizar con R, tales como sumar o restar valores, crear vectores o conjuntos de datos y otros procesos básicos.",
+    "crumbs": [
+      "Nivelación Estadística",
+      "Instalación de R"
+    ]
+  },
+  {
+    "objectID": "c0_repaso_estadistico.html#rstudio",
+    "href": "c0_repaso_estadistico.html#rstudio",
+    "title": "1  Operaciones Básicas",
+    "section": "1.2 Rstudio",
+    "text": "1.2 Rstudio\nUna vez descargado R y Rstudio, para empezar a trabajar, basta con abrir la aplicación de Rstudio. La ventaja de esta plataforma es que entrega una interfaz más amigable para el trabajo, la cual se divide en 4 partes:\n\nConsola (parte inferior izquierda): Es dónde se ejecutan los códigos\nFiles (parte inferior derecha): Posee varias ventanas:\n\nFiles: Permite navegar por los distintos archivos del computador\nPlots: Permite mostrar las visualizaciones que creemos\nPackages: Podemos explorar las distintas librerías con las que trabajaremos\nHelp: Pestaña de ayuda\n\nGlobal Environment (parte superior derecha): Es donde se cargan todos los archivos que importamos a R así como las variables que vayamos creando\nScript (parte superior izquierda): Permite escribir los códigos para poder guardarlos y compartirlos. Es similar al do file en STATA. CTRL + ENTER permite correr el código de la línea seleccionada.\n\n\n\n\nFuente: Apuntes de clase curso Introducción a R para Ciencias Sociales",
+    "crumbs": [
+      "Nivelación Estadística",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Operaciones Básicas</span>"
+    ]
+  },
+  {
+    "objectID": "c0_repaso_estadistico.html#sec-op_basicas",
+    "href": "c0_repaso_estadistico.html#sec-op_basicas",
+    "title": "1  Operaciones Básicas",
+    "section": "1.3 Operaciones Básicas",
+    "text": "1.3 Operaciones Básicas\nEl signo # permite escribir texto en el R script, el cual no será considerado cómo código al momento de ejecutar un comando:\n\n# Así puedo comentar líneas de comando\n\nR se puede ocupar como calculadora para las principales operaciones matemáticas y operadores lógicos. Por ejemplo, al escribir en la consola 2+2 y apretar ENTER (CTRL + ENTER en el script) nos devolverá el resultado de 4:\n\n2+2\n\n[1] 4\n\n\nAlguna información relevante respecto de las operaciones es la siguiente:\n\nSi una línea termina con una operación, pasará a la siguiente línea para continuar.\nLos espacios dentro de una misma línea no se consideran relevantes.\nEl operador lógico de “igual” se escribe: ==. En general, se suele trabajar con estructuras de datos. La estructura más básica es el vector. Con la función: c() que se conoce como combinar, se pueden crear vectores.\n\n\nOperaciones Matemáticas\n\n\nOperador\nSintaxis\n\n\n\n\nSuma\n+\n\n\nResta\n-\n\n\nDivisión\n/\n\n\nMultiplicación\n*\n\n\n^\nExponente\n\n\n%%\nMódulo (Resto de una división)\n\n\n%/%\nDivisión Entera\n\n\n\n\nOperadores Lógicos\n\n\nOperador\nSintaxis\n\n\n\n\nMayor\n&gt;\n\n\nMenor\n&lt;\n\n\nIgual\n==\n\n\nDistinto\n!=\n\n\nMayor o igual\n&gt;=\n\n\nMenor o igual\n&lt;=\n\n\nEn (Contiene a)\n%in%\n\n\nNo en (No contiene a)\n!(%in%)\n\n\n\n\n1.3.1 Ejemplos de Aplicación\n\n#Operaciones matemáticas básicas\n\n1 + 2 + 3\n\n[1] 6\n\n1 +2 *      3\n\n[1] 7\n\n4.4 / 2.2\n\n[1] 2\n\n3 ^ 2\n\n[1] 9\n\n(1+2)* #si una linea termina con una operacion, \"pasará\" a la siguiente linea para continuar\n  3\n\n[1] 9\n\n#Operadores lógicos\n\n2 &gt; 3\n\n[1] FALSE\n\n3 &gt; 3\n\n[1] FALSE\n\n3 &gt;= 3\n\n[1] TRUE\n\n3 == 3\n\n[1] TRUE\n\n2 != 3\n\n[1] TRUE",
+    "crumbs": [
+      "Nivelación Estadística",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Operaciones Básicas</span>"
+    ]
+  },
+  {
+    "objectID": "c0_repaso_estadistico.html#operaciones-con-vectores",
+    "href": "c0_repaso_estadistico.html#operaciones-con-vectores",
+    "title": "1  Operaciones Básicas",
+    "section": "1.4 Operaciones con Vectores",
+    "text": "1.4 Operaciones con Vectores\nSe pueden realizar operaciones matemáticas con vectores al igual que como se realizan con números.\nR entrega mensajes de error y advertencia. Ejemplo de esto último ocurre cuando se realizan operaciones con vectores de distintas dimensiones, en donde el vector más corto se vuelve a operacionalizar con las componentes restantes del vector más largo en orden lógico (izquierda a derecha).\n\nc(1,2,3) + c(2,3,4)\n\n[1] 3 5 7\n\n\n\nc(1,2,3,4) + c(2,3,4)\n\nWarning in c(1, 2, 3, 4) + c(2, 3, 4): longitud de objeto mayor no es múltiplo\nde la longitud de uno menor\n\n\n[1] 3 5 7 6\n\n\nEn efecto, vemos que en el segundo caso lo que hace R es el siguiente proceso: \\[Z = X + Y =\\{x_1+y_1,x_2+y_2,x_3+y_3,x_4+y_1\\}\\] donde \\(X\\) es un vector tal que \\(X=\\{x_1=1,x_2=2,x_3=3,x_4=4\\}\\) e \\(Y\\) es otro vector tal que \\(Y=\\{y_1=2,y_2=3,y_3=4\\}\\)\nTambién se puede trabajar con datos de carácter. La forma de indicar que un dato es string (carácter) es escribiendo el texto entrecomillas: \"\"\n\n\"Esto es un caracter\"\n\n[1] \"Esto es un caracter\"\n\n\nLa función class() permite conocer qué tipo de dato es el objeto indicado, es decir, conocer su clase\n\nclass(c(1,2,3))\n\n[1] \"numeric\"\n\n\n\nclass(\"Esto es un caracter\")\n\n[1] \"character\"\n\n\nCon la función c() se pueden crear vectores de datos de carácter, al igual que cómo se realiza con números. También se pueden crear vectores con los valores lógicos: TRUE, FALSE y NA.\n\nc('Hola','Adios')\n\n[1] \"Hola\"  \"Adios\"\n\nclass(c('Hola','Adios'))\n\n[1] \"character\"\n\n\n\nc(TRUE,FALSE,NA)\n\n[1]  TRUE FALSE    NA\n\nclass(c(TRUE,FALSE,NA))\n\n[1] \"logical\"\n\n\nEs importante señalar que los vectores solo admiten un tipo de dato, es decir, no se puede combinar en un solo vector datos numéricos y lógicos, por ejemplo. Si se combinan, R hará la transformación correspondiente a un solo tipo de dato.\n\nc(2,TRUE)\n\n[1] 2 1\n\nclass(c(2,TRUE))\n\n[1] \"numeric\"\n\n\n\nc(1,'Hola',FALSE)\n\n[1] \"1\"     \"Hola\"  \"FALSE\"\n\nclass(c(1,'Hola',FALSE))\n\n[1] \"character\"",
+    "crumbs": [
+      "Nivelación Estadística",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Operaciones Básicas</span>"
+    ]
+  },
+  {
+    "objectID": "c0_repaso_estadistico.html#creación-de-variables",
+    "href": "c0_repaso_estadistico.html#creación-de-variables",
+    "title": "1  Operaciones Básicas",
+    "section": "1.5 Creación de Variables",
+    "text": "1.5 Creación de Variables\nLa creación de variables se operacionaliza con el siguiente símbolo: &lt;- o bien ALT + -\nPor ejemplo, asignar a x el valor 1 se escribe así: x &lt;- 1. La forma rápida de escribir el símbolo de creación es a través de: ALT + -:\n\nx &lt;- 1\ny &lt;- 2\n\nPara ver más atajos, se puede buscar en herramientas -&gt; Keyboard shortcuts quick reference. Las variables creadas se muestran en Global environment. También se pueden sobrescribir las variables si se ejecuta un código posterior a la primera creación de la variable.\nCon la función c() se pueden generar vectores combinados en función de las variables creadas. La creación de variables también puede incluir operaciones de variables ya creadas (por ejemplo, sumadexey &lt;- x+y):\n\nsumadexey &lt;- x+y\nsumadexey\n\n[1] 3\n\n\nIMPORTANTE: Al reescribir una variable, por ejemplo, x, se alterará el valor de la variable x, mas no el valor de la variable creada anteriormente sumadexey. Es decir, cambiar el valor de x no influye en los objetos ya creados (no es retroactivo). Técnicamente, esta característica se le conoce como que la asignación de valores no es reactiva.\n\nsumadexey &lt;- x+y\nx &lt;- 3\nx+y\n\n[1] 5\n\nsumadexey\n\n[1] 3\n\n\n\n1.5.1 Eliminación de Variables\nSe pueden eliminar variables con la función rm()que significa remove\n\nrm(x)\n\nSi se quiere eliminar todo lo que está en Global environment se puede ocupar la siguiente función: rm(list=ls())\n\nx &lt;- 3\nz &lt;- 5\nrm(list=ls())",
+    "crumbs": [
+      "Nivelación Estadística",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Operaciones Básicas</span>"
+    ]
+  },
+  {
+    "objectID": "c0_repaso_estadistico.html#trabajo-con-objetos",
+    "href": "c0_repaso_estadistico.html#trabajo-con-objetos",
+    "title": "1  Operaciones Básicas",
+    "section": "1.6 Trabajo con Objetos",
+    "text": "1.6 Trabajo con Objetos\nEn la siguiente sección se estudia cómo aprovechar la facilidad de trabajar con objetos en R.\nPara crear un vector ocupamos el comando de creación:\n\nvector1 &lt;- c(0,2,4,6,8,10,12,12,14,16,18,20)\n\nPara devolver el valor en la posición 5 del vector, realizamos la siguiente operación:\n\nvector1[5]\n\n[1] 8\n\n\nEs clave entender la funcionalidad del corchete [] aplicándolo a una variable x cualquiera:\n\nFuncionalidad del []\n\n\n\n\n\n\nSintaxis\nValor que Entrega\n\n\n\n\n[n positivo]\nValor de la componente del vector en la posición n\n\n\n[n negativo]\nValor de todas las componentes del vector excepto la posición n\n\n\n[n:m]\nValor de las componentes del vector desde la posición n hasta la m inclusive\n\n\n== n\nOperador lógico para cada componente del vector que indica si se cumple la condición (=n)\n\n\n[x==n]\nExtrae todos los valores del vector que cumplen la condición (valores igual a n)\n\n\n[x!=n]\nExtrae todos los valores del vector que cumplen la condición (valores distintos a n)\n\n\n\n\nvector1[-1] #extraer todos los números de vector1 menos el que está en la posición 1\n\n [1]  2  4  6  8 10 12 12 14 16 18 20\n\nvector1[2:4] #extraer los números entre la posición 2 y 4 (incluyéndolos) de vector1\n\n[1] 2 4 6\n\nvector1[c(1,3,5)] #extraer los números en las posiciones 1, 3 y 5 de vector1\n\n[1] 0 4 8\n\nvector1 == 12 #vector con operadores lógicos para condición\n\n [1] FALSE FALSE FALSE FALSE FALSE FALSE  TRUE  TRUE FALSE FALSE FALSE FALSE\n\nvector1[vector1==12] #extraer todos los números de vector1 iguales a 12\n\n[1] 12 12\n\nvector1[vector1!=12] #extraer todos los números de vector1 distintos a 12\n\n [1]  0  2  4  6  8 10 14 16 18 20",
+    "crumbs": [
+      "Nivelación Estadística",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Operaciones Básicas</span>"
+    ]
+  },
+  {
+    "objectID": "c0_basics.html",
+    "href": "c0_basics.html",
+    "title": "Operaciones Básicas",
+    "section": "",
+    "text": "Introducción\nR debe entenderse como un lenguaje y ambiente de programación. A lo largo de este apartado, enfocaremos el uso del software como un proceso de exploración de datos:",
+    "crumbs": [
+      "Introducción a R",
+      "Operaciones Básicas"
+    ]
+  },
+  {
+    "objectID": "c0_basics.html#introducción",
+    "href": "c0_basics.html#introducción",
+    "title": "Operaciones Básicas",
+    "section": "",
+    "text": "Fuente: (Wickham, Çetinkaya-Rundel, and Grolemund 2023)",
+    "crumbs": [
+      "Introducción a R",
+      "Operaciones Básicas"
+    ]
+  },
+  {
+    "objectID": "c0_basics.html#rstudio",
+    "href": "c0_basics.html#rstudio",
+    "title": "Operaciones Básicas",
+    "section": "Rstudio",
+    "text": "Rstudio\nUna vez descargado R y Rstudio, para empezar a trabajar basta con abrir la aplicación . La ventaja de esta plataforma es que entrega una interfaz más amigable para el trabajo, la cual se divide en 4 partes:\n\nScripts o Editor de Código (Parte Superior Izquierda): Aquí es donde escribes y guardas tu código. Piensa en esto como un cuaderno digital donde puedes escribir varias líneas de código antes de ejecutarlas. A diferencia de la consola, el código aquí no se ejecuta de inmediato. Para hacerlo, primero debes seleccionarlo y presionar Ctrl + Enter (Windows/Linux) o Cmd + Enter (Mac) para ejecutarlo línea por línea o en bloques.\nConsola (Parte Inferior Izquierda): Aquí puedes escribir código y ejecutarlo directamente, obteniendo resultados de inmediato. Sin embargo, lo que escribas en la consola no se guarda automáticamente, por lo que es mejor usar scripts para guardar tu trabajo y reutilizarlo en el futuro. Al ejecutar un script o una parte de él, código se correra directamente en la consola.\nEnvironment (Parte Superior Derecha): Muestra los objetos que has creado en tu sesión, como variables, data frames y funciones. Piénsalo como una lista de los elementos con los que estás trabajando.\nFiles y Otros Paneles (Parte Inferior Derecha): una caja de herramientas con varias funciones útiles: les: Permite navegar por los distintos archivos del computador\n\nFiles: Permite navegar por entre carpetas y archivos de tu computador o la nube\nPlots: Muestra los gráficos que generas con R.\nPackages: Aquí podemos instalar y cargar las distintas librerías con las que trabajaremos.\nHelp: Pestaña de ayuda para buscar sintaxis y argumentos de las funciones que usemos.\nViewer: Se usa para visualizar reportes en HTML, tablas y mapas interactivos y otros elementos gráficos.\n\n\n\n\n\nPanel Layout Rstudio",
+    "crumbs": [
+      "Introducción a R",
+      "Operaciones Básicas"
+    ]
+  },
+  {
+    "objectID": "c0_basics.html#sec-op_basicas",
+    "href": "c0_basics.html#sec-op_basicas",
+    "title": "Operaciones Básicas",
+    "section": "Operaciones Básicas",
+    "text": "Operaciones Básicas\nEl signo # permite escribir texto en el R script, el cual no será considerado cómo código al momento de ejecutar un comando:\n\n# Así puedo comentar líneas de comando\n\nR se puede ocupar como calculadora para las principales operaciones matemáticas y operadores lógicos. Por ejemplo, al escribir en la consola 2+2 y apretar ENTER (CTRL + ENTER en el script) nos devolverá el resultado de 4:\n\n2+2\n\n[1] 4\n\n\nAlguna información relevante respecto de las operaciones es la siguiente:\n\nSi una línea termina con una operación, pasará a la siguiente línea para continuar.\nLos espacios dentro de una misma línea no se consideran relevantes.\nEl operador lógico de “igual” se escribe: ==. En general, se suele trabajar con estructuras de datos. La estructura más básica es el vector. Con la función: c() que se conoce como combinar, se pueden crear vectores.\n\n\nOperaciones Matemáticas\n\n\nOperador\nSintaxis\n\n\n\n\nSuma\n+\n\n\nResta\n-\n\n\nDivisión\n/\n\n\nMultiplicación\n*\n\n\n^\nExponente\n\n\n%%\nMódulo (Resto de una división)\n\n\n%/%\nDivisión Entera\n\n\n\n\nOperadores Lógicos\n\n\nOperador\nSintaxis\n\n\n\n\nMayor\n&gt;\n\n\nMenor\n&lt;\n\n\nIgual\n==\n\n\nDistinto\n!=\n\n\nMayor o igual\n&gt;=\n\n\nMenor o igual\n&lt;=\n\n\nEn (Contiene a)\n%in%\n\n\nNo en (No contiene a)\n!(%in%)\n\n\n\n\nEjemplos de Aplicación\n\n#Operaciones matemáticas básicas\n\n1 + 2 + 3\n\n[1] 6\n\n1 +2 *      3\n\n[1] 7\n\n4.4 / 2.2\n\n[1] 2\n\n3 ^ 2\n\n[1] 9\n\n(1+2)* #si una linea termina con una operacion, \"pasará\" a la siguiente linea para continuar\n  3\n\n[1] 9\n\n#Operadores lógicos\n\n2 &gt; 3\n\n[1] FALSE\n\n3 &gt; 3\n\n[1] FALSE\n\n3 &gt;= 3\n\n[1] TRUE\n\n3 == 3\n\n[1] TRUE\n\n2 != 3\n\n[1] TRUE",
+    "crumbs": [
+      "Nivelación Estadística",
+      "Operaciones Básicas"
+    ]
+  },
+  {
+    "objectID": "c0_basics.html#operaciones-con-vectores",
+    "href": "c0_basics.html#operaciones-con-vectores",
+    "title": "Operaciones Básicas",
+    "section": "Operaciones con Vectores",
+    "text": "Operaciones con Vectores\nEn general, se suele trabajar con estructuras de datos. La estructura más básica es el vector. Con la función c() (que se conoce como combinar) se pueden crear vectores.\nSe pueden realizar operaciones matemáticas con vectores al igual que como se realizan con números.\nR entrega mensajes de error y advertencia. Ejemplo de esto último ocurre cuando se realizan operaciones con vectores de distintas dimensiones, en donde el vector más corto se vuelve a operacionalizar con las componentes restantes del vector más largo en orden lógico (izquierda a derecha).\n\nc(1,2,3) + c(2,3,4)\n\n[1] 3 5 7\n\n\n\nc(1,2,3,4) + c(2,3,4)\n\nWarning in c(1, 2, 3, 4) + c(2, 3, 4): longitud de objeto mayor no es múltiplo\nde la longitud de uno menor\n\n\n[1] 3 5 7 6\n\n\nEn efecto, vemos que en el segundo caso lo que hace R es el siguiente proceso: \\[Z = X + Y =\\{x_1+y_1,x_2+y_2,x_3+y_3,x_4+y_1\\}\\] donde \\(X\\) es un vector tal que \\(X=\\{x_1=1,x_2=2,x_3=3,x_4=4\\}\\) e \\(Y\\) es otro vector tal que \\(Y=\\{y_1=2,y_2=3,y_3=4\\}\\)\nTambién se puede trabajar con datos de carácter. La forma de indicar que un dato es string (carácter) es escribiendo el texto entrecomillas: \"\"\n\n\"Esto es un caracter\"\n\n[1] \"Esto es un caracter\"\n\n\nLa función class() permite conocer qué tipo de dato es el objeto indicado, es decir, conocer su clase\n\nclass(c(1,2,3))\n\n[1] \"numeric\"\n\n\n\nclass(\"Esto es un caracter\")\n\n[1] \"character\"\n\n\nCon la función c() se pueden crear vectores de datos de carácter, al igual que cómo se realiza con números. También se pueden crear vectores con los valores lógicos: TRUE, FALSE y NA.\n\nc('Hola','Adios')\n\n[1] \"Hola\"  \"Adios\"\n\nclass(c('Hola','Adios'))\n\n[1] \"character\"\n\n\n\nc(TRUE,FALSE,NA)\n\n[1]  TRUE FALSE    NA\n\nclass(c(TRUE,FALSE,NA))\n\n[1] \"logical\"\n\n\nEs importante señalar que los vectores solo admiten un tipo de dato, es decir, no se puede combinar en un solo vector datos numéricos y lógicos, por ejemplo. Si se combinan, R hará la transformación correspondiente a un solo tipo de dato.\n\nc(2,TRUE)\n\n[1] 2 1\n\nclass(c(2,TRUE))\n\n[1] \"numeric\"\n\n\n\nc(1,'Hola',FALSE)\n\n[1] \"1\"     \"Hola\"  \"FALSE\"\n\nclass(c(1,'Hola',FALSE))\n\n[1] \"character\"",
+    "crumbs": [
+      "Introducción a R",
+      "Operaciones Básicas"
+    ]
+  },
+  {
+    "objectID": "c0_basics.html#creación-de-variables",
+    "href": "c0_basics.html#creación-de-variables",
+    "title": "Operaciones Básicas",
+    "section": "Creación de Variables",
+    "text": "Creación de Variables\nLa creación de variables u objetos se operacionaliza con el siguiente símbolo: &lt;- o bien ALT + -\nPor ejemplo, asignar a x el valor 1 se escribe así: x &lt;- 1. La forma rápida de escribir el símbolo de creación es a través de: ALT + -:\n\nx &lt;- 1\ny &lt;- 2\n\nPara ver más atajos, se puede buscar en herramientas -&gt; Keyboard shortcuts quick reference.\n\nLas variables creadas se muestran en Global environment. También se pueden sobrescribir las variables si se ejecuta un código posterior a la primera creación de la variable.\nCon la función c() se pueden generar vectores combinados en función de las variables creadas. La creación de variables también puede incluir operaciones de variables ya creadas (por ejemplo, sumadexey &lt;- x+y):\n\nsumadexey &lt;- x+y\nsumadexey\n\n[1] 3\n\n\n\n\n\n\n\n\nImportante\n\n\n\nAl reescribir una variable, por ejemplo, x, se alterará el valor de la variable x, mas no el valor de la variable creada anteriormente sumadexey. Es decir, cambiar el valor de x no influye en los objetos ya creados. Técnicamente, esta característica se le conoce como que la asignación de valores no es reactiva.\nLo anterior implica que, a medida que vamos realizando cambios en un mismo objeto, si queremos corregir algo en un paso intermedio, debemos asegurarnos de correr todo el código desde el inicio (o al menos en las partes relevantes) con el fin de minimizar los riesgos de cometer un error en nuestros cálculos.\n\n\n\nsumadexey &lt;- x+y\nx &lt;- 3\nx+y\n\n[1] 5\n\nsumadexey\n\n[1] 3\n\n\n\nEliminación de Variables\nSe pueden eliminar variables con la función rm()que significa remove\n\nrm(x)\n\nSi se quiere eliminar todo lo que está en Global environment se puede ocupar la siguiente función: rm(list=ls())\n\nx &lt;- 3\nz &lt;- 5\nrm(list=ls())",
+    "crumbs": [
+      "Introducción a R",
+      "Operaciones Básicas"
+    ]
+  },
+  {
+    "objectID": "c0_basics.html#trabajo-con-objetos",
+    "href": "c0_basics.html#trabajo-con-objetos",
+    "title": "Operaciones Básicas",
+    "section": "Trabajo con Objetos",
+    "text": "Trabajo con Objetos\nEn la siguiente sección se estudia cómo aprovechar la facilidad de trabajar con objetos en R.\nPara crear un vector ocupamos el comando de creación:\n\nvector1 &lt;- c(0,2,4,6,8,10,12,12,14,16,18,20)\n\nPara devolver el valor en la posición 5 del vector, realizamos la siguiente operación:\n\nvector1[5]\n\n[1] 8\n\n\nEs clave entender la funcionalidad del corchete [] aplicándolo a una variable x cualquiera:\n\nFuncionalidad del []\n\n\n\n\n\n\nSintaxis\nValor que Entrega\n\n\n\n\n[n positivo]\nValor de la componente del vector en la posición n\n\n\n[n negativo]\nValor de todas las componentes del vector excepto la posición n\n\n\n[n:m]\nValor de las componentes del vector desde la posición n hasta la m inclusive\n\n\n== n\nOperador lógico para cada componente del vector que indica si se cumple la condición (=n)\n\n\n[x==n]\nExtrae todos los valores del vector que cumplen la condición (valores igual a n)\n\n\n[x!=n]\nExtrae todos los valores del vector que cumplen la condición (valores distintos a n)\n\n\n\n\nvector1[-1] #extraer todos los números de vector1 menos el que está en la posición 1\n\n [1]  2  4  6  8 10 12 12 14 16 18 20\n\nvector1[2:4] #extraer los números entre la posición 2 y 4 (incluyéndolos) de vector1\n\n[1] 2 4 6\n\nvector1[c(1,3,5)] #extraer los números en las posiciones 1, 3 y 5 de vector1\n\n[1] 0 4 8\n\nvector1 == 12 #vector con operadores lógicos para condición\n\n [1] FALSE FALSE FALSE FALSE FALSE FALSE  TRUE  TRUE FALSE FALSE FALSE FALSE\n\nvector1[vector1==12] #extraer todos los números de vector1 iguales a 12\n\n[1] 12 12\n\nvector1[vector1!=12] #extraer todos los números de vector1 distintos a 12\n\n [1]  0  2  4  6  8 10 14 16 18 20",
+    "crumbs": [
+      "Introducción a R",
+      "Operaciones Básicas"
+    ]
+  },
+  {
+    "objectID": "c0_descriptivo.html",
+    "href": "c0_descriptivo.html",
+    "title": "1  Estadística Descriptiva",
+    "section": "",
+    "text": "1.1 Estadística\nEste capítulo tiene como objetivo general enseñar las nociones básicas de la estadística a través del uso del software R.\nComo objetivos específicos se busca:",
+    "crumbs": [
+      "Nivelación Estadística",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Estadística Descriptiva</span>"
+    ]
+  },
+  {
+    "objectID": "c0_descriptivo.html#introducción",
+    "href": "c0_descriptivo.html#introducción",
+    "title": "Operaciones Básicas",
+    "section": "",
+    "text": "Fuente: (Wickham, Çetinkaya-Rundel, and Grolemund 2023)",
+    "crumbs": [
+      "Nivelación Estadística",
+      "Operaciones Básicas"
+    ]
+  },
+  {
+    "objectID": "c0_descriptivo.html#rstudio",
+    "href": "c0_descriptivo.html#rstudio",
+    "title": "Operaciones Básicas",
+    "section": "Rstudio",
+    "text": "Rstudio\nUna vez descargado R y Rstudio, para empezar a trabajar, basta con abrir la aplicación de Rstudio. La ventaja de esta plataforma es que entrega una interfaz más amigable para el trabajo, la cual se divide en 4 partes:\n\nConsola (parte inferior izquierda): Es dónde se ejecutan los códigos\nFiles (parte inferior derecha): Posee varias ventanas:\n\nFiles: Permite navegar por los distintos archivos del computador\nPlots: Permite mostrar las visualizaciones que creemos\nPackages: Podemos explorar las distintas librerías con las que trabajaremos\nHelp: Pestaña de ayuda\n\nGlobal Environment (parte superior derecha): Es donde se cargan todos los archivos que importamos a R así como las variables que vayamos creando\nScript (parte superior izquierda): Permite escribir los códigos para poder guardarlos y compartirlos. Es similar al do file en STATA. CTRL + ENTER permite correr el código de la línea seleccionada.\n\n\n\n\nFuente: Apuntes de clase curso Introducción a R para Ciencias Sociales",
+    "crumbs": [
+      "Nivelación Estadística",
+      "Operaciones Básicas"
+    ]
+  },
+  {
+    "objectID": "c0_descriptivo.html#sec-op_basicas",
+    "href": "c0_descriptivo.html#sec-op_basicas",
+    "title": "Operaciones Básicas",
+    "section": "Operaciones Básicas",
+    "text": "Operaciones Básicas\nEl signo # permite escribir texto en el R script, el cual no será considerado cómo código al momento de ejecutar un comando:\n\n# Así puedo comentar líneas de comando\n\nR se puede ocupar como calculadora para las principales operaciones matemáticas y operadores lógicos. Por ejemplo, al escribir en la consola 2+2 y apretar ENTER (CTRL + ENTER en el script) nos devolverá el resultado de 4:\n\n2+2\n\n[1] 4\n\n\nAlguna información relevante respecto de las operaciones es la siguiente:\n\nSi una línea termina con una operación, pasará a la siguiente línea para continuar.\nLos espacios dentro de una misma línea no se consideran relevantes.\nEl operador lógico de “igual” se escribe: ==. En general, se suele trabajar con estructuras de datos. La estructura más básica es el vector. Con la función: c() que se conoce como combinar, se pueden crear vectores.\n\n\nOperaciones Matemáticas\n\n\nOperador\nSintaxis\n\n\n\n\nSuma\n+\n\n\nResta\n-\n\n\nDivisión\n/\n\n\nMultiplicación\n*\n\n\n^\nExponente\n\n\n%%\nMódulo (Resto de una división)\n\n\n%/%\nDivisión Entera\n\n\n\n\nOperadores Lógicos\n\n\nOperador\nSintaxis\n\n\n\n\nMayor\n&gt;\n\n\nMenor\n&lt;\n\n\nIgual\n==\n\n\nDistinto\n!=\n\n\nMayor o igual\n&gt;=\n\n\nMenor o igual\n&lt;=\n\n\nEn (Contiene a)\n%in%\n\n\nNo en (No contiene a)\n!(%in%)\n\n\n\n\nEjemplos de Aplicación\n\n#Operaciones matemáticas básicas\n\n1 + 2 + 3\n\n[1] 6\n\n1 +2 *      3\n\n[1] 7\n\n4.4 / 2.2\n\n[1] 2\n\n3 ^ 2\n\n[1] 9\n\n(1+2)* #si una linea termina con una operacion, \"pasará\" a la siguiente linea para continuar\n  3\n\n[1] 9\n\n#Operadores lógicos\n\n2 &gt; 3\n\n[1] FALSE\n\n3 &gt; 3\n\n[1] FALSE\n\n3 &gt;= 3\n\n[1] TRUE\n\n3 == 3\n\n[1] TRUE\n\n2 != 3\n\n[1] TRUE",
+    "crumbs": [
+      "Nivelación Estadística",
+      "Operaciones Básicas"
+    ]
+  },
+  {
+    "objectID": "c0_descriptivo.html#operaciones-con-vectores",
+    "href": "c0_descriptivo.html#operaciones-con-vectores",
+    "title": "Operaciones Básicas",
+    "section": "Operaciones con Vectores",
+    "text": "Operaciones con Vectores\nSe pueden realizar operaciones matemáticas con vectores al igual que como se realizan con números.\nR entrega mensajes de error y advertencia. Ejemplo de esto último ocurre cuando se realizan operaciones con vectores de distintas dimensiones, en donde el vector más corto se vuelve a operacionalizar con las componentes restantes del vector más largo en orden lógico (izquierda a derecha).\n\nc(1,2,3) + c(2,3,4)\n\n[1] 3 5 7\n\n\n\nc(1,2,3,4) + c(2,3,4)\n\nWarning in c(1, 2, 3, 4) + c(2, 3, 4): longitud de objeto mayor no es múltiplo\nde la longitud de uno menor\n\n\n[1] 3 5 7 6\n\n\nEn efecto, vemos que en el segundo caso lo que hace R es el siguiente proceso: \\[Z = X + Y =\\{x_1+y_1,x_2+y_2,x_3+y_3,x_4+y_1\\}\\] donde \\(X\\) es un vector tal que \\(X=\\{x_1=1,x_2=2,x_3=3,x_4=4\\}\\) e \\(Y\\) es otro vector tal que \\(Y=\\{y_1=2,y_2=3,y_3=4\\}\\)\nTambién se puede trabajar con datos de carácter. La forma de indicar que un dato es string (carácter) es escribiendo el texto entrecomillas: \"\"\n\n\"Esto es un caracter\"\n\n[1] \"Esto es un caracter\"\n\n\nLa función class() permite conocer qué tipo de dato es el objeto indicado, es decir, conocer su clase\n\nclass(c(1,2,3))\n\n[1] \"numeric\"\n\n\n\nclass(\"Esto es un caracter\")\n\n[1] \"character\"\n\n\nCon la función c() se pueden crear vectores de datos de carácter, al igual que cómo se realiza con números. También se pueden crear vectores con los valores lógicos: TRUE, FALSE y NA.\n\nc('Hola','Adios')\n\n[1] \"Hola\"  \"Adios\"\n\nclass(c('Hola','Adios'))\n\n[1] \"character\"\n\n\n\nc(TRUE,FALSE,NA)\n\n[1]  TRUE FALSE    NA\n\nclass(c(TRUE,FALSE,NA))\n\n[1] \"logical\"\n\n\nEs importante señalar que los vectores solo admiten un tipo de dato, es decir, no se puede combinar en un solo vector datos numéricos y lógicos, por ejemplo. Si se combinan, R hará la transformación correspondiente a un solo tipo de dato.\n\nc(2,TRUE)\n\n[1] 2 1\n\nclass(c(2,TRUE))\n\n[1] \"numeric\"\n\n\n\nc(1,'Hola',FALSE)\n\n[1] \"1\"     \"Hola\"  \"FALSE\"\n\nclass(c(1,'Hola',FALSE))\n\n[1] \"character\"",
+    "crumbs": [
+      "Nivelación Estadística",
+      "Operaciones Básicas"
+    ]
+  },
+  {
+    "objectID": "c0_descriptivo.html#creación-de-variables",
+    "href": "c0_descriptivo.html#creación-de-variables",
+    "title": "Operaciones Básicas",
+    "section": "Creación de Variables",
+    "text": "Creación de Variables\nLa creación de variables se operacionaliza con el siguiente símbolo: &lt;- o bien ALT + -\nPor ejemplo, asignar a x el valor 1 se escribe así: x &lt;- 1. La forma rápida de escribir el símbolo de creación es a través de: ALT + -:\n\nx &lt;- 1\ny &lt;- 2\n\nPara ver más atajos, se puede buscar en herramientas -&gt; Keyboard shortcuts quick reference. Las variables creadas se muestran en Global environment. También se pueden sobrescribir las variables si se ejecuta un código posterior a la primera creación de la variable.\nCon la función c() se pueden generar vectores combinados en función de las variables creadas. La creación de variables también puede incluir operaciones de variables ya creadas (por ejemplo, sumadexey &lt;- x+y):\n\nsumadexey &lt;- x+y\nsumadexey\n\n[1] 3\n\n\nIMPORTANTE: Al reescribir una variable, por ejemplo, x, se alterará el valor de la variable x, mas no el valor de la variable creada anteriormente sumadexey. Es decir, cambiar el valor de x no influye en los objetos ya creados (no es retroactivo). Técnicamente, esta característica se le conoce como que la asignación de valores no es reactiva.\n\nsumadexey &lt;- x+y\nx &lt;- 3\nx+y\n\n[1] 5\n\nsumadexey\n\n[1] 3\n\n\n\nEliminación de Variables\nSe pueden eliminar variables con la función rm()que significa remove\n\nrm(x)\n\nSi se quiere eliminar todo lo que está en Global environment se puede ocupar la siguiente función: rm(list=ls())\n\nx &lt;- 3\nz &lt;- 5\nrm(list=ls())",
+    "crumbs": [
+      "Nivelación Estadística",
+      "Operaciones Básicas"
+    ]
+  },
+  {
+    "objectID": "c0_descriptivo.html#trabajo-con-objetos",
+    "href": "c0_descriptivo.html#trabajo-con-objetos",
+    "title": "Operaciones Básicas",
+    "section": "Trabajo con Objetos",
+    "text": "Trabajo con Objetos\nEn la siguiente sección se estudia cómo aprovechar la facilidad de trabajar con objetos en R.\nPara crear un vector ocupamos el comando de creación:\n\nvector1 &lt;- c(0,2,4,6,8,10,12,12,14,16,18,20)\n\nPara devolver el valor en la posición 5 del vector, realizamos la siguiente operación:\n\nvector1[5]\n\n[1] 8\n\n\nEs clave entender la funcionalidad del corchete [] aplicándolo a una variable x cualquiera:\n\nFuncionalidad del []\n\n\n\n\n\n\nSintaxis\nValor que Entrega\n\n\n\n\n[n positivo]\nValor de la componente del vector en la posición n\n\n\n[n negativo]\nValor de todas las componentes del vector excepto la posición n\n\n\n[n:m]\nValor de las componentes del vector desde la posición n hasta la m inclusive\n\n\n== n\nOperador lógico para cada componente del vector que indica si se cumple la condición (=n)\n\n\n[x==n]\nExtrae todos los valores del vector que cumplen la condición (valores igual a n)\n\n\n[x!=n]\nExtrae todos los valores del vector que cumplen la condición (valores distintos a n)\n\n\n\n\nvector1[-1] #extraer todos los números de vector1 menos el que está en la posición 1\n\n [1]  2  4  6  8 10 12 12 14 16 18 20\n\nvector1[2:4] #extraer los números entre la posición 2 y 4 (incluyéndolos) de vector1\n\n[1] 2 4 6\n\nvector1[c(1,3,5)] #extraer los números en las posiciones 1, 3 y 5 de vector1\n\n[1] 0 4 8\n\nvector1 == 12 #vector con operadores lógicos para condición\n\n [1] FALSE FALSE FALSE FALSE FALSE FALSE  TRUE  TRUE FALSE FALSE FALSE FALSE\n\nvector1[vector1==12] #extraer todos los números de vector1 iguales a 12\n\n[1] 12 12\n\nvector1[vector1!=12] #extraer todos los números de vector1 distintos a 12\n\n [1]  0  2  4  6  8 10 14 16 18 20\n\n\n\n\n\n\n\n\nWickham, Hadley, Mine Çetinkaya-Rundel, and Garrett Grolemund. 2023. R for Data Science: Import, Tidy, Transform, Visualize, and Model Data. https://r4ds.hadley.nz/.",
+    "crumbs": [
+      "Nivelación Estadística",
+      "Operaciones Básicas"
+    ]
+  },
+  {
+    "objectID": "c0_probabilidad.html",
+    "href": "c0_probabilidad.html",
+    "title": "Operaciones Básicas",
+    "section": "",
+    "text": "Introducción\nR debe entenderse como un lenguaje y ambiente de programación. A lo largo de esta capacitación, se enfocará el trabajo con R como un proceso de exploración de Datos:",
+    "crumbs": [
+      "Nivelación Estadística",
+      "Operaciones Básicas"
+    ]
+  },
+  {
+    "objectID": "c0_probabilidad.html#introducción",
+    "href": "c0_probabilidad.html#introducción",
+    "title": "Operaciones Básicas",
+    "section": "",
+    "text": "Fuente: (Wickham, Çetinkaya-Rundel, and Grolemund 2023)",
+    "crumbs": [
+      "Nivelación Estadística",
+      "Operaciones Básicas"
+    ]
+  },
+  {
+    "objectID": "c0_probabilidad.html#rstudio",
+    "href": "c0_probabilidad.html#rstudio",
+    "title": "Operaciones Básicas",
+    "section": "Rstudio",
+    "text": "Rstudio\nUna vez descargado R y Rstudio, para empezar a trabajar, basta con abrir la aplicación de Rstudio. La ventaja de esta plataforma es que entrega una interfaz más amigable para el trabajo, la cual se divide en 4 partes:\n\nConsola (parte inferior izquierda): Es dónde se ejecutan los códigos\nFiles (parte inferior derecha): Posee varias ventanas:\n\nFiles: Permite navegar por los distintos archivos del computador\nPlots: Permite mostrar las visualizaciones que creemos\nPackages: Podemos explorar las distintas librerías con las que trabajaremos\nHelp: Pestaña de ayuda\n\nGlobal Environment (parte superior derecha): Es donde se cargan todos los archivos que importamos a R así como las variables que vayamos creando\nScript (parte superior izquierda): Permite escribir los códigos para poder guardarlos y compartirlos. Es similar al do file en STATA. CTRL + ENTER permite correr el código de la línea seleccionada.\n\n\n\n\nFuente: Apuntes de clase curso Introducción a R para Ciencias Sociales",
+    "crumbs": [
+      "Nivelación Estadística",
+      "Operaciones Básicas"
+    ]
+  },
+  {
+    "objectID": "c0_probabilidad.html#sec-op_basicas",
+    "href": "c0_probabilidad.html#sec-op_basicas",
+    "title": "Operaciones Básicas",
+    "section": "Operaciones Básicas",
+    "text": "Operaciones Básicas\nEl signo # permite escribir texto en el R script, el cual no será considerado cómo código al momento de ejecutar un comando:\n\n# Así puedo comentar líneas de comando\n\nR se puede ocupar como calculadora para las principales operaciones matemáticas y operadores lógicos. Por ejemplo, al escribir en la consola 2+2 y apretar ENTER (CTRL + ENTER en el script) nos devolverá el resultado de 4:\n\n2+2\n\n[1] 4\n\n\nAlguna información relevante respecto de las operaciones es la siguiente:\n\nSi una línea termina con una operación, pasará a la siguiente línea para continuar.\nLos espacios dentro de una misma línea no se consideran relevantes.\nEl operador lógico de “igual” se escribe: ==. En general, se suele trabajar con estructuras de datos. La estructura más básica es el vector. Con la función: c() que se conoce como combinar, se pueden crear vectores.\n\n\nOperaciones Matemáticas\n\n\nOperador\nSintaxis\n\n\n\n\nSuma\n+\n\n\nResta\n-\n\n\nDivisión\n/\n\n\nMultiplicación\n*\n\n\n^\nExponente\n\n\n%%\nMódulo (Resto de una división)\n\n\n%/%\nDivisión Entera\n\n\n\n\nOperadores Lógicos\n\n\nOperador\nSintaxis\n\n\n\n\nMayor\n&gt;\n\n\nMenor\n&lt;\n\n\nIgual\n==\n\n\nDistinto\n!=\n\n\nMayor o igual\n&gt;=\n\n\nMenor o igual\n&lt;=\n\n\nEn (Contiene a)\n%in%\n\n\nNo en (No contiene a)\n!(%in%)\n\n\n\n\nEjemplos de Aplicación\n\n#Operaciones matemáticas básicas\n\n1 + 2 + 3\n\n[1] 6\n\n1 +2 *      3\n\n[1] 7\n\n4.4 / 2.2\n\n[1] 2\n\n3 ^ 2\n\n[1] 9\n\n(1+2)* #si una linea termina con una operacion, \"pasará\" a la siguiente linea para continuar\n  3\n\n[1] 9\n\n#Operadores lógicos\n\n2 &gt; 3\n\n[1] FALSE\n\n3 &gt; 3\n\n[1] FALSE\n\n3 &gt;= 3\n\n[1] TRUE\n\n3 == 3\n\n[1] TRUE\n\n2 != 3\n\n[1] TRUE",
+    "crumbs": [
+      "Nivelación Estadística",
+      "Operaciones Básicas"
+    ]
+  },
+  {
+    "objectID": "c0_probabilidad.html#operaciones-con-vectores",
+    "href": "c0_probabilidad.html#operaciones-con-vectores",
+    "title": "Operaciones Básicas",
+    "section": "Operaciones con Vectores",
+    "text": "Operaciones con Vectores\nSe pueden realizar operaciones matemáticas con vectores al igual que como se realizan con números.\nR entrega mensajes de error y advertencia. Ejemplo de esto último ocurre cuando se realizan operaciones con vectores de distintas dimensiones, en donde el vector más corto se vuelve a operacionalizar con las componentes restantes del vector más largo en orden lógico (izquierda a derecha).\n\nc(1,2,3) + c(2,3,4)\n\n[1] 3 5 7\n\n\n\nc(1,2,3,4) + c(2,3,4)\n\nWarning in c(1, 2, 3, 4) + c(2, 3, 4): longitud de objeto mayor no es múltiplo\nde la longitud de uno menor\n\n\n[1] 3 5 7 6\n\n\nEn efecto, vemos que en el segundo caso lo que hace R es el siguiente proceso: \\[Z = X + Y =\\{x_1+y_1,x_2+y_2,x_3+y_3,x_4+y_1\\}\\] donde \\(X\\) es un vector tal que \\(X=\\{x_1=1,x_2=2,x_3=3,x_4=4\\}\\) e \\(Y\\) es otro vector tal que \\(Y=\\{y_1=2,y_2=3,y_3=4\\}\\)\nTambién se puede trabajar con datos de carácter. La forma de indicar que un dato es string (carácter) es escribiendo el texto entrecomillas: \"\"\n\n\"Esto es un caracter\"\n\n[1] \"Esto es un caracter\"\n\n\nLa función class() permite conocer qué tipo de dato es el objeto indicado, es decir, conocer su clase\n\nclass(c(1,2,3))\n\n[1] \"numeric\"\n\n\n\nclass(\"Esto es un caracter\")\n\n[1] \"character\"\n\n\nCon la función c() se pueden crear vectores de datos de carácter, al igual que cómo se realiza con números. También se pueden crear vectores con los valores lógicos: TRUE, FALSE y NA.\n\nc('Hola','Adios')\n\n[1] \"Hola\"  \"Adios\"\n\nclass(c('Hola','Adios'))\n\n[1] \"character\"\n\n\n\nc(TRUE,FALSE,NA)\n\n[1]  TRUE FALSE    NA\n\nclass(c(TRUE,FALSE,NA))\n\n[1] \"logical\"\n\n\nEs importante señalar que los vectores solo admiten un tipo de dato, es decir, no se puede combinar en un solo vector datos numéricos y lógicos, por ejemplo. Si se combinan, R hará la transformación correspondiente a un solo tipo de dato.\n\nc(2,TRUE)\n\n[1] 2 1\n\nclass(c(2,TRUE))\n\n[1] \"numeric\"\n\n\n\nc(1,'Hola',FALSE)\n\n[1] \"1\"     \"Hola\"  \"FALSE\"\n\nclass(c(1,'Hola',FALSE))\n\n[1] \"character\"",
+    "crumbs": [
+      "Nivelación Estadística",
+      "Operaciones Básicas"
+    ]
+  },
+  {
+    "objectID": "c0_probabilidad.html#creación-de-variables",
+    "href": "c0_probabilidad.html#creación-de-variables",
+    "title": "Operaciones Básicas",
+    "section": "Creación de Variables",
+    "text": "Creación de Variables\nLa creación de variables se operacionaliza con el siguiente símbolo: &lt;- o bien ALT + -\nPor ejemplo, asignar a x el valor 1 se escribe así: x &lt;- 1. La forma rápida de escribir el símbolo de creación es a través de: ALT + -:\n\nx &lt;- 1\ny &lt;- 2\n\nPara ver más atajos, se puede buscar en herramientas -&gt; Keyboard shortcuts quick reference. Las variables creadas se muestran en Global environment. También se pueden sobrescribir las variables si se ejecuta un código posterior a la primera creación de la variable.\nCon la función c() se pueden generar vectores combinados en función de las variables creadas. La creación de variables también puede incluir operaciones de variables ya creadas (por ejemplo, sumadexey &lt;- x+y):\n\nsumadexey &lt;- x+y\nsumadexey\n\n[1] 3\n\n\nIMPORTANTE: Al reescribir una variable, por ejemplo, x, se alterará el valor de la variable x, mas no el valor de la variable creada anteriormente sumadexey. Es decir, cambiar el valor de x no influye en los objetos ya creados (no es retroactivo). Técnicamente, esta característica se le conoce como que la asignación de valores no es reactiva.\n\nsumadexey &lt;- x+y\nx &lt;- 3\nx+y\n\n[1] 5\n\nsumadexey\n\n[1] 3\n\n\n\nEliminación de Variables\nSe pueden eliminar variables con la función rm()que significa remove\n\nrm(x)\n\nSi se quiere eliminar todo lo que está en Global environment se puede ocupar la siguiente función: rm(list=ls())\n\nx &lt;- 3\nz &lt;- 5\nrm(list=ls())",
+    "crumbs": [
+      "Nivelación Estadística",
+      "Operaciones Básicas"
+    ]
+  },
+  {
+    "objectID": "c0_probabilidad.html#trabajo-con-objetos",
+    "href": "c0_probabilidad.html#trabajo-con-objetos",
+    "title": "Operaciones Básicas",
+    "section": "Trabajo con Objetos",
+    "text": "Trabajo con Objetos\nEn la siguiente sección se estudia cómo aprovechar la facilidad de trabajar con objetos en R.\nPara crear un vector ocupamos el comando de creación:\n\nvector1 &lt;- c(0,2,4,6,8,10,12,12,14,16,18,20)\n\nPara devolver el valor en la posición 5 del vector, realizamos la siguiente operación:\n\nvector1[5]\n\n[1] 8\n\n\nEs clave entender la funcionalidad del corchete [] aplicándolo a una variable x cualquiera:\n\nFuncionalidad del []\n\n\n\n\n\n\nSintaxis\nValor que Entrega\n\n\n\n\n[n positivo]\nValor de la componente del vector en la posición n\n\n\n[n negativo]\nValor de todas las componentes del vector excepto la posición n\n\n\n[n:m]\nValor de las componentes del vector desde la posición n hasta la m inclusive\n\n\n== n\nOperador lógico para cada componente del vector que indica si se cumple la condición (=n)\n\n\n[x==n]\nExtrae todos los valores del vector que cumplen la condición (valores igual a n)\n\n\n[x!=n]\nExtrae todos los valores del vector que cumplen la condición (valores distintos a n)\n\n\n\n\nvector1[-1] #extraer todos los números de vector1 menos el que está en la posición 1\n\n [1]  2  4  6  8 10 12 12 14 16 18 20\n\nvector1[2:4] #extraer los números entre la posición 2 y 4 (incluyéndolos) de vector1\n\n[1] 2 4 6\n\nvector1[c(1,3,5)] #extraer los números en las posiciones 1, 3 y 5 de vector1\n\n[1] 0 4 8\n\nvector1 == 12 #vector con operadores lógicos para condición\n\n [1] FALSE FALSE FALSE FALSE FALSE FALSE  TRUE  TRUE FALSE FALSE FALSE FALSE\n\nvector1[vector1==12] #extraer todos los números de vector1 iguales a 12\n\n[1] 12 12\n\nvector1[vector1!=12] #extraer todos los números de vector1 distintos a 12\n\n [1]  0  2  4  6  8 10 14 16 18 20\n\n\n\n\n\n\nWickham, Hadley, Mine Çetinkaya-Rundel, and Garrett Grolemund. 2023. R for Data Science: Import, Tidy, Transform, Visualize, and Model Data. https://r4ds.hadley.nz/.",
+    "crumbs": [
+      "Nivelación Estadística",
+      "Operaciones Básicas"
+    ]
+  },
+  {
+    "objectID": "c0_R.html#posibles-problemas",
+    "href": "c0_R.html#posibles-problemas",
+    "title": "Instalación de R",
+    "section": "Posibles Problemas",
+    "text": "Posibles Problemas\nEn caso de que no puedas instalar programas en tu computador, ya sea por falta de permisos de administrador o por preferencia personal, tienes la opción de utilizar Posit Cloud, una plataforma en línea que te permite trabajar con RStudio sin necesidad de realizar instalaciones.\nEste servicio ofrece un número limitado de horas gratuitas al mes, y si necesitas más tiempo, se puede optar por un plan de pago2. Es importante tener en cuenta que, al ser una herramienta basada en la nube, Posit Cloud no es adecuada para trabajar con datos confidenciales o personales a menos que cuentes con la autorización correspondiente para hacerlo.\n\n\n\n\n\n\nNota\n\n\n\nEs importante que la ruta en donde se aloje R y Rstudio no tenga caracteres especiales. Por ejemplo, \"C:\\Users\\OneDrive-Fundación XX\\\" podría generar problemas por el tílde en la ó)",
+    "crumbs": [
+      "Nivelación Estadística",
+      "Instalación de R"
+    ]
+  },
+  {
+    "objectID": "c0_R.html#footnotes",
+    "href": "c0_R.html#footnotes",
+    "title": "Instalación de R",
+    "section": "",
+    "text": "Recientemente se lanzó otro IDE llamado Positron. Sin embargo, en la actualidad sigue siendo un IDE en desarrollo y versión beta, por lo que si solo se pretende trabajar con R, Rstudio sigue siendo una mejor opción. Para más detalle ver: https://positron.posit.co/start.html↩︎\nEn el caso de los estudiantes del Diplomado en Ciencia de Datos Para Políticas Públicas, con su correo de la universidad pueden acceder gratuitamente a la plataforma y a los ejercicios diseñados para cada clase.↩︎",
+    "crumbs": [
+      "Nivelación Estadística",
+      "Instalación de R"
+    ]
+  },
+  {
+    "objectID": "c0_basics.html#sec-op-basicas",
+    "href": "c0_basics.html#sec-op-basicas",
+    "title": "Operaciones Básicas",
+    "section": "Operaciones Básicas",
+    "text": "Operaciones Básicas\nEl signo # permite escribir texto en el script, el cual no será considerado cómo código al momento de ejecutar un comando:\n\n# Así puedo comentar líneas de comando\n\nR se puede ocupar como calculadora para las principales operaciones matemáticas y operadores lógicos. Por ejemplo, al escribir en la consola 2+2 y apretar ENTER (o CTRL + ENTER si escribo el código en el script) nos devolverá el resultado de 4:\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nEs importante considerar la siguiente información respecto de las operaciones al escribir código en R:\n\nSi una línea termina con una operación, pasará a la siguiente línea para continuar.\nLos espacios dentro de una misma línea no se consideran relevantes.\nEl operador lógico de “igual” se escribe: ==.\n\nLas operaciones matemáticas más utilizadas se señalan en la siguiente tabla:\n\nOperaciones Matemáticas\n\n\nOperador\nSintaxis\n\n\n\n\nSuma\n+\n\n\nResta\n-\n\n\nDivisión\n/\n\n\nMultiplicación\n*\n\n\n^\nExponente\n\n\n%%\nMódulo (Resto de una división)\n\n\n%/%\nDivisión Entera\n\n\n\nMientras que los operadores lógicos más usados, estan en la siguiente tabla:\n\nOperadores Lógicos\n\n\nOperador\nSintaxis\n\n\n\n\nMayor\n&gt;\n\n\nMenor\n&lt;\n\n\nIgual\n==\n\n\nDistinto\n!=\n\n\nMayor o igual\n&gt;=\n\n\nMenor o igual\n&lt;=\n\n\nEn (Contiene a)\n%in%\n\n\nNo en (No contiene a)\n!(%in%)\n\n\n\n\n\n\n\n\n\nNota\n\n\n\nLos operadores lógicos nos serán de mucha ayuda cuando trabajemos con la manipulación de datos, lo cual se verá en el apartado de Herramientas para la Ciencia de Datos. En particular, el operador %in% nos permitirá eficientar nuestro código cuando queramos hacer filtros o selecciones múltiples.\n\n\n\nEjemplos\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.",
+    "crumbs": [
+      "Introducción a R",
+      "Operaciones Básicas"
+    ]
+  },
+  {
+    "objectID": "c0_basics.html#ejercicios-aplicados-a-política-pública",
+    "href": "c0_basics.html#ejercicios-aplicados-a-política-pública",
+    "title": "Operaciones Básicas",
+    "section": "Ejercicios Aplicados a Política Pública",
+    "text": "Ejercicios Aplicados a Política Pública\nEn esta sección trabajaremos con datos de Chile que nos permitan realizar algunas de las operaciones básicas revisadas. Estos datos son sobre:\n\nPoblación comunal\nDatos de empleo\nDatos delictuales\n\n\n\n\n\n\n\nImportante\n\n\n\nPara responder preguntas que incluyan decimales, es necesario usar el . como separador en lugar de la , ya que R sigue la convención anglosajona de puntuación.\n\n\n\nPoblación Según División Administrativa de Chile\nLa división territorial de Chile contempla las siguientes unidades geográficas:\n\nEl país completo se divide en 16 regiones.\nCada región se subdivide a la vez en provincias, las cuales suman 56 a nivel nacional.\nDe manera análoga, cada provincia contempla un número definido de comunas, las cuales suman 346 en total.\n\nConsidere el caso de la XV Región de Arica y Parinacota, la cual está compuesta por las provincias de Arica y Parinacota. La provincia de Arica, contiene a las comunas de Arica y Camarones, mientras que la provincia de Parinacota, a las comunas de General Lagos y Putre. Según proyecciones del censo 2017, la población en el año 2025 de cada comuna es la siguiente:\n\nPoblación Comunal año 2025 Región de Arica y Parinacota según proyecciones Censo 2017.\n\n\nComuna\nPoblación Año 2025\n\n\n\n\nArica\n259.064\n\n\nCamarones\n1.248\n\n\nGeneral Lagos\n797\n\n\nPutre\n2.578\n\n\n\nUtilizando los datos de población entregada, responda las siguientes preguntas:\n\n\n\n\n\n\nPoblación XV° Región\n\n\n\n\n¿Cuánta es la población de la Provincia de Arica? \n¿Cuánta es la población de la Provincia de Parinacota? \n¿Cuánta es la población de la Región de Arica y Parinacota? \n¿Qué porcentaje representa la población de la comuna de Arica respecto a la población regional? (aproxime a dos decimales) \n\n\n\n\n\nRegistros Delictuales\nEn Chile, existen diversas fuentes que reportan la cantidad de delitos ocurridos. Una de las más importantes, es la que sitematiza la Subsecreataría de Prevención del Delito a partir de los casos policiales.\nEste último indicador, es una de las variables principales para analizar la ocurrencia de hechos delictivos. Considera las denuncias de delitos que realiza la comunidad en las unidades policiales, más las detenciones que realizan las policías ante la ocurrencia de delitos flagrantes. Internacionalmente, este indicador es conocido como “delitos conocidos por la policía” (crimes known to police).\nGeneralmente, al analizar la evolución del fenómeno en el tiempo, se suelen usar dos formas de medición:\n\nFrecuencia Simple: Presenta la cantidad de ilícitos registrados en una unidad territorial determinada.\nTasa Cada 100.000 Habitantes: Es un indicador que relaciona el total de ilícitos –registrados por las policías a través de una denuncia o una detención flagrante– de un territorio con su población. Su importancia metodológica es que permite comparar distintos niveles territoriales (comuna, región y país), en distintos períodos de tiempo (meses, trimestres y años). Se calcula dividiendo el total de delitos registrados por las policías en un periodo de tiempo (meses, trimestres o años) por la población de referencia para ese mismo periodo, el resultado es multiplicado por 100 mil. De esta forma, la tasa delictual cada 100.000 habitantes queda definida como \\[Tasa_{itj} = \\frac{Frecuencia_{it}}{Población_{jt}}\\times 100.000\\]\n\ndonde \\(i\\) representa el delito analizado y \\(j\\) el territorio analizado y \\(t\\) el periodo de tiempo analizado.\n\nVariación Porcentual: Indica si la variable en estudio aumentó o disminuyó. Si la variación resulta positiva significa que la variable aumentó en valor, si la variación resulta negativa significa que la variable disminuyó en valor. Matemáticamente, un variación porcentual se calcula como: \\[\\Delta\\% = \\frac{valor_{t1} - valor_{t0}}{valor_{t0}}\\times 100 = [\\frac{valor_{t1}}{valor_{t0}}-1]\\times 100\\]\n\ndonde \\(t0\\) corresponde al periodo inicial y \\(t1\\) al periodo final (por ejemplo, año de inicio de la comparación o \\(t0\\) y año de término de la comparación o \\(t1\\)).\nConsiderando lo anterior, responda las siguientes preguntas aproximando el valor entregado a un solo decimal.\n\n\n\n\n\n\nHomicidios en Chile\n\n\n\n\nSegún datos del observatorio de homicidios, en el año 2023 hubo 1.248 víctimas consumadas de homicidios. Si la población nacional proyectada para el año 2023 era de 19.960.889 habitantes ¿Cuál fue la tasa de víctimas de homicidios consumados cada 100.000 habitantes en el año 2023? \nEn el año 2022 se registraron 1.330 víctimas de homicidios consumados y hubo una proyección de población de 19.828.563 ¿Cuánto fue la variación porcentual de la cantidad de víctimas consumadas de homicidios entre 2022 y 2023? \nAsumamos que la población en Chile permanece constante entre el año 2022 y el año 2023. En ese contexto, un colega suyo le dice que es mejor calcular la variación porcentual en términos de tasa que en términos de frecuencia ¿Qué le respondería usted?\nEn el año 2021, en El Salvador se registraron 1.085 víctimas de homicidios intencionales, mientras que en el año siguiente en Chile se registraron 1.330 víctimas de homicidio. A partir de esto, un colega le señala que Chile está experimentando un nivel de violencia más alto de lo que era El Salvador en el año 2021 y en periodos anteriores ¿Que le respondería usted a su colega?",
+    "crumbs": [
+      "Introducción a R",
+      "Operaciones Básicas"
+    ]
+  },
+  {
+    "objectID": "c0_basics.html#primeros-pasos",
+    "href": "c0_basics.html#primeros-pasos",
+    "title": "Operaciones Básicas",
+    "section": "Primeros Pasos",
+    "text": "Primeros Pasos\n\nAbrir \nAbrir un script usando CTRL + SHIFT + N o bien usando el menú de Rstudio . Esto debiese abrir una ventana como la que se ve a continuación:",
+    "crumbs": [
+      "Introducción a R",
+      "Operaciones Básicas"
+    ]
+  },
+  {
+    "objectID": "c0_basics.html#bibliografía",
+    "href": "c0_basics.html#bibliografía",
+    "title": "Operaciones Básicas",
+    "section": "Bibliografía",
+    "text": "Bibliografía\n\n\n\n\n\n\n\n\n\n\n\n\n\nWickham, Hadley, Mine Çetinkaya-Rundel, and Garrett Grolemund. 2023. R for Data Science: Import, Tidy, Transform, Visualize, and Model Data. https://r4ds.hadley.nz/.",
+    "crumbs": [
+      "Introducción a R",
+      "Operaciones Básicas"
+    ]
+  },
+  {
+    "objectID": "c0_descriptivo.html#estadística",
+    "href": "c0_descriptivo.html#estadística",
+    "title": "1  Estadística Descriptiva",
+    "section": "",
+    "text": "En un sentido amplio, la estadística se define como una disciplina que, basada en determinadas metodologías y conceptos, consiste en producir, analizar, procesar, interpretar y presentar un conjunto de datos.\nDos ideas fundamentales en el campo de la estadística son la incertidumbre y la variación. En este sentido, la estadística y la probabilidad se basan en métodos tanto para describir y modelar esta variabilidad, así como para tomar decisiones en presencia de ella.\nLas principales dos ramas de la estadística son la estadística descriptiva y la estadística inferencial:\n\nEstadística Descriptiva: Consiste en métodos para organizar y resumir datos.\nEstadística Inferencial: Consiste en obtener conclusiones a partir de una muestra de datos.\n\n\n\n1.1.1 Orígines del Data Science\n\nOriginalmente, la estadística clásica se centraba casi exclusivamente en la inferencia, un conjunto de procedimientos para sacar conclusiones sobre poblaciones grandes basadas en muestras pequeñas.\nNo obstante, en el año 1962, John Turkey ya comentaba sobre una reformulación de la estadística en su paper The Future of Data Analysis (tukey1962?) abogando por una nueva disciplina llamada data analysis, en donde la inferencia era solo un componente de ella:\n\n[…My central interest is in data analysis, which I take to include, among other things: procedures for analyzing data, techniques for interpreting the results of such procedures, ways of planning the gathering of data to make its analysis easier, more precise or more accurate, and all the machinery and results of (mathematical) statistics which apply to analyzing data…]\n\nEn 1977 con su libro Exploratory Data Analysis (tukey1977?) propone utilizar gráficos sencillos (tales como boxplots y scatterplots) en conjunto con estadísticas de resumen (tales como la media, la mediana, cuantiles, etc.) para tener una primera impresión general del conjunto de datos que se analiza.\n\n\n\n1.1.2 ¿Data Science o Estadística?\n\nSegun AWS, la estadística es un campo con bases matemáticas que busca recopilar e interpretar datos cuantitativos. En cambio, la ciencia de datos es un campo multidisciplinario que utiliza métodos, procesos y sistemas científicos para extraer conocimientos a partir de los datos de maneras diversas. Los científicos de datos utilizan métodos de muchas disciplinas, incluida la estadística. Sin embargo, los campos difieren en sus procesos y los problemas que estudian.\nYanir Seroussi (seroussi2014?), en su post, define como Data Scientist a aquella persona que es mejor en estadística que cualquier ingeniero de software y mejor en ingeniería de software que cualquier estadístico. Argumenta que, para él, la novedad principal de la ciencia de datos proviene de la aplicación de softwares para modelar cualquier tipo de datos de una manera que se generalice en todos los dominios.\n\n\n\nEl campo de la estadística guarda relación con la recopilación, análisis y uso de datos para tomar decisiones y resolver problemas.\nLas 2 ramas principales de la estadística son la descriptiva y la inferencial.\nEl análisis de datos implica más procesos que solamente el uso de la estadística.\nLa estadística es sola una parte de lo que podemos entender por ciencia de datos en su concepción más general.",
+    "crumbs": [
+      "Nivelación Estadística",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Estadística Descriptiva</span>"
+    ]
+  },
+  {
+    "objectID": "c0_descriptivo.html#orígines-del-data-science",
+    "href": "c0_descriptivo.html#orígines-del-data-science",
+    "title": "2  Estadística Descriptiva",
+    "section": "2.2 Orígines del Data Science",
+    "text": "2.2 Orígines del Data Science\n\nOriginalmente, la estadística clásica se centraba casi exclusivamente en la inferencia, un conjunto de procedimientos para sacar conclusiones sobre poblaciones grandes basadas en muestras pequeñas.\nNo obstante, en el año 1962, John Turkey ya comentaba sobre una reformulación de la estadística en su paper The Future of Data Analysis (tukey1962?) abogando por una nueva disciplina llamada data analysis, en donde la inferencia era solo un componente de ella:\n\n[…My central interest is in data analysis, which I take to include, among other things: procedures for analyzing data, techniques for interpreting the results of such procedures, ways of planning the gathering of data to make its analysis easier, more precise or more accurate, and all the machinery and results of (mathematical) statistics which apply to analyzing data…]\n\nEn 1977 con su libro Exploratory Data Analysis (tukey1977?) propone utilizar gráficos sencillos (tales como boxplots y scatterplots) en conjunto con estadísticas de resumen (tales como la media, la mediana, cuantiles, etc.) para tener una primera impresión general del conjunto de datos que se analiza.",
+    "crumbs": [
+      "Nivelación Estadística",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Estadística Descriptiva</span>"
+    ]
+  },
+  {
+    "objectID": "c0_descriptivo.html#data-science-o-estadística",
+    "href": "c0_descriptivo.html#data-science-o-estadística",
+    "title": "2  Estadística Descriptiva",
+    "section": "2.3 ¿Data Science o Estadística?",
+    "text": "2.3 ¿Data Science o Estadística?\n\nSegun AWS, la estadística es un campo con bases matemáticas que busca recopilar e interpretar datos cuantitativos. En cambio, la ciencia de datos es un campo multidisciplinario que utiliza métodos, procesos y sistemas científicos para extraer conocimientos a partir de los datos de maneras diversas. Los científicos de datos utilizan métodos de muchas disciplinas, incluida la estadística. Sin embargo, los campos difieren en sus procesos y los problemas que estudian.\nYanir Seroussi (seroussi2014?), en su post, define como Data Scientist a aquella persona que es mejor en estadística que cualquier ingeniero de software y mejor en ingeniería de software que cualquier estadístico. Argumenta que, para él, la novedad principal de la ciencia de datos proviene de la aplicación de softwares para modelar cualquier tipo de datos de una manera que se generalice en todos los dominios.\n\n\n\nEl campo de la estadística guarda relación con la recopilación, análisis y uso de datos para tomar decisiones y resolver problemas.\nLas 2 ramas principales de la estadística son la descriptiva y la inferencial.\nEl análisis de datos implica más procesos que solamente el uso de la estadística.\nLa estadística es sola una parte de lo que podemos entender por ciencia de datos en su concepción más general.",
+    "crumbs": [
+      "Nivelación Estadística",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Estadística Descriptiva</span>"
+    ]
+  },
+  {
+    "objectID": "c0_descriptivo.html#tipos-de-datos",
+    "href": "c0_descriptivo.html#tipos-de-datos",
+    "title": "1  Estadística Descriptiva",
+    "section": "1.2 Tipos de Datos",
+    "text": "1.2 Tipos de Datos\n\nNuméricos: Datos que son expresados en una escala numérica. Pueden clasificarse en:\n\nContinuos: Datos que pueden tomar cualquier valor en un intervalo.\nDiscretos: Datos que sólo pueden tomar valores enteros, tales como los recuentos.\n\nCategóricos: Datos que solo pueden tomar valores específicos sobre un set de posibles categorías. Pueden clasificarse en:\n\nNominales: Categorías que no se pueden ordenar ni clasificar.\n\nBinarios: Un caso especial de datos categóricos con solo dos categorías de valores, por ejemplo: 0/1, verdadero/falso.\n\nOrdinales: Datos categóricos que tienen un orden explícito.\n\n\nLos tipos de datos se pueden resumir según el siguiente esquema:\n\n\n\nFuente: (çetinkaya-rundel2021?)\n\n\n\n1.2.1 Datos Rectangulares\n\nDataframe: Los datos rectangulares (aquellos que comúnmente asociamos a una hoja de cálculo) son la estructura de datos básica para los modelos estadísticos.\nFeature: Corresponde a las columnas o variables de la tabla de datos (sinónimos: attribute, input, predictor, variable).\nOutcome: Muchos proyectos de ciencia de datos tienen por objetivo predecir un resultado de interés o outcome. Las features a veces se utilizan para predecir el resultado de un experimento o estudio. (sinónimos: dependent variable, response, target, output).\nRecords: Una observación o record corresponde comúnmente a una fila dentro de una tabla. (sinónimos: case, instance,observation).\n\n\n\n\n\n\n\n\nVeamos un ejemplo de datos ordenados en formato rectangular y tidy (bryan2023?)\n\n\n\nDatos Gapminder 2007: 5 Países de América\n\n\nPaís\nContinente\nEsperanza de Vida\nPoblación\nPIB per Cápita\n\n\n\n\nArgentina\nAmericas\n75,32\n40.301.927\n12.779,38\n\n\nBolivia\nAmericas\n65,55\n9.119.152\n3.822,14\n\n\nBrazil\nAmericas\n72,39\n190.010.647\n9.065,80\n\n\nCanada\nAmericas\n80,65\n33.390.141\n36.319,24\n\n\nChile\nAmericas\n78,55\n16.284.741\n13.171,64\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIdeas Principales\n\n\n\n\nLos tipos de datos incluyen numéricos (continuos, discretos) y categóricos (nominales, binarios, ordinales).\nLa tipificación de datos dentro de un software es importante para indicarle cómo debe procesar los datos.\nLa estructura de datos básica en la ciencia de datos es una matriz rectangular (dataframe) en la que las filas son registros (records) y las columnas son variables (features).",
+    "crumbs": [
+      "Nivelación Estadística",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Estadística Descriptiva</span>"
+    ]
+  },
+  {
+    "objectID": "c0_descriptivo.html#tipos-de-datos-1",
+    "href": "c0_descriptivo.html#tipos-de-datos-1",
+    "title": "2  Estadística Descriptiva",
+    "section": "2.5 Tipos de Datos",
+    "text": "2.5 Tipos de Datos\n\n\n\nFuente: (çetinkaya-rundel2021?)",
+    "crumbs": [
+      "Nivelación Estadística",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Estadística Descriptiva</span>"
+    ]
+  },
+  {
+    "objectID": "c0_descriptivo.html#datos-rectangulares",
+    "href": "c0_descriptivo.html#datos-rectangulares",
+    "title": "2  Estadística Descriptiva",
+    "section": "2.3 Datos Rectangulares",
+    "text": "2.3 Datos Rectangulares\n\nDataframe: Los datos rectangulares (aquellos que comúnmente asociamos a una hoja de cálculo) son la estructura de datos básica para los modelos estadísticos.\nFeature: Corresponde a las columnas o variables de la tabla de datos (sinónimos: attribute, input, predictor, variable).\nOutcome: Muchos proyectos de ciencia de datos tienen por objetivo predecir un resultado de interés o outcome. Las features a veces se utilizan para predecir el resultado de un experimento o estudio. (sinónimos: dependent variable, response, target, output).\nRecords: Una observación o record corresponde comúnmente a una fila dentro de una tabla. (sinónimos: case, instance,observation).\n\n\n\n\n\n\n\n\nVeamos un ejemplo de datos ordenados en formato rectangular y tidy (bryan2023?)\n\n\n\nDatos Gapminder 2007: 5 Países de América\n\n\nPaís\nContinente\nEsperanza de Vida\nPoblación\nPIB per Cápita\n\n\n\n\nArgentina\nAmericas\n75,32\n40.301.927\n12.779,38\n\n\nBolivia\nAmericas\n65,55\n9.119.152\n3.822,14\n\n\nBrazil\nAmericas\n72,39\n190.010.647\n9.065,80\n\n\nCanada\nAmericas\n80,65\n33.390.141\n36.319,24\n\n\nChile\nAmericas\n78,55\n16.284.741\n13.171,64\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIdeas Principales\n\n\n\n\nLos tipos de datos incluyen numéricos (continuos, discretos) y categóricos (nominales, binarios, ordinales).\nLa tipificación de datos dentro de un software es importante para indicarle cómo debe procesar los datos.\nLa estructura de datos básica en la ciencia de datos es una matriz rectangular (dataframe) en la que las filas son registros (records) y las columnas son variables (features).",
+    "crumbs": [
+      "Nivelación Estadística",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Estadística Descriptiva</span>"
+    ]
+  },
+  {
+    "objectID": "c0_descriptivo.html#ejemplo-bryan2023",
+    "href": "c0_descriptivo.html#ejemplo-bryan2023",
+    "title": "2  Estadística Descriptiva",
+    "section": "2.7 Ejemplo (bryan2023?)",
+    "text": "2.7 Ejemplo (bryan2023?)\n\n\n\nDatos Gapminder 2007: 5 Países de América\n\n\nPaís\nContinente\nEsperanza de Vida\nPoblación\nPIB per Cápita\n\n\n\n\nArgentina\nAmericas\n75,32\n40.301.927\n12.779,38\n\n\nBolivia\nAmericas\n65,55\n9.119.152\n3.822,14\n\n\nBrazil\nAmericas\n72,39\n190.010.647\n9.065,80\n\n\nCanada\nAmericas\n80,65\n33.390.141\n36.319,24\n\n\nChile\nAmericas\n78,55\n16.284.741\n13.171,64",
+    "crumbs": [
+      "Nivelación Estadística",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Estadística Descriptiva</span>"
+    ]
+  },
+  {
+    "objectID": "c0_descriptivo.html#puntos-importantes",
+    "href": "c0_descriptivo.html#puntos-importantes",
+    "title": "2  Estadística Descriptiva",
+    "section": "2.8 Puntos Importantes",
+    "text": "2.8 Puntos Importantes\n\n\n\n\n\n\n\nIdeas Principales\n\n\n\n\nLos tipos de datos incluyen numéricos (continuos, discretos) y categóricos (nominales, binarios, ordinales).\nLa tipificación de datos dentro de un software es importante para indicarle cómo debe procesar los datos.\nLa estructura de datos básica en la ciencia de datos es una matriz rectangular (dataframe) en la que las filas son registros (records) y las columnas son variables (features).",
+    "crumbs": [
+      "Nivelación Estadística",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Estadística Descriptiva</span>"
+    ]
+  },
+  {
+    "objectID": "c0_descriptivo.html#medidas-de-tendencia-central",
+    "href": "c0_descriptivo.html#medidas-de-tendencia-central",
+    "title": "1  Estadística Descriptiva",
+    "section": "1.3 Medidas de tendencia central",
+    "text": "1.3 Medidas de tendencia central\nUn paso básico para explorar datos cuantitativos es obtener un valor típico para cada variable: una estimación de dónde se encuentran la mayoría de los datos (es decir, su tendencia central). Las más típicas son:\n\nMedia\nMedia Ponderada\nMedia Recortada\nMediana\nPercentiles\n\n\n1.3.1 Media (Mean)\nLa media es la suma de todos los valores dividido por la cantidad de valores considerados (n = total de observaciones): \\[Media = \\bar{x} = {\\frac {1}{n}}\\sum _{i=1}^{n}x_{i}={\\frac {x_{1}+x_{2}+\\cdots +x_{n}}{n}}\\]\n\n1.3.1.1 Aplicación\nSupongamos que tenemos los números del 1 al 5: \\[C_1 =\\{1,2,3,4,5\\}\\]\n¿Cuál sería su media?\nPara resolver, bastaría con aplicar la fórmula: \\(\\bar{C_1} ={\\frac {1+2+3+4+5}{5}} = 3\\)\nEn R, esto se realiza con la función mean()\n\nmean(c(1,2,3,4,5))\n\n[1] 3\n\n\n\n\n1.3.1.2 Media y Valores Faltantes\nEs importante señalar que cuando se intenta calcular la media y existen valores faltantes, el resultado en R será siempre del tipo NA:\n\nmean(c(1,2,NA,4,5))\n\n[1] NA\n\n\nPara calcular la media de los valores válidos o existentes en estas situaciones, se debe utilizar el argumento na.rm = T:\n\nmean(c(1,2,NA,4,5),\n     na.rm = T\n     )\n\n[1] 3\n\n\n\n\n\n1.3.2 Media Ponderada (Weighted Mean)\nSe calcula multiplicando cada valor de datos \\(x_i\\) por un peso \\(w_i\\) seleccionado y dividiendo su suma por la suma de los pesos. La fórmula para una media ponderada es: \\[{\\displaystyle {\\bar {x}}={\\frac {\\sum _{i=1}^{n}x_{i}w_{i}}{\\sum _{i=1}^{n}w_{i}}}={\\frac {x_{1}w_{1}+x_{2}w_{2}+x_{3}w_{3}+...+x_{n}w_{n}}{w_{1}+w_{2}+w_{3}+...+w_{n}}}}\\]\nLa media ponderada puede ser útil cuando:\n\nAlgunos valores son intrínsecamente más variables que otros.\nLos datos recopilados no representan por igual a los diferentes grupos que nos interesa medir.\n\nEn R, se puede calcular la media ponderada con la función weighted.mean():\n\nweighted.mean(c(1,2,3,4,5), c(4,4,2,2,1)/13)\n\n[1] 2.384615\n\n\n ¿Qué estoy haciendo en el segundo argumento de la función? (freeico?)\n\n\n1.3.3 Media Recortada (Trimmed Mean)\nSe calcula eliminando un número fijo de valores ordenados en cada extremo y luego tomando un promedio de los valores restantes.\nRepresentando los valores ordenados por \\(x_1\\), \\(x_2\\), …,\\(x_n\\) donde \\(x_1\\) es el valor más pequeño y \\(x_n\\) el más grande, la fórmula para calcular la media recortada con los \\(p\\) valores más pequeños y grandes omitidos es:\n\\[Media\\ Recortada = {\\frac {\\sum _{i=p+1}^{n-p}x_{i}}{n-2p}}\\]\n\n1.3.3.1 Aplicación\n\nPor ejemplo, si queremos sacar 1 observación tanto en el extremo superior como el inferior del conjunto \\(C_1\\), el resultado sería: \\(\\bar{C_1}^{T} ={\\frac {2+3+4}{3}} = 3\\)\nSi generamos un nuevo conjunto \\(C_2 =\\{1,2,2,2,5\\}\\) y recortamos el valor más alto y más bajo, el resultado sería: \\(\\bar{C_2}^{T} ={\\frac {2+2+2}{3}} = 2\\) el cual es distinto al promedio simple del conjunto \\(C_2\\): \\(\\bar{C_2} ={\\frac {1+2+2+2+5}{5}} = 2.4\\)\n\nEn R, se puede especificar dentro de la función mean() el argumento trim =\n\nmean(c(1,2,3,4,5), trim = 0.2)\n\n[1] 3\n\nmean(c(1,2,2,2,5), trim = 0.2) \n\n[1] 2\n\nmean(c(1,2,2,2,5))\n\n[1] 2.4\n\n\n ¿Por qué ocupo \\(trim = 0.2\\)?\n\n\n\n1.3.4 Mediana\n\nLa mediana es el número central en una lista ordenada de datos.\nSi hay un número par de valores de datos, el valor central en realidad no se encuentra en el conjunto de datos, sino que se obtiene a partir del promedio de los dos valores que dividen los datos ordenados en la mitad superior e inferior.\nLa formula matemática de la mediana es la siguiente:\n\n\\[\nMediana =\n\\begin{cases}\nx_\\frac{n}{2} + x_{\\frac{n}{2}+1} \\text{, si n es par} \\\\\nx_\\frac{n+1}{2}\\text{, si n es impar}\n\\end{cases}       \n\\] En comparación con la media, que utiliza todas las observaciones, la mediana depende sólo de los valores en el centro de los datos ordenados. Si bien esto puede parecer una desventaja, dado que la media es mucho más sensible a los datos extremos, hay muchos casos en los que la mediana es una mejor métrica para describir la tendencia central de los datos.\nEn R, la función que permite realizar esto es median()\n\nmedian(c(1,2,3,4,5))\n\n[1] 3\n\n\n\nmedian(c(1,2,2,2,5))\n\n[1] 2\n\n\n\nmedian(c(1,2,3,4))\n\n[1] 2.5\n\n\n\n1.3.4.1 Ejemplo: Ingresos Laborales Chile (2022)\n\n\n\nFuente: Encuesta Suplementaria de Ingresos 2022, INE\n\n\n\n\n1.3.4.2 Ejemplo: Ingresos Laborales Chile (2022)\n\n\n\nFuente: Encuesta Suplementaria de Ingresos 2022, INE\n\n\n\n\n\n\n\n\nIdeas Principales\n\n\n\n\nLa métrica básica para tendencias centrales es la media, pero puede ser sensible a valores atípicos (outliers).\nOtras métricas como la mediana o la media recortada son menos sensibles a valores atípicos y, por lo tanto, son más robustas frente a valores extremos.",
+    "crumbs": [
+      "Nivelación Estadística",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Estadística Descriptiva</span>"
+    ]
+  },
+  {
+    "objectID": "c0_descriptivo.html#media-mean",
+    "href": "c0_descriptivo.html#media-mean",
+    "title": "2  Estadística Descriptiva",
+    "section": "3.2 Media (Mean)",
+    "text": "3.2 Media (Mean)\nLa media es la suma de todos los valores dividido por la cantidad de valores considerados (n = total de observaciones): \\[Media = \\bar{x} = {\\frac {1}{n}}\\sum _{i=1}^{n}x_{i}={\\frac {x_{1}+x_{2}+\\cdots +x_{n}}{n}}\\]",
+    "crumbs": [
+      "Nivelación Estadística",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Estadística Descriptiva</span>"
+    ]
+  },
+  {
+    "objectID": "c0_descriptivo.html#media-mean-aplicación",
+    "href": "c0_descriptivo.html#media-mean-aplicación",
+    "title": "2  Estadística Descriptiva",
+    "section": "3.3 Media (Mean): Aplicación",
+    "text": "3.3 Media (Mean): Aplicación\n\n\n\nSupongamos que tenemos los números del 1 al 5: \\[C_1 =\\{1,2,3,4,5\\}\\]\n¿Cuál sería su media?\n\n\n\nPara resolver, bastaría con aplicar la fórmula: \\(\\bar{C_1} ={\\frac {1+2+3+4+5}{5}} = 3\\)\nEn R, esto se realiza con la función mean()\n\nmean(c(1,2,3,4,5))\n\n[1] 3",
+    "crumbs": [
+      "Nivelación Estadística",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Estadística Descriptiva</span>"
+    ]
+  },
+  {
+    "objectID": "c0_descriptivo.html#media-y-valores-faltantes",
+    "href": "c0_descriptivo.html#media-y-valores-faltantes",
+    "title": "2  Estadística Descriptiva",
+    "section": "3.4 Media y Valores Faltantes",
+    "text": "3.4 Media y Valores Faltantes\n\nEs importante señalar que en R, cuando se intenta calcular la media y existen valores faltantes, el resultado será siempre NA:\n\n\n\nmean(c(1,2,NA,4,5))\n\n[1] NA\n\n\n\n\nPara calcular la media de los valores válidos o existentes en estas situaciones, se debe utilizar el argumento na.rm = T:\n\n\n\nmean(c(1,2,NA,4,5), na.rm = T)\n\n[1] 3",
+    "crumbs": [
+      "Nivelación Estadística",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Estadística Descriptiva</span>"
+    ]
+  },
+  {
+    "objectID": "c0_descriptivo.html#media-ponderada-weighted-mean",
+    "href": "c0_descriptivo.html#media-ponderada-weighted-mean",
+    "title": "2  Estadística Descriptiva",
+    "section": "3.5 Media Ponderada (Weighted Mean)",
+    "text": "3.5 Media Ponderada (Weighted Mean)\n\nSe calcula multiplicando cada valor de datos \\(x_i\\) por un peso \\(w_i\\) seleccionado y dividiendo su suma por la suma de los pesos. La fórmula para una media ponderada es: \\[{\\displaystyle {\\bar {x}}={\\frac {\\sum _{i=1}^{n}x_{i}w_{i}}{\\sum _{i=1}^{n}w_{i}}}={\\frac {x_{1}w_{1}+x_{2}w_{2}+x_{3}w_{3}+...+x_{n}w_{n}}{w_{1}+w_{2}+w_{3}+...+w_{n}}}}\\]\nLa media ponderada puede ser útil cuando:\n\n\n\nAlgunos valores son intrínsecamente más variables que otros.\nLos datos recopilados no representan por igual a los diferentes grupos que nos interesa medir.",
+    "crumbs": [
+      "Nivelación Estadística",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Estadística Descriptiva</span>"
+    ]
+  },
+  {
+    "objectID": "c0_descriptivo.html#media-ponderada-weighted-mean-aplicación",
+    "href": "c0_descriptivo.html#media-ponderada-weighted-mean-aplicación",
+    "title": "2  Estadística Descriptiva",
+    "section": "3.6 Media Ponderada (Weighted Mean): Aplicación",
+    "text": "3.6 Media Ponderada (Weighted Mean): Aplicación\nEn R, se puede calcular la media ponderada con la función weighted.mean():\n\nweighted.mean(c(1,2,3,4,5), c(4,4,2,2,1)/13)\n\n[1] 2.384615\n\n\n ¿Qué estoy haciendo en el segundo argumento de la función? (freeico?)",
+    "crumbs": [
+      "Nivelación Estadística",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Estadística Descriptiva</span>"
+    ]
+  },
+  {
+    "objectID": "c0_descriptivo.html#media-recortada-trimmed-mean",
+    "href": "c0_descriptivo.html#media-recortada-trimmed-mean",
+    "title": "2  Estadística Descriptiva",
+    "section": "3.7 Media Recortada (Trimmed Mean)",
+    "text": "3.7 Media Recortada (Trimmed Mean)\nSe calcula eliminando un número fijo de valores ordenados en cada extremo y luego tomando un promedio de los valores restantes. Representando los valores ordenados por \\(x_1\\), \\(x_2\\), …,\\(x_n\\) donde \\(x_1\\) es el valor más pequeño y \\(x_n\\) el más grande, la fórmula para calcular la media recortada con los \\(p\\) valores más pequeños y grandes omitidos es:\n\\[Media\\ Recortada = {\\frac {\\sum _{i=p+1}^{n-p}x_{i}}{n-2p}}\\]",
+    "crumbs": [
+      "Nivelación Estadística",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Estadística Descriptiva</span>"
+    ]
+  },
+  {
+    "objectID": "c0_descriptivo.html#media-recortada-trimmed-mean-aplicación",
+    "href": "c0_descriptivo.html#media-recortada-trimmed-mean-aplicación",
+    "title": "2  Estadística Descriptiva",
+    "section": "3.8 Media Recortada (Trimmed Mean): Aplicación",
+    "text": "3.8 Media Recortada (Trimmed Mean): Aplicación\n\n\nPor ejemplo, si queremos sacar 1 observación tanto en el extremo superior como el inferior del conjunto \\(C_1\\), el resultado sería: \\(\\bar{C_1}^{T} ={\\frac {2+3+4}{3}} = 3\\)\nSi generamos un nuevo conjunto \\(C_2 =\\{1,2,2,2,5\\}\\) y recortamos el valor más alto y más bajo, el resultado sería: \\(\\bar{C_2}^{T} ={\\frac {2+2+2}{3}} = 2\\) el cual es distinto al promedio simple del conjunto \\(C_2\\): \\(\\bar{C_2} ={\\frac {1+2+2+2+5}{5}} = 2.4\\)\n\n\n\nEn R, se puede especificar dentro de la función mean() el argumento trim =\n\n\n\nmean(c(1,2,3,4,5), trim = 0.2)\n\n[1] 3\n\nmean(c(1,2,2,2,5), trim = 0.2) \n\n[1] 2\n\nmean(c(1,2,2,2,5))\n\n[1] 2.4\n\n\n\n\n ¿Por qué ocupo \\(trim = 0.2\\)?",
+    "crumbs": [
+      "Nivelación Estadística",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Estadística Descriptiva</span>"
+    ]
+  },
+  {
+    "objectID": "c0_descriptivo.html#mediana",
+    "href": "c0_descriptivo.html#mediana",
+    "title": "2  Estadística Descriptiva",
+    "section": "3.9 Mediana",
+    "text": "3.9 Mediana\n\nLa mediana es el número central en una lista ordenada de datos.\nSi hay un número par de valores de datos, el valor central en realidad no se encuentra en el conjunto de datos, sino que se obtiene a partir del promedio de los dos valores que dividen los datos ordenados en la mitad superior e inferior.\nLa formula matemática de la mediana es la siguiente: \\[\nMediana =\n\\begin{cases}\nx_\\frac{n}{2} + x_{\\frac{n}{2}+1} \\text{, si n es par} \\\\\nx_\\frac{n+1}{2}\\text{, si n es impar}\n\\end{cases}       \n\\] :::",
+    "crumbs": [
+      "Nivelación Estadística",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Estadística Descriptiva</span>"
+    ]
+  },
+  {
+    "objectID": "c0_descriptivo.html#mediana-aplicación",
+    "href": "c0_descriptivo.html#mediana-aplicación",
+    "title": "2  Estadística Descriptiva",
+    "section": "3.10 Mediana: Aplicación",
+    "text": "3.10 Mediana: Aplicación\nEn comparación con la media, que utiliza todas las observaciones, la mediana depende sólo de los valores en el centro de los datos ordenados. Si bien esto puede parecer una desventaja, dado que la media es mucho más sensible a los datos extremos, hay muchos casos en los que la mediana es una mejor métrica para describir la tendencia central de los datos.\nEn R, la función que permite realizar esto es median()\n\nmedian(c(1,2,3,4,5))\n\n[1] 3\n\n\n\nmedian(c(1,2,2,2,5))\n\n[1] 2\n\n\n\nmedian(c(1,2,3,4))\n\n[1] 2.5",
+    "crumbs": [
+      "Nivelación Estadística",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Estadística Descriptiva</span>"
+    ]
+  },
+  {
+    "objectID": "c0_descriptivo.html#ejemplo-ingresos-laborales-chile-2022",
+    "href": "c0_descriptivo.html#ejemplo-ingresos-laborales-chile-2022",
+    "title": "2  Estadística Descriptiva",
+    "section": "3.11 Ejemplo: Ingresos Laborales Chile (2022)",
+    "text": "3.11 Ejemplo: Ingresos Laborales Chile (2022)\n\n\n\nFuente: Encuesta Suplementaria de Ingresos 2022, INE",
+    "crumbs": [
+      "Nivelación Estadística",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Estadística Descriptiva</span>"
+    ]
+  },
+  {
+    "objectID": "c0_descriptivo.html#ejemplo-ingresos-laborales-chile-2022-1",
+    "href": "c0_descriptivo.html#ejemplo-ingresos-laborales-chile-2022-1",
+    "title": "2  Estadística Descriptiva",
+    "section": "3.12 Ejemplo: Ingresos Laborales Chile (2022)",
+    "text": "3.12 Ejemplo: Ingresos Laborales Chile (2022)\n\n\n\nFuente: Encuesta Suplementaria de Ingresos 2022, INE",
+    "crumbs": [
+      "Nivelación Estadística",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Estadística Descriptiva</span>"
+    ]
+  },
+  {
+    "objectID": "c0_descriptivo.html#resumen-medidas-de-localización",
+    "href": "c0_descriptivo.html#resumen-medidas-de-localización",
+    "title": "2  Estadística Descriptiva",
+    "section": "2.4 Resumen Medidas de Localización",
+    "text": "2.4 Resumen Medidas de Localización",
+    "crumbs": [
+      "Nivelación Estadística",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Estadística Descriptiva</span>"
+    ]
+  },
+  {
+    "objectID": "c0_descriptivo.html#ideas-principales-1",
+    "href": "c0_descriptivo.html#ideas-principales-1",
+    "title": "2  Estadística Descriptiva",
+    "section": "2.5 Ideas Principales",
+    "text": "2.5 Ideas Principales\n\nLa métrica básica para tendencias centrales es la media, pero puede ser sensible a valores atípicos (outliers).\nOtras métricas como la mediana o la media recortada son menos sensibles a valores atípicos y, por lo tanto, son más robustas.",
+    "crumbs": [
+      "Nivelación Estadística",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Estadística Descriptiva</span>"
+    ]
+  },
+  {
+    "objectID": "c0_descriptivo.html#desviación-media-absoluta",
+    "href": "c0_descriptivo.html#desviación-media-absoluta",
+    "title": "2  Estadística Descriptiva",
+    "section": "4.1 Desviación Media Absoluta",
+    "text": "4.1 Desviación Media Absoluta\n\nLas estimaciones de variación más utilizadas se basan en las diferencias o desviaciones entre una estimación de localización y los datos observados.\nPara un conjunto de datos \\(C4 = \\{1, 4, 4\\}\\), la media es 3 y la mediana es 4. Las desviaciones de la media son las diferencias: \\(1 – 3 = –2\\), \\(4 – 3 = 1\\), \\(4 – 3 = 1\\).\nEstas desviaciones nos dicen cuán dispersas están los datos están alrededor del valor central.\nUna forma de medir la variabilidad es estimar un valor típico para estas desviaciones. Promediar las desviaciones en sí mismas no nos diría mucho: las desviaciones negativas compensan las positivas. De hecho ¡la suma de las desviaciones de la media es precisamente cero! \\(\\sum_{i=1}^n (x-\\bar{x}) = 0\\).\nAsí, la desviación media absoluta (mean absolute deviation) se define como: \\[\\frac{\\sum_{i=1}^n |(x_i-\\bar{x})|}{n}\\]",
+    "crumbs": [
+      "Nivelación Estadística",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Estadística Descriptiva</span>"
+    ]
+  },
+  {
+    "objectID": "c0_descriptivo.html#desviación-estándar-y-varianza",
+    "href": "c0_descriptivo.html#desviación-estándar-y-varianza",
+    "title": "2  Estadística Descriptiva",
+    "section": "4.2 Desviación Estándar y Varianza",
+    "text": "4.2 Desviación Estándar y Varianza\n\nLas estimaciones de variabilidad más conocidas son la varianza y la desviación estándar, que se basan en desviaciones al cuadrado.\nLa varianza es un promedio de las desviaciones al cuadrado y la desviación estándar es la raíz cuadrada de la varianza:\n\n\\[\\operatorname{Varianza} = s^2 = \\frac{\\sum_{i=1}^n {(x_i-\\bar{x})}^2}{n-1}\\]\n\\[\\operatorname{Desviación\\ Estándar} = s = \\sqrt{\\operatorname{Varianza}}\\]",
+    "crumbs": [
+      "Nivelación Estadística",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Estadística Descriptiva</span>"
+    ]
+  },
+  {
+    "objectID": "c0_descriptivo.html#desviación-absoluta-mediana-mad",
+    "href": "c0_descriptivo.html#desviación-absoluta-mediana-mad",
+    "title": "2  Estadística Descriptiva",
+    "section": "4.3 Desviación Absoluta Mediana (MAD)",
+    "text": "4.3 Desviación Absoluta Mediana (MAD)\n\nLa desviación estándar es mucho más fácil de interpretar que la varianza ya que está en la misma escala que los datos originales.\nNi la varianza, ni la desviación estándar ni la desviación media absoluta son robustas ante valores atípicos y extremos. La varianza y la desviación estándar son especialmente sensibles a los valores atípicos ya que se basan en desviaciones al cuadrado.\nUna estimación más robusta de la variabilidad es la desviación absoluta mediana de la mediana o MAD:\\[MAD = Mediana(|x_1-m|,|x_2-m|,\\cdots,|x_n-m| )\\] donde \\(m\\) es la mediana\nEn R esta se puede calcular a través de la función mad()",
+    "crumbs": [
+      "Nivelación Estadística",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Estadística Descriptiva</span>"
+    ]
+  },
+  {
+    "objectID": "c0_descriptivo.html#aplicación-desviación-estándar-y-varianza",
+    "href": "c0_descriptivo.html#aplicación-desviación-estándar-y-varianza",
+    "title": "2  Estadística Descriptiva",
+    "section": "4.4 Aplicación: Desviación Estándar y Varianza",
+    "text": "4.4 Aplicación: Desviación Estándar y Varianza\n\nPara obtener la desviación estándar y la varianza de una variable se puede utilizar la función sd() y var() respectivamente. Adicionalmente, MAD se obtiene mediante mad() como vimos en la lámina anterior:\n\n\nsd(c(1, 4, 4))\n\n[1] 1.732051\n\nvar(c(1, 4, 4))\n\n[1] 3\n\nmad(c(1, 4, 4))\n\n[1] 0\n\n\n\nEs importante recordar que cuando existen valores NA, se debe especificar el argumento na.rm = T:\n\n\nsd(c(1, 4, 4, NA), na.rm = T)\n\n[1] 1.732051\n\nvar(c(1, 4, 4, NA), na.rm = T)\n\n[1] 3\n\nmad(c(1, 4, 4, NA), na.rm = T)\n\n[1] 0",
+    "crumbs": [
+      "Nivelación Estadística",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Estadística Descriptiva</span>"
+    ]
+  },
+  {
+    "objectID": "c0_descriptivo.html#rango",
+    "href": "c0_descriptivo.html#rango",
+    "title": "2  Estadística Descriptiva",
+    "section": "4.5 Rango",
+    "text": "4.5 Rango\n\nEl rango es la diferencia entre el valor más grande y el más pequeño en un conjunto de datos.\nLa fórmula matemática es sencilla: \\[R =x_{max} - x_{min}\\]\n\nEn R, los valores máximos y mínimos se pueden extraer mediante el comando range(). Si se desea calcular el valor numérico del rango, se debe utilizar las funciones min() y max()\n\nrange(c(1, 4, 4))\n\n[1] 1 4\n\nmax(c(1, 4, 4)) - min(c(1, 4, 4))\n\n[1] 3",
+    "crumbs": [
+      "Nivelación Estadística",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Estadística Descriptiva</span>"
+    ]
+  },
+  {
+    "objectID": "c0_descriptivo.html#percentiles",
+    "href": "c0_descriptivo.html#percentiles",
+    "title": "2  Estadística Descriptiva",
+    "section": "4.6 Percentiles",
+    "text": "4.6 Percentiles\n\nEl percentil es una medida estadística la cual divide una serie de datos ordenados de menor a mayor en cien partes iguales. En términos concretos, un percentil corresponde al valor que permite ubicar a una cierta proporción de los datos ordenados.\nEl percentil \\(P\\) se define como un valor tal que \\(P\\) por ciento de los valores tome este valor o menos y \\((100–P)\\) por ciento tome este valor o más.\nEn este sentido, el percentil 50 es lo mismo que la mediana, pues es la observación en donde se cumple que el 50% de los datos tienen un valor igual o menor a él.\nEl percentil es esencialmente lo mismo que un cuantil, solo que los cuantiles son indexados por fracciones (por lo que el cuantil \\(.8\\) es lo mismo que el percentil 80 (\\(P_{80}\\)).\nEs importante notar que no existe una única forma de calcular los percentiles (ver detalle de la función). Sin embargo, generalmente no es necesario preocuparse de qué tan preciso es el cálculo del percentil y se puede usar el algoritmo que viene por defecto con la función quantile()",
+    "crumbs": [
+      "Nivelación Estadística",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Estadística Descriptiva</span>"
+    ]
+  },
+  {
+    "objectID": "c0_descriptivo.html#percentiles-aplicación",
+    "href": "c0_descriptivo.html#percentiles-aplicación",
+    "title": "2  Estadística Descriptiva",
+    "section": "4.7 Percentiles: Aplicación",
+    "text": "4.7 Percentiles: Aplicación\n\nLa función para calcular percentiles es quantile(). Sus argumentos principales son:\n\nx: El vector númerico sobre el cual se calculará el percentil\nprobs =: Vector numérico de las probabilidades P a calcular (los percentiles) en un rango \\([0,1]\\)\n\n\nVeamos un ejemplo usando R:\n\nc3 &lt;- c(1,2,3,3,5,6,7,9)\nquantile(c3, probs = 0.5)\n\n50% \n  4 \n\nmedian(c3)\n\n[1] 4\n\n\nProbemos ahora varios percentiles:\n\nquantile(c3, probs = c(0.1,0.25,0.5,0.75,0.9))\n\n 10%  25%  50%  75%  90% \n1.70 2.75 4.00 6.25 7.60",
+    "crumbs": [
+      "Nivelación Estadística",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Estadística Descriptiva</span>"
+    ]
+  },
+  {
+    "objectID": "c0_descriptivo.html#aplicación-resumen-de-estadísticas",
+    "href": "c0_descriptivo.html#aplicación-resumen-de-estadísticas",
+    "title": "2  Estadística Descriptiva",
+    "section": "2.5 Aplicación: Resumen de Estadísticas",
+    "text": "2.5 Aplicación: Resumen de Estadísticas\n\nEn R, la función summary() entrega un resumen de las estadísticas más importantes:\n\n\nsummary(c3)\n\n   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. \n   1.00    2.75    4.00    4.50    6.25    9.00",
+    "crumbs": [
+      "Nivelación Estadística",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Estadística Descriptiva</span>"
+    ]
+  },
+  {
+    "objectID": "c0_descriptivo.html#aplicación-resumen-de-estadísticas-1",
+    "href": "c0_descriptivo.html#aplicación-resumen-de-estadísticas-1",
+    "title": "2  Estadística Descriptiva",
+    "section": "2.6 Aplicación: Resumen de Estadísticas",
+    "text": "2.6 Aplicación: Resumen de Estadísticas\n\nUna función similar y un poco más completa es skim() del paquete skimr\n\n\nyank(skim(c3), 'numeric')\n\nVariable type: numeric\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nskim_variable\nn_missing\ncomplete_rate\nmean\nsd\np0\np25\np50\np75\np100\nhist\n\n\n\n\ndata\n0\n1\n4.5\n2.73\n1\n2.75\n4\n6.25\n9\n▇▇▃▇▃",
+    "crumbs": [
+      "Nivelación Estadística",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Estadística Descriptiva</span>"
+    ]
+  },
+  {
+    "objectID": "c0_descriptivo.html#outliers",
+    "href": "c0_descriptivo.html#outliers",
+    "title": "1  Estadística Descriptiva",
+    "section": "1.6 Outliers",
+    "text": "1.6 Outliers\nLa mediana se conoce como una estimación robusta de tendencia central, ya que no está influenciada por valores atípicos (casos extremos) que podrían sesgar los resultados. Un valor atípico es cualquier valor que es muy distante de los otros valores en un conjunto de datos. La definición exacta de un valor atípico es algo subjetivo, aunque se utilizan ciertas convenciones en varios resúmenes de datos. En particular, al graficar boxplots, el criterio para definir los outliers es:\n\\[\nOutlier =\n\\begin{cases}\nQ3 + (1.5*IQR) \\\\\n\\lor \\\\\nQ1 - (1.5*IQR)\n\\end{cases}       \n\\] donde \\(Q3\\) es el percentil 25 o cuartil 1, \\(Q3\\) es el percentil 75 o cuartil 3 y IQR es el rango intercuartílico que es igual a \\(Q3-Q1\\):\n\\[IQR = Q_3-Q_1\\]",
+    "crumbs": [
+      "Nivelación Estadística",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Estadística Descriptiva</span>"
+    ]
+  },
+  {
+    "objectID": "c0_descriptivo.html#visualizaciones-básicas",
+    "href": "c0_descriptivo.html#visualizaciones-básicas",
+    "title": "2  Estadística Descriptiva",
+    "section": "2.7 Visualizaciones Básicas",
+    "text": "2.7 Visualizaciones Básicas\n\nEn el entorno del tidyverse, es posible graficar boxplots y otros tipos de visualizaciones con código resumido a través del comando qplot(). Los argumentos principales de la función son los siguientes:\n\nx: La variable a graficar en el eje de las abscisas (eje x). Se escribe sin comilas\ny: La variable a graficar en el eje de las ordenadas (eje y). Se escribe sin comilas\ndata: El dataset desde donde se extraen los datos. Se escribe sin comilas\ngeom: Objetos geométricos a graficar (puntos, lineas, histogramas etc.). Se escribe con comilas (’ ’ o ” “)\n\nPor ejemplo, grafiquemos la evolución de los salarios medios de ambos sexos entre 2018 y 2022:\n\n\n2.7.1 Gráfico de Líneas\n\naños &lt;- c(2018:2022)\ningreso_medio &lt;- c(606.400,620.500,631.100,681.000,757.800)\ndf_ingresos &lt;- tibble(años,ingreso_medio)\n\n\nqplot(años,ingreso_medio,data = df_ingresos, geom = c('point', 'line'))\n\nWarning: `qplot()` was deprecated in ggplot2 3.4.0.\n\n\n\n\n\n\n\n\n\n\n\n2.7.2 Histograma\n\nUn histograma es una gráfica que nos permite observar la distribución de una variable numérica usando barras. Cada barra representa el número de veces (frecuencia) que se observaron datos en un rango determinado.\nPara graficar un histograma R se puede ocupar la función hist() o especificar en qplot(geom = 'histogram')\n\n\ndata(gapminder)\nqplot(lifeExp,data = gapminder, geom = ('histogram'),color=I(\"black\"), fill=I(\"steelblue\"))\n\n`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.\n\n\n\n\n\n\n\n\n\n\nhist(gapminder$lifeExp) #Similar pero con el comando base\n\n\n\n\n\n\n\n\n\n\n2.7.3 Boxplot\n\nUna de las visualizaciones más utilizadas para describir la variabilidad de una variable es el boxplot o gráfico de caja y bigotes\nEste gráfico se compone de los siguientes elementos visuales:\n\nCaja: Representa el percentil 75 y percentil 25 de la distribución\nLinea Horizontal: Representa la mediana de la distribución o percentil 50\nPuntos: Representan los valores atípicos (outliers) según la fórmula vista anteriormente\n\n\n\n\n\n\n\n\n2.7.3.1 Aplicación: Boxplot\n\nPara realizar un boxplot en R se puede utilizar la función base boxplot() o especificar en qplot(geom = 'boxplot')\n\n\ndata(gapminder)\nqplot('',lifeExp,data = gapminder, geom = ('boxplot'),color=I(\"black\"), fill=I(\"red\"))\n\n\n\n\n\n\n\n\n\nboxplot(gapminder$lifeExp) #Similar pero con el comando base\n\n\n\n\n\n\n\n\n\n\n\n2.7.4 Correlación\n\nSe dice que las variables \\(X\\) e \\(Y\\) (cada una con datos cuantitativos) están correlacionadas positivamente si es que cuando aumenta \\(X\\), \\(Y\\) también lo hace, y viceversa.\n\nSi cuando \\(X\\) aumenta \\(Y\\) disminuye, y viceversa, las variables están correlacionadas negativamente.\nEs importante notar que la correlación es una medida de dependencia lineal entre dos variables cuantitativas. Esto quiere decir, que puede ocurrir que 2 variables estén relacionadas de manera no lineal y, por lo tanto, exista una baja o nula correlación de pearson, lo que no implica que no haya asociación entre estas variables.\nPara calcular el coeficiente de correlación de Pearson, multiplicamos las desviaciones de la media de la variable 1 por las de la variable 2 y las dividimos por el producto de las desviaciones estándar respectivas:\n\n\\[r=\\frac{\\sigma_{xy}}{{\\sigma _{x}\\sigma _{y}}} = {\\frac{\\sum_{i=1}^n(x_i-\\bar{x})(y_i-\\bar{y})}{(n-1) s_{x}s_{y}}}\\]\n\n2.7.4.1 Interpretación de la Correlación\n\nEl valor numérico de la correlación de pearson nos indica 2 cosas: la fuerza de la correlación (valor absoluto de la correlación: \\(|r|\\)) y en qué dirección va la correlación (signo de la correlación: \\(r &lt;0\\) o \\(r&gt;0\\)).\nEl coeficiente de correlación es una métrica estandarizada, por lo que siempre oscila entre –1 (correlación negativa perfecta) a +1 (correlación positiva perfecta). Un coeficiente de correlación de 0 indica que no hay correlación o asociación lineal entre las variables.\nEs importante notar que no existe una única interpretación de la fuerza de la correlación de pearson (en efecto, hay muchos rangos utilizados dependiendo de la disciplina, por ejemplo ver aquí). Sin embargo una regla de oro (quizás un poco estricta) es la siguiente (devore2016?):\n\n\\(r = 0\\): No existe correlación\n\\(0 &lt; |r| \\leq 0.5\\): Correlación Débil\n\\(0.5 &lt; |r| &lt; 0.8\\): Correlación Moderada\n\\(0.8 \\leq  |r| &lt; 1\\): Correlación Fuerte\n\\(|r| = 1\\): Correlación Perfecta\n\n\n\n\n2.7.4.2 Matriz de Correlaciones\n\nLa matriz de correlaciones es una tabla donde las variables se muestran tanto en filas como en columnas, y los valores de las celdas son las correlaciones entre las variables.\nEsta matriz es necesaria para realizar los gráficos de correlación o corplots. El comando en R para obtener esta matriz de correlaciones es cor()\n\n\ndata(\"USArrests\")\nhead(USArrests)\n\n           Murder Assault UrbanPop Rape\nAlabama      13.2     236       58 21.2\nAlaska       10.0     263       48 44.5\nArizona       8.1     294       80 31.0\nArkansas      8.8     190       50 19.5\nCalifornia    9.0     276       91 40.6\nColorado      7.9     204       78 38.7\n\n\n\ncor(USArrests)\n\n             Murder   Assault   UrbanPop      Rape\nMurder   1.00000000 0.8018733 0.06957262 0.5635788\nAssault  0.80187331 1.0000000 0.25887170 0.6652412\nUrbanPop 0.06957262 0.2588717 1.00000000 0.4113412\nRape     0.56357883 0.6652412 0.41134124 1.0000000",
+    "crumbs": [
+      "Nivelación Estadística",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Estadística Descriptiva</span>"
+    ]
+  },
+  {
+    "objectID": "c0_descriptivo.html#aplicación-gráfico-de-líneas",
+    "href": "c0_descriptivo.html#aplicación-gráfico-de-líneas",
+    "title": "2  Estadística Descriptiva",
+    "section": "4.1 Aplicación: Gráfico de Líneas",
+    "text": "4.1 Aplicación: Gráfico de Líneas\n\naños &lt;- c(2018:2022)\ningreso_medio &lt;- c(606.400,620.500,631.100,681.000,757.800)\ndf_ingresos &lt;- tibble(años,ingreso_medio)\n\n\nqplot(años,ingreso_medio,data = df_ingresos, geom = c('point', 'line'))\n\nWarning: `qplot()` was deprecated in ggplot2 3.4.0.",
+    "crumbs": [
+      "Nivelación Estadística",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Estadística Descriptiva</span>"
+    ]
+  },
+  {
+    "objectID": "c0_descriptivo.html#aplicación-histograma",
+    "href": "c0_descriptivo.html#aplicación-histograma",
+    "title": "2  Estadística Descriptiva",
+    "section": "4.2 Aplicación: Histograma",
+    "text": "4.2 Aplicación: Histograma\n\nUn histograma es una gráfica que nos permite observar la distribución de una variable numérica usando barras. Cada barra representa el número de veces (frecuencia) que se observaron datos en un rango determinado.\nPara graficar un histograma R se puede ocupar la función hist() o especificar en qplot(geom = 'histogram')\n\n\ndata(gapminder)\nqplot(lifeExp,data = gapminder, geom = ('histogram'),color=I(\"black\"), fill=I(\"steelblue\"))\n\n`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.\n\n\n\n\n\n\n\n\n\n\nhist(gapminder$lifeExp) #Similar pero con el comando base",
+    "crumbs": [
+      "Nivelación Estadística",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Estadística Descriptiva</span>"
+    ]
+  },
+  {
+    "objectID": "c0_descriptivo.html#boxplot",
+    "href": "c0_descriptivo.html#boxplot",
+    "title": "2  Estadística Descriptiva",
+    "section": "4.3 Boxplot",
+    "text": "4.3 Boxplot\n\nUna de las visualizaciones más utilizadas para describir la variabilidad de una variable es el boxplot o gráfico de caja y bigotes\nEste gráfico se compone de los siguientes elementos visuales:\n\nCaja: Representa el percentil 75 y percentil 25 de la distribución\nLinea Horizontal: Representa la mediana de la distribución o percentil 50\nPuntos: Representan los valores atípicos (outliers) según la fórmula vista anteriormente",
+    "crumbs": [
+      "Nivelación Estadística",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Estadística Descriptiva</span>"
+    ]
+  },
+  {
+    "objectID": "c0_descriptivo.html#aplicación-boxplot",
+    "href": "c0_descriptivo.html#aplicación-boxplot",
+    "title": "2  Estadística Descriptiva",
+    "section": "4.4 Aplicación: Boxplot",
+    "text": "4.4 Aplicación: Boxplot\n\nPara realizar un boxplot en R se puede utilizar la función base boxplot() o especificar en qplot(geom = 'boxplot')\n\n\ndata(gapminder)\nqplot('',lifeExp,data = gapminder, geom = ('boxplot'),color=I(\"black\"), fill=I(\"red\"))\n\n\n\n\n\n\n\n\n\nboxplot(gapminder$lifeExp) #Similar pero con el comando base",
+    "crumbs": [
+      "Nivelación Estadística",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Estadística Descriptiva</span>"
+    ]
+  },
+  {
+    "objectID": "c0_descriptivo.html#correlación",
+    "href": "c0_descriptivo.html#correlación",
+    "title": "2  Estadística Descriptiva",
+    "section": "4.5 Correlación",
+    "text": "4.5 Correlación\n\nSe dice que las variables \\(X\\) e \\(Y\\) (cada una con datos cuantitativos) están correlacionadas positivamente si es que cuando aumenta \\(X\\), \\(Y\\) también lo hace, y viceversa.\n\nSi cuando \\(X\\) aumenta \\(Y\\) disminuye, y viceversa, las variables están correlacionadas negativamente.\nEs importante notar que la correlación es una medida de dependencia lineal entre dos variables cuantitativas. Esto quiere decir, que puede ocurrir que 2 variables estén relacionadas de manera no lineal y, por lo tanto, exista una baja o nula correlación de pearson, lo que no implica que no haya asociación entre estas variables.\nPara calcular el coeficiente de correlación de Pearson, multiplicamos las desviaciones de la media de la variable 1 por las de la variable 2 y las dividimos por el producto de las desviaciones estándar respectivas:\n\n\\[r=\\frac{\\sigma_{xy}}{{\\sigma _{x}\\sigma _{y}}} = {\\frac{\\sum_{i=1}^n(x_i-\\bar{x})(y_i-\\bar{y})}{(n-1) s_{x}s_{y}}}\\]",
+    "crumbs": [
+      "Nivelación Estadística",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Estadística Descriptiva</span>"
+    ]
+  },
+  {
+    "objectID": "c0_descriptivo.html#interpretación-de-la-correlación",
+    "href": "c0_descriptivo.html#interpretación-de-la-correlación",
+    "title": "2  Estadística Descriptiva",
+    "section": "4.6 Interpretación de la Correlación",
+    "text": "4.6 Interpretación de la Correlación\n\nEl valor numérico de la correlación de pearson nos indica 2 cosas: la fuerza de la correlación (valor absoluto de la correlación: \\(|r|\\)) y en qué dirección va la correlación (signo de la correlación: \\(r &lt;0\\) o \\(r&gt;0\\)).\nEl coeficiente de correlación es una métrica estandarizada, por lo que siempre oscila entre –1 (correlación negativa perfecta) a +1 (correlación positiva perfecta). Un coeficiente de correlación de 0 indica que no hay correlación o asociación lineal entre las variables.\nEs importante notar que no existe una única interpretación de la fuerza de la correlación de pearson (en efecto, hay muchos rangos utilizados dependiendo de la disciplina, por ejemplo ver aquí). Sin embargo una regla de oro (quizás un poco estricta) es la siguiente (devore2016?):\n\n\\(r = 0\\): No existe correlación\n\\(0 &lt; |r| \\leq 0.5\\): Correlación Débil\n\\(0.5 &lt; |r| &lt; 0.8\\): Correlación Moderada\n\\(0.8 \\leq  |r| &lt; 1\\): Correlación Fuerte\n\\(|r| = 1\\): Correlación Perfecta",
+    "crumbs": [
+      "Nivelación Estadística",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Estadística Descriptiva</span>"
+    ]
+  },
+  {
+    "objectID": "c0_descriptivo.html#interpretación-de-la-correlación-1",
+    "href": "c0_descriptivo.html#interpretación-de-la-correlación-1",
+    "title": "2  Estadística Descriptiva",
+    "section": "4.18 Interpretación de la Correlación",
+    "text": "4.18 Interpretación de la Correlación\n\nEs importante notar que no existe una única interpretación de la fuerza de la correlación de pearson (en efecto, hay muchos rangos utilizados dependiendo de la disciplina, por ejemplo ver aquí). Sin embargo una regla de oro (quizás un poco estricta) es la siguiente (devore2016?):\n\n\\(r = 0\\): No existe correlación\n\\(0 &lt; |r| \\leq 0.5\\): Correlación Débil\n\\(0.5 &lt; |r| &lt; 0.8\\): Correlación Moderada\n\\(0.8 \\leq  |r| &lt; 1\\): Correlación Fuerte\n\\(|r| = 1\\): Correlación Perfecta",
+    "crumbs": [
+      "Nivelación Estadística",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Estadística Descriptiva</span>"
+    ]
+  },
+  {
+    "objectID": "c0_descriptivo.html#matriz-de-correlaciones",
+    "href": "c0_descriptivo.html#matriz-de-correlaciones",
+    "title": "2  Estadística Descriptiva",
+    "section": "4.7 Matriz de Correlaciones",
+    "text": "4.7 Matriz de Correlaciones\n\nLa matriz de correlaciones es una tabla donde las variables se muestran tanto en filas como en columnas, y los valores de las celdas son las correlaciones entre las variables.\nEsta matriz es necesaria para realizar los gráficos de correlación o corplots. El comando en R para obtener esta matriz de correlaciones es cor()\n\n\ndata(\"USArrests\")\nhead(USArrests)\n\n           Murder Assault UrbanPop Rape\nAlabama      13.2     236       58 21.2\nAlaska       10.0     263       48 44.5\nArizona       8.1     294       80 31.0\nArkansas      8.8     190       50 19.5\nCalifornia    9.0     276       91 40.6\nColorado      7.9     204       78 38.7\n\n\n\ncor(USArrests)\n\n             Murder   Assault   UrbanPop      Rape\nMurder   1.00000000 0.8018733 0.06957262 0.5635788\nAssault  0.80187331 1.0000000 0.25887170 0.6652412\nUrbanPop 0.06957262 0.2588717 1.00000000 0.4113412\nRape     0.56357883 0.6652412 0.41134124 1.0000000",
+    "crumbs": [
+      "Nivelación Estadística",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Estadística Descriptiva</span>"
+    ]
+  },
+  {
+    "objectID": "c0_descriptivo.html#aplicación-gráfico-de-dispersión-scatterplot",
+    "href": "c0_descriptivo.html#aplicación-gráfico-de-dispersión-scatterplot",
+    "title": "2  Estadística Descriptiva",
+    "section": "4.20 Aplicación: Gráfico de Dispersión (Scatterplot)",
+    "text": "4.20 Aplicación: Gráfico de Dispersión (Scatterplot)\n\ndata(\"USArrests\")\ncor(USArrests$Murder,USArrests$Assault)\n\n[1] 0.8018733\n\nqplot(Murder,Assault,data = USArrests)",
+    "crumbs": [
+      "Nivelación Estadística",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Estadística Descriptiva</span>"
+    ]
+  },
+  {
+    "objectID": "c0_descriptivo.html#aplicación-gráfico-de-dispersión-scatterplot-curva-ajustada",
+    "href": "c0_descriptivo.html#aplicación-gráfico-de-dispersión-scatterplot-curva-ajustada",
+    "title": "2  Estadística Descriptiva",
+    "section": "4.21 Aplicación: Gráfico de Dispersión (Scatterplot) + Curva Ajustada",
+    "text": "4.21 Aplicación: Gráfico de Dispersión (Scatterplot) + Curva Ajustada\n\ncor(USArrests$Murder,USArrests$Rape)\n\n[1] 0.5635788\n\nqplot(Murder,Rape,data = USArrests, geom = c('point', 'smooth'))\n\n`geom_smooth()` using method = 'loess' and formula = 'y ~ x'",
+    "crumbs": [
+      "Nivelación Estadística",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Estadística Descriptiva</span>"
+    ]
+  },
+  {
+    "objectID": "c0_descriptivo.html#aplicación-matriz-de-correlaciones",
+    "href": "c0_descriptivo.html#aplicación-matriz-de-correlaciones",
+    "title": "2  Estadística Descriptiva",
+    "section": "4.22 Aplicación: Matriz de Correlaciones",
+    "text": "4.22 Aplicación: Matriz de Correlaciones\n\nm &lt;- cor(USArrests)\ncorrplot(m,method = 'number',type=\"lower\",tl.col=\"black\",pch.col = \"black\",)",
+    "crumbs": [
+      "Nivelación Estadística",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Estadística Descriptiva</span>"
+    ]
+  },
+  {
+    "objectID": "c0_descriptivo.html#reflexiones-finales-bruce2020",
+    "href": "c0_descriptivo.html#reflexiones-finales-bruce2020",
+    "title": "1  Estadística Descriptiva",
+    "section": "1.9 Reflexiones finales (bruce2020?)",
+    "text": "1.9 Reflexiones finales (bruce2020?)\n\n\n\n\n\n\nResumen\n\n\n\n\nEl análisis de datos exploratorios (EDA), iniciado por John Tukey, sentó las bases para el campo de la ciencia de datos. La idea clave de EDA es que el primer y más importante paso en cualquier proyecto basado en datos es observar los mismos. Al resumir y visualizar los datos, se puede obtener una valiosa intuición y comprensión del objetivo que se busca resolver.\nEl conjunto diverso de herramientas y técnicas que está desarrollando la comunidad de código abierto, combinado con la versatilidad de R (y otros softwares de este estilo), ha creado una gran cantidad de formas de explorar y analizar datos.\nEl análisis exploratorio debiese ser la piedra angular de cualquier proyecto de ciencia de datos.",
+    "crumbs": [
+      "Nivelación Estadística",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Estadística Descriptiva</span>"
+    ]
+  },
+  {
+    "objectID": "c0_descriptivo.html#aplicaciones",
+    "href": "c0_descriptivo.html#aplicaciones",
+    "title": "2  Estadística Descriptiva",
+    "section": "2.8 Aplicaciones",
+    "text": "2.8 Aplicaciones\n\n2.8.1 Aplicación: Gráfico de Dispersión (Scatterplot)\n\ndata(\"USArrests\")\ncor(USArrests$Murder,USArrests$Assault)\n\n[1] 0.8018733\n\nqplot(Murder,Assault,data = USArrests)\n\n\n\n\n\n\n\n\n\n\n2.8.2 Aplicación: Gráfico de Dispersión (Scatterplot) + Curva Ajustada\n\ncor(USArrests$Murder,USArrests$Rape)\n\n[1] 0.5635788\n\nqplot(Murder,Rape,data = USArrests, geom = c('point', 'smooth'))\n\n`geom_smooth()` using method = 'loess' and formula = 'y ~ x'\n\n\n\n\n\n\n\n\n\n\n\n2.8.3 Aplicación: Matriz de Correlaciones\n\nm &lt;- cor(USArrests)\ncorrplot(m,method = 'number',type=\"lower\",tl.col=\"black\",pch.col = \"black\",)",
+    "crumbs": [
+      "Nivelación Estadística",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Estadística Descriptiva</span>"
+    ]
+  },
+  {
+    "objectID": "c0_descriptivo.html#medidas-de-variabilidad",
+    "href": "c0_descriptivo.html#medidas-de-variabilidad",
+    "title": "1  Estadística Descriptiva",
+    "section": "1.4 Medidas de Variabilidad",
+    "text": "1.4 Medidas de Variabilidad\n\n1.4.1 Desviación Media Absoluta\n\nLas estimaciones de variación más utilizadas se basan en las diferencias o desviaciones entre una estimación de localización y los datos observados.\nPara un conjunto de datos \\(C4 = \\{1, 4, 4\\}\\), la media es 3 y la mediana es 4. Las desviaciones de la media son las diferencias: \\(1 – 3 = –2\\), \\(4 – 3 = 1\\), \\(4 – 3 = 1\\).\nEstas desviaciones nos dicen cuán dispersas están los datos están alrededor del valor central.\nUna forma de medir la variabilidad es estimar un valor típico para estas desviaciones. Promediar las desviaciones en sí mismas no nos diría mucho: Las desviaciones negativas compensan las positivas. De hecho ¡la suma de las desviaciones de la media es precisamente cero! \\(\\sum_{i=1}^n (x-\\bar{x}) = 0\\).\nAsí, la desviación media absoluta (mean absolute deviation) se define como: \\[\\frac{\\sum_{i=1}^n |(x_i-\\bar{x})|}{n}\\]\n\n\n\n1.4.2 Desviación Estándar y Varianza\n\nLas estimaciones de variabilidad más conocidas son la varianza y la desviación estándar, que se basan en desviaciones al cuadrado.\nLa varianza es un promedio de las desviaciones al cuadrado y la desviación estándar es la raíz cuadrada de la varianza:\n\n\\[\\operatorname{Varianza} = s^2 = \\frac{\\sum_{i=1}^n {(x_i-\\bar{x})}^2}{n-1}\\]\n\\[\\operatorname{Desviación\\ Estándar} = s = \\sqrt{\\operatorname{Varianza}}\\]\n\n\n1.4.3 Desviación Absoluta Mediana (MAD)\n\nLa desviación estándar es mucho más fácil de interpretar que la varianza ya que está en la misma escala que los datos originales.\nNi la varianza, ni la desviación estándar ni la desviación media absoluta son robustas ante valores atípicos y extremos. La varianza y la desviación estándar son especialmente sensibles a los valores atípicos ya que se basan en desviaciones al cuadrado.\nUna estimación más robusta de la variabilidad es la desviación absoluta mediana de la mediana o MAD:\\[MAD = Mediana(|x_1-m|,|x_2-m|,\\cdots,|x_n-m| )\\] donde \\(m\\) es la mediana\nEn R esta se puede calcular a través de la función mad()\n\n\n1.4.3.1 Aplicación: Desviación Estándar y Varianza\nPara obtener las medidas de variabilidad revisadas usando R, se pueden utilizar las siguientes funciones:\n\nDesviación Estándar: sd()\nVarianza: var().\nDesviación Media Absoluta: mad()\n\n\nsd(c(1, 4, 4))\n\n[1] 1.732051\n\nvar(c(1, 4, 4))\n\n[1] 3\n\nmad(c(1, 4, 4))\n\n[1] 0\n\n\n\nEs importante recordar que cuando existen valores NA, se debe especificar el argumento na.rm = T:\n\n\nsd(c(1, 4, 4, NA), na.rm = T)\n\n[1] 1.732051\n\nvar(c(1, 4, 4, NA), na.rm = T)\n\n[1] 3\n\nmad(c(1, 4, 4, NA), na.rm = T)\n\n[1] 0\n\n\n\n\n\n1.4.4 Rango\n\nEl rango es la diferencia entre el valor más grande y el más pequeño en un conjunto de datos.\nLa fórmula matemática es sencilla: \\[R =x_{max} - x_{min}\\]\n\nEn R, los valores máximos y mínimos se pueden extraer mediante el comando range(). Si se desea calcular el valor numérico del rango, se debe utilizar las funciones min() y max()\n\nrange(c(1, 4, 4))\n\n[1] 1 4\n\nmax(c(1, 4, 4)) - min(c(1, 4, 4))\n\n[1] 3\n\n\n\n\n1.4.5 Percentiles\n\nEl percentil es una medida estadística la cual divide una serie de datos ordenados de menor a mayor en cien partes iguales. En términos concretos, un percentil corresponde al valor que permite ubicar a una cierta proporción de los datos ordenados.\nEl percentil \\(P\\) se define como un valor tal que \\(P\\) por ciento de los valores tome este valor o menos y \\((100–P)\\) por ciento tome este valor o más.\nEn este sentido, el percentil 50 es lo mismo que la mediana, pues es la observación en donde se cumple que el 50% de los datos tienen un valor igual o menor a él.\nEl percentil es esencialmente lo mismo que un cuantil, solo que los cuantiles son indexados por fracciones (por lo que el cuantil \\(.8\\) es lo mismo que el percentil 80 (\\(P_{80}\\)).\nEs importante notar que no existe una única forma de calcular los percentiles (ver detalle de la función). Sin embargo, generalmente no es necesario preocuparse de qué tan preciso es el cálculo del percentil y se puede usar el algoritmo que viene por defecto con la función quantile()\n\n\n1.4.5.1 Aplicación\n\nLa función para calcular percentiles es quantile(). Sus argumentos principales son:\n\nx: El vector númerico sobre el cual se calculará el percentil\nprobs =: Vector numérico de las probabilidades P a calcular (los percentiles) en un rango \\([0,1]\\)\n\n\nVeamos un ejemplo usando R:\n\nc3 &lt;- c(1,2,3,3,5,6,7,9)\nquantile(c3, probs = 0.5)\n\n50% \n  4 \n\nmedian(c3)\n\n[1] 4\n\n\nProbemos ahora varios percentiles:\n\nquantile(c3, probs = c(0.1,0.25,0.5,0.75,0.9))\n\n 10%  25%  50%  75%  90% \n1.70 2.75 4.00 6.25 7.60",
+    "crumbs": [
+      "Nivelación Estadística",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Estadística Descriptiva</span>"
+    ]
+  },
+  {
+    "objectID": "c0_descriptivo.html#resumen-de-estadísticas-en-r",
+    "href": "c0_descriptivo.html#resumen-de-estadísticas-en-r",
+    "title": "1  Estadística Descriptiva",
+    "section": "1.5 Resumen de Estadísticas en R",
+    "text": "1.5 Resumen de Estadísticas en R\n\nEn R, existen diversos paquetes que permiten resumir las estadísticas más utilizadas de manera sencilla y ordenada. Estas funciones pueden facilitar el análisis exploratorio de los datos ejecutando solo unas pocas líneas de código.\n\nA continuación, revisaremos algunas de estas funciones y sus paquetes respectivos:\n\n1.5.1 summary()\nLa función summary() entrega un resumen de las estadísticas más importantes, tales como el valor mínimo y máximo, la media y mediana, y el percentil 25 y 75.\nEsta función está dentro del paquete base de R, por lo que no es necesario cargar ninguna librería previamente para utilizar la función:\n\nsummary(c3)\n\n   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. \n   1.00    2.75    4.00    4.50    6.25    9.00 \n\n\n\n\n1.5.2 skim()\nUna función similar y un poco más completa es skim() del paquete skimr\n\nyank(skim(c3), 'numeric')\n\nVariable type: numeric\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nskim_variable\nn_missing\ncomplete_rate\nmean\nsd\np0\np25\np50\np75\np100\nhist\n\n\n\n\ndata\n0\n1\n4.5\n2.73\n1\n2.75\n4\n6.25\n9\n▇▇▃▇▃\n\n\n\n\n\n\n\n1.5.3 gt_plt_summary\nLa función gt_plt_summary() del paquete gtExtras en R permite agregar una visualización resumen dentro de una tabla generada con gt. Su propósito principal es proporcionar una representación visual de una variable dentro de la tabla, como una mini gráfica de barras, densidad o histograma.\n\nlibrary(gt)\nlibrary(gtExtras)\nlibrary(datasets)\n\ngt_plt_summary(iris)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\niris\n\n\n150 rows x 5 cols\n\n\n\nColumn\nPlot Overview\nMissing\nMean\nMedian\nSD\n\n\n\n\n\n\n\nSepal.Length\n\n\n\n      4.37.9\n\n0.0%\n5.8\n5.8\n0.8\n\n\n\n\n\nSepal.Width\n\n\n\n      2.04.4\n\n0.0%\n3.1\n3.0\n0.4\n\n\n\n\n\nPetal.Length\n\n\n\n      1.06.9\n\n0.0%\n3.8\n4.3\n1.8\n\n\n\n\n\nPetal.Width\n\n\n\n      0.12.5\n\n0.0%\n1.2\n1.3\n0.8\n\n\n\n\n\n\n\n\nSpecies\n\nsetosa, versicolor and virginica\n\n\n\n\n\n      3 categories\n\n0.0%\n—\n—\n—",
+    "crumbs": [
+      "Nivelación Estadística",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Estadística Descriptiva</span>"
+    ]
+  },
+  {
+    "objectID": "c0_descriptivo.html#visualización-de-datos",
+    "href": "c0_descriptivo.html#visualización-de-datos",
+    "title": "1  Estadística Descriptiva",
+    "section": "1.7 Visualización de Datos",
+    "text": "1.7 Visualización de Datos\n\nEn el entorno del tidyverse, es posible graficar boxplots y otros tipos de visualizaciones con código resumido a través del comando qplot(). Los argumentos principales de la función son los siguientes:\n\nx: La variable a graficar en el eje de las abscisas (eje x). Se escribe sin comilas\ny: La variable a graficar en el eje de las ordenadas (eje y). Se escribe sin comilas\ndata: El dataset desde donde se extraen los datos. Se escribe sin comilas\ngeom: Objetos geométricos a graficar (puntos, lineas, histogramas etc.). Se escribe con comilas (’ ’ o ” “)\n\nPor ejemplo, grafiquemos la evolución de los salarios medios de ambos sexos entre 2018 y 2022:\n\n\n1.7.1 Gráfico de Líneas\n\naños &lt;- c(2018:2022)\ningreso_medio &lt;- c(606.400,620.500,631.100,681.000,757.800)\ndf_ingresos &lt;- tibble(años,ingreso_medio)\n\n\nqplot(años,ingreso_medio,data = df_ingresos, geom = c('point', 'line'))\n\nWarning: `qplot()` was deprecated in ggplot2 3.4.0.\n\n\n\n\n\n\n\n\n\n\n\n1.7.2 Histograma\n\nUn histograma es una gráfica que nos permite observar la distribución de una variable numérica usando barras. Cada barra representa el número de veces (frecuencia) que se observaron datos en un rango determinado.\nPara graficar un histograma R se puede ocupar la función hist() o especificar en qplot(geom = 'histogram')\n\n\ndata(gapminder)\nqplot(lifeExp,data = gapminder, geom = ('histogram'),color=I(\"black\"), fill=I(\"steelblue\"))\n\n`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.\n\n\n\n\n\n\n\n\n\n\nhist(gapminder$lifeExp) #Similar pero con el comando base\n\n\n\n\n\n\n\n\n\n\n1.7.3 Boxplot\n\nUna de las visualizaciones más utilizadas para describir la variabilidad de una variable es el boxplot o gráfico de caja y bigotes\nEste gráfico se compone de los siguientes elementos visuales:\n\nCaja: Representa el percentil 75 y percentil 25 de la distribución\nLinea Horizontal: Representa la mediana de la distribución o percentil 50\nPuntos: Representan los valores atípicos (outliers) según la fórmula vista anteriormente\n\n\n\n\n\n\n\n\n1.7.3.1 Aplicación: Boxplot\n\nPara realizar un boxplot en R se puede utilizar la función base boxplot() o especificar en qplot(geom = 'boxplot')\n\n\ndata(gapminder)\nqplot('',lifeExp,data = gapminder, geom = ('boxplot'),color=I(\"black\"), fill=I(\"red\"))\n\n\n\n\n\n\n\n\n\nboxplot(gapminder$lifeExp) #Similar pero con el comando base",
+    "crumbs": [
+      "Nivelación Estadística",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Estadística Descriptiva</span>"
+    ]
+  },
+  {
+    "objectID": "c0_descriptivo.html#medidas-de-asociación",
+    "href": "c0_descriptivo.html#medidas-de-asociación",
+    "title": "1  Estadística Descriptiva",
+    "section": "1.8 Medidas de Asociación",
+    "text": "1.8 Medidas de Asociación\nLas medidas de asociación son herramientas estadísticas que permiten cuantificar la relación entre dos o más variables. Su propósito es describir el grado y la dirección en que una variable cambia en función de otra, ayudando a identificar patrones y tendencias en los datos.\nAlgunas de las medidas de asociación más utilizadas incluyen:\n\nCorrelación de Pearson: Mide la relación lineal entre dos variables continuas. Va de -1 (relación negativa perfecta) a 1 (relación positiva perfecta), donde 0 indica la ausencia de correlación.\nCoeficiente de Spearman: Mide la relación entre dos variables ordinales o no necesariamente lineales.\nRazón de probabilidades (Odds Ratio, OR): Común en estudios de caso-control, indica cuánto más probable es un evento en un grupo comparado con otro.\n\nRazón de tasas/incidencia (Rate Ratio, RR): Utilizada en estudios epidemiológicos para comparar la incidencia de un evento en distintos grupos.\nCoeficiente de contingencia y chi-cuadrado: Aplicados a variables categóricas para evaluar si existe asociación entre ellas.\n\n1.8.1 Correlación\nSe dice que las variables \\(X\\) e \\(Y\\) (cada una con datos cuantitativos) están correlacionadas positivamente si ocurre que cuando aumenta \\(X\\), \\(Y\\) también lo hace, o viceversa. Cuando \\(X\\) aumenta e \\(Y\\) disminuye, o viceversa, las variables están correlacionadas negativamente.\nEs importante notar que la correlación es una medida de dependencia lineal entre dos variables cuantitativas. Esto quiere decir, que puede ocurrir que 2 variables estén relacionadas de manera no lineal y, por lo tanto, exista una baja o nula correlación de pearson, lo que no implica que no haya asociación entre estas variables.\nPara calcular el coeficiente de correlación de Pearson, multiplicamos las desviaciones de la media de la variable 1 por las de la variable 2 y las dividimos por el producto de las desviaciones estándar respectivas:\n\\[r=\\frac{\\sigma_{xy}}{{\\sigma _{x}\\sigma _{y}}} = {\\frac{\\sum_{i=1}^n(x_i-\\bar{x})(y_i-\\bar{y})}{(n-1) s_{x}s_{y}}}\\]\n\n1.8.1.1 Interpretación de la Correlación\n\nEl valor numérico de la correlación de pearson nos indica 2 cosas: la fuerza de la correlación (valor absoluto de la correlación: \\(|r|\\)) y en qué dirección va la correlación (signo de la correlación: \\(r &lt;0\\) o \\(r&gt;0\\)).\nEl coeficiente de correlación es una métrica estandarizada, por lo que siempre oscila entre –1 (correlación negativa perfecta) a +1 (correlación positiva perfecta). Un coeficiente de correlación de 0 indica que no hay correlación o asociación lineal entre las variables.\nEs importante notar que no existe una única interpretación de la fuerza de la correlación de pearson (en efecto, hay muchos rangos utilizados dependiendo de la disciplina, por ejemplo ver aquí). Sin embargo una regla de oro (quizás un poco estricta) es la siguiente (devore2016?):\n\n\\(r = 0\\): No existe correlación\n\\(0 &lt; |r| \\leq 0.5\\): Correlación Débil\n\\(0.5 &lt; |r| &lt; 0.8\\): Correlación Moderada\n\\(0.8 \\leq  |r| &lt; 1\\): Correlación Fuerte\n\\(|r| = 1\\): Correlación Perfecta\n\n\n\n\n1.8.1.2 Matriz de Correlaciones\n\nLa matriz de correlaciones es una tabla donde las variables se muestran tanto en filas como en columnas, y los valores de las celdas son las correlaciones entre las variables.\nEsta matriz es necesaria para realizar los gráficos de correlación o corplots. El comando en R para obtener esta matriz de correlaciones es cor()\n\n\ndata(\"USArrests\")\nhead(USArrests)\n\n           Murder Assault UrbanPop Rape\nAlabama      13.2     236       58 21.2\nAlaska       10.0     263       48 44.5\nArizona       8.1     294       80 31.0\nArkansas      8.8     190       50 19.5\nCalifornia    9.0     276       91 40.6\nColorado      7.9     204       78 38.7\n\n\n\ncor(USArrests)\n\n             Murder   Assault   UrbanPop      Rape\nMurder   1.00000000 0.8018733 0.06957262 0.5635788\nAssault  0.80187331 1.0000000 0.25887170 0.6652412\nUrbanPop 0.06957262 0.2588717 1.00000000 0.4113412\nRape     0.56357883 0.6652412 0.41134124 1.0000000\n\n\n\n\n\n1.8.2 Visualización de Medidas de Asociación\nExisten dos formas clásicas de visualizar la relación lineal entre 2 variables cuantitativas:\n\nGráficos de dispersión (Scatterplot)\nCorrelograma\n\nPara realizar un scatterplot en R, utilicemos el dataset de USArrests que contiene datos delictuales de arrestos por cada 100.000 habitantes en los 50 estados de USA en 1973.\n\ndata(\"USArrests\")\ncor(USArrests$Murder,USArrests$Assault)\n\n[1] 0.8018733\n\nqplot(Murder,Assault,data = USArrests)\n\n\n\n\n\n\n\n\nSi quisiéramos ajustar una recta para visualizar si la relación es negativa o positiva y su magnitud (todo esto, según la pendiente de la recta), podemos agregar un geom_smooth y especificar que nos ajuste una recta a través del método de regresión lineal (method = \"lm\")\n\ncor(USArrests$Murder,USArrests$Rape)\n\n[1] 0.5635788\n\nqplot(Murder, Rape, data = USArrests, geom = c(\"point\", \"smooth\"), method = \"lm\")\n\nWarning in geom_point(method = \"lm\"): Ignoring unknown parameters: `method`\n\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\n\n\n\n\n\n\n\nSi buscamos visualizar las asociaciones entre distintas variables cuantiativas en un solo gráfico, podemos usar un correlograma mediante la función corrplot\n\nlibrary(corrplot)\n\nm &lt;- cor(USArrests)\n\ncorrplot(m, \n         method ='number',\n         type=\"lower\", \n         tl.col=\"black\",pch.col = \"black\"\n         )",
+    "crumbs": [
+      "Nivelación Estadística",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Estadística Descriptiva</span>"
+    ]
+  },
+  {
+    "objectID": "p0_intror.html",
+    "href": "p0_intror.html",
+    "title": "Introducción a R",
+    "section": "",
+    "text": "El siguiente apartado tiene por objetivo introducir al lector sobre el uso del software R.\nLa ejecución de código dentro de cada capítulo se puede realizar tanto en línea como de manera local en su computador.\nEl código ejecutable en línea se ubica en un recuadro de código que luce como la siguiente imagen:\n\n\n\nEjecución de código en línea\n\n\nAl hacer clic en Run Code, se ejecutarán todas las líneas de código (aquellas marcadas con un número azul en la izquierda) y se entregará el resultado de la siguiente:\n\n\n\nResultado al hacer clic en “Run Code”\n\n\nDe la imagen anterior, vemos que al hacer clic en Run Code, R realiza la ejecución del comando y entrega el resultado correspondiente (en este caso, ejecuta la suma: 2 + 2). Es relevante considerar dos cosas al momento de ejecutar código en línea:\n\nEl código se ejecutará en lenguaje R",
+    "crumbs": [
+      "Introducción a R"
+    ]
+  },
+  {
+    "objectID": "c0_instr.html",
+    "href": "c0_instr.html",
+    "title": "Instalación de R",
+    "section": "",
+    "text": "Paso 1: Descargar R\nSi esta es la primera vez que interactúas con R, lo primero que debes hacer es seguir los siguientes pasos para la correcta instalación del software y la interfaz de trabajo Rstudio (también llamado IDE o Entorno de Desarrollo Integrado).\nEl primer paso es descargar e instalar R. R es un lenguaje de programación diseñado para realizar analisís estadísticos, visualizar datos, crear mapas y muchas otras funciones más relacionadas con el tratamiento de información.\nPara instalar R, debes visitar el sitio web oficial de R y descargar la versión correspondiente a tu sistema operativo (Windows o Mac):\nUna vez descargado el archivo de instalación, debes seguir las instrucciones que vienen por defecto y esperar a que se instale el software.",
+    "crumbs": [
+      "Introducción a R",
+      "Instalación de R"
+    ]
+  },
+  {
+    "objectID": "c0_instr.html#paso-1-descargar-r",
+    "href": "c0_instr.html#paso-1-descargar-r",
+    "title": "Instalación de R",
+    "section": "",
+    "text": "R para Windows\nR para macOS\n\n\n\n\n\n\n\n\nNota\n\n\n\nSi ya tienes R instalado en tu computador, asegúrate de actualizarlo a la última versión disponible.",
+    "crumbs": [
+      "Introducción a R",
+      "Instalación de R"
+    ]
+  },
+  {
+    "objectID": "c0_instr.html#paso-2-descargar-rstudio",
+    "href": "c0_instr.html#paso-2-descargar-rstudio",
+    "title": "Instalación de R",
+    "section": "Paso 2: Descargar Rstudio",
+    "text": "Paso 2: Descargar Rstudio\nEl segundo paso para poder trabajar con R es descargar el entorno de trabajo (IDE). Un IDE es una aplicación de software que ayuda a los programadores a desarrollar código de software de manera eficiente. Aumenta la productividad de quien ejecuta código al combinar capacidades como editar, crear, probar y empaquetar código en una aplicación fácil de usar.\nSi bien existen varias alternativas, en el caso de R el IDE más utilizado y diseñado para explotar de manera más versatil su potencial es Rstudio1.\nPara descargarlo, basta con acceder al siguiente link y seguir las instrucciones de instalación que vienen por defecto\n\nRstudio Desktop\n\n\n\n\n\n\n\nNota\n\n\n\nSi has trabajado con otro lenguaje de programación, probablemente hayas usado Visual Studio Code  u otra IDE en donde escribir código. Si bien tal interfaz también puede ser utilizada para programar en lenguaje R, más adelante veremos varias ventajas que entrega Rstudio. Así como un escritor puede utilizar una hoja de cuaderno, un bloc de notas o Microsoft Word para escribir sus libros; un programador de R puede escribir código directamente desde el software, usar Visual Studio Code, o bien, Rstudio para realizar sus proyectos de análisis de datos.",
+    "crumbs": [
+      "Introducción a R",
+      "Instalación de R"
+    ]
+  },
+  {
+    "objectID": "c0_instr.html#paso-3-abrir-rstudio",
+    "href": "c0_instr.html#paso-3-abrir-rstudio",
+    "title": "Instalación de R",
+    "section": "Paso 3: Abrir Rstudio",
+    "text": "Paso 3: Abrir Rstudio\nSi seguiste correctamente los pasos anteriores ¡Felicitaciones! ya tienes todo para empezar tus primeros proyectos con datos mediante R y de manera local en tu computador. Desde ahora en adelante, la recomendación es utilizar solamente la aplicación de  cuando quieras trabajar con R, ya que el software estará integrado directamente al IDE.\nAl abrir Rstudio por primera vez, verás el panel que se muestra a continuación, el cual puede sonar un poco intimidante en un inicio, pero con el tiempo ya te irás famialirizando con él.\nEn el siguiente capítulo, veremos algunas operaciones básicas que puedes realizar con R, tales como sumar o restar valores, crear vectores o conjuntos de datos y otros procesos básicos.",
+    "crumbs": [
+      "Introducción a R",
+      "Instalación de R"
+    ]
+  },
+  {
+    "objectID": "c0_instr.html#posibles-problemas",
+    "href": "c0_instr.html#posibles-problemas",
+    "title": "Instalación de R",
+    "section": "Posibles Problemas",
+    "text": "Posibles Problemas\nEn caso de que no puedas instalar programas en tu computador, ya sea por falta de permisos de administrador o por preferencia personal, tienes la opción de utilizar Posit Cloud, una plataforma en línea que te permite trabajar con RStudio sin necesidad de realizar instalaciones.\nEste servicio ofrece un número limitado de horas gratuitas al mes, y si necesitas más tiempo, se puede optar por un plan de pago2. Es importante tener en cuenta que, al ser una herramienta basada en la nube, Posit Cloud no es adecuada para trabajar con datos confidenciales o personales a menos que cuentes con la autorización correspondiente para hacerlo.\n\n\n\n\n\n\nNota\n\n\n\nEs importante que la ruta en donde se aloje R y Rstudio no tenga caracteres especiales. Por ejemplo, \"C:\\Users\\OneDrive-Fundación XX\\\" podría generar problemas por el tílde en la ó)",
+    "crumbs": [
+      "Introducción a R",
+      "Instalación de R"
+    ]
+  },
+  {
+    "objectID": "c0_instr.html#footnotes",
+    "href": "c0_instr.html#footnotes",
+    "title": "Instalación de R",
+    "section": "",
+    "text": "Recientemente se lanzó otro IDE llamado Positron. Sin embargo, en la actualidad sigue siendo un IDE en desarrollo y versión beta, por lo que si solo se pretende trabajar con R, Rstudio sigue siendo una mejor opción. Para más detalle ver: https://positron.posit.co/start.html↩︎\nEn el caso de los estudiantes del Diplomado en Ciencia de Datos Para Políticas Públicas, con su correo de la universidad pueden acceder gratuitamente a la plataforma y a los ejercicios diseñados para cada clase.↩︎",
+    "crumbs": [
+      "Introducción a R",
+      "Instalación de R"
+    ]
+  },
+  {
+    "objectID": "p1_nivelacion.html",
+    "href": "p1_nivelacion.html",
+    "title": "Nivelación Estadística",
+    "section": "",
+    "text": "En la actualidad, cada vez es más intensivo el uso de los datos para la toma de decisiones, ya sea para describir, explicar o predecir un fenómeno. Específicamente, los algoritmos de Machine Learning se basan en gran medida en modelos estadísticos. Por lo tanto, tener conocimiento sobre los fundamentos de la probabilidad y la estadística es esencial dentro de la labor de cualquier analista de datos que busque utilizar la información disponible de manera fiable, independientemente de si están involucrados en un análisis exploratorio de datos o en la creación de modelos de predicción más sofisticados.\nEn este apartado, se enseñarán de forma resumida, conceptos normalmente cubiertos en un curso universitario introductorio de probabilidad y estadística. Esto, con el fin de asegurar un nivel base de conocimientos para todas/os las/os estudiantes del programa.\nLa nivelación se realizará con el fin entregar los conocimientos fundamentales que servirán de base para la segunda unidad del módulo 2 del Diplomado de Ciencia de Datos para Políticas Públicas, en el que se abordarán los conceptos de inferencia estadística y modelos de regresión lineal (entre otros).\nCada uno de los conceptos será revisado tanto desde una perspectiva teórica como práctica, con un énfasis particular en esta última. Cuando sea posible, se empleará el lenguaje de programación R para las demostraciones y ejercicios\nComo objetivos específicos de este apartado se busca:\n\nFortalecer la comprensión de los fundamentos teóricos de probabilidad y la estadística entre las y los estudiantes, permitiéndoles aplicar conceptos clave en la resolución de problemas prácticos.\nFomentar la integración de la teoría estadística con la práctica mediante el uso de R, facilitando así la aplicación de métodos estadísticos en un lenguaje común que sirva de base para el resto de los cursos del diplomado.",
+    "crumbs": [
+      "Nivelación Estadística"
+    ]
+  },
+  {
+    "objectID": "p2_tidyverse.html",
+    "href": "p2_tidyverse.html",
+    "title": "Herramientas para la Ciencia de Datos",
+    "section": "",
+    "text": "Librerías a utilizar\nSi bien no hay una definición única sobre qué se entiende por Ciencia de Datos, sí existen ciertas acciones que todo analista de datos debe saber realizar.\nAntes de poder analizar los datos para extraer conclusiones y tomar decisiones informadas, es importante procesar la información en un formato que nos permita aplicar algún algoritmo o realizar algun procedimiento estadístico que nos ayude a conseguir nuestro objetivo.\nEste proceso, conocido como data wranglign, puede significar una parte importante del tiempo del proyecto de ciencia de datos que se busque desarrollar. Si bien es cierto que cada vez la tecnología nos ofrece múltiples formas de disponibilizar información, muchas veces vamos a requerir importarla a nuestro software de análisis, ordenarla en un formato que sea adecuado y transformar o crear variables nuevas a partir de las ya existentes o vincular la información con otras bases de datos.\nPor último y no menos importante, debemos ser capaces de encontrar hallazgos de manera clara y comunicable a una audiencia objetivo. Muchas veces los gráficos e imágenes nos ayudarán en esta tarea que algunas veces pasa desapercibida, pero que es una parte necesaria para conseguir la atención y comprensión de nuestras contrapartes.\nEn los siguientes 4 capítulos, revisaremos en detalle el flujo estándar del trabajo con datos y necesario para poder desarrollar un análisis exploratorio de los mismos.\nIn this chapter, you’ll learn how to load flat files in R with the readr package, which is part of the core tidyverse.",
+    "crumbs": [
+      "Herramientas para la Ciencia de Datos"
+    ]
+  },
+  {
+    "objectID": "p2_tidyverse.html#resumen",
+    "href": "p2_tidyverse.html#resumen",
+    "title": "Herramientas para la Ciencia de Datos",
+    "section": "Resumen",
+    "text": "Resumen\nIn this chapter, you’ve learned how to load CSV files with read_csv() and to do your own data entry with tibble() and tribble(). You’ve learned how csv files work, some of the problems you might encounter, and how to overcome them. We’ll come to data import a few times in this book: ?sec-import-spreadsheets from Excel and Google Sheets, ?sec-import-databases will show you how to load data from databases, ?sec-arrow from parquet files, ?sec-rectangling from JSON, and ?sec-scraping from websites.\nWe’re just about at the end of this section of the book, but there’s one important last topic to cover: how to get help. So in the next chapter, you’ll learn some good places to look for help, how to create a reprex to maximize your chances of getting good help, and some general advice on keeping up with the world of R.",
+    "crumbs": [
+      "Herramientas para la Ciencia de Datos"
+    ]
+  },
+  {
+    "objectID": "p3_estadistica-aplicada.html",
+    "href": "p3_estadistica-aplicada.html",
+    "title": "Estadística Aplicada",
+    "section": "",
+    "text": "Introducción\nWorking with data provided by R packages is a great way to learn data science tools, but you want to apply what you’ve learned to your own data at some point. In this chapter, you’ll learn the basics of reading data files into R.\nSpecifically, this chapter will focus on reading plain-text rectangular files. We’ll start with practical advice for handling features like column names, types, and missing data. You will then learn about reading data from multiple files at once and writing data from R to a file. Finally, you’ll learn how to handcraft data frames in R.",
+    "crumbs": [
+      "Estadística Aplicada"
+    ]
+  },
+  {
+    "objectID": "p3_estadistica-aplicada.html#introducción",
+    "href": "p3_estadistica-aplicada.html#introducción",
+    "title": "Estadística Aplicada",
+    "section": "",
+    "text": "Librerías a utilizar\nIn this chapter, you’ll learn how to load flat files in R with the readr package, which is part of the core tidyverse.",
+    "crumbs": [
+      "Estadística Aplicada"
+    ]
+  },
+  {
+    "objectID": "p3_estadistica-aplicada.html#resumen",
+    "href": "p3_estadistica-aplicada.html#resumen",
+    "title": "Estadística Aplicada",
+    "section": "Resumen",
+    "text": "Resumen\nIn this chapter, you’ve learned how to load CSV files with read_csv() and to do your own data entry with tibble() and tribble(). You’ve learned how csv files work, some of the problems you might encounter, and how to overcome them. We’ll come to data import a few times in this book: ?sec-import-spreadsheets from Excel and Google Sheets, ?sec-import-databases will show you how to load data from databases, ?sec-arrow from parquet files, ?sec-rectangling from JSON, and ?sec-scraping from websites.\nWe’re just about at the end of this section of the book, but there’s one important last topic to cover: how to get help. So in the next chapter, you’ll learn some good places to look for help, how to create a reprex to maximize your chances of getting good help, and some general advice on keeping up with the world of R.",
+    "crumbs": [
+      "Estadística Aplicada"
+    ]
+  }
+]

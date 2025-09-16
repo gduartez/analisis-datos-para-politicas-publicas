@@ -1,0 +1,245 @@
+---
+bibliography: references.bib
+---
+
+# Operaciones Básicas {#sec-data-basics .unnumbered}
+
+## Introducción
+
+`R` debe entenderse como un lenguaje y ambiente de programación. A lo largo de esta capacitación, se enfocará el trabajo con R como un proceso de exploración de Datos:
+
+![Fuente: [@wickham2023]](images/1.%20Exploración%20de%20Datos.png){fig-align="center"}
+
+## Rstudio
+
+Una vez descargado R y Rstudio, para empezar a trabajar, basta con abrir la aplicación de Rstudio. La ventaja de esta plataforma es que entrega una interfaz más amigable para el trabajo, la cual se divide en 4 partes:
+
+1.  **Consola (parte inferior izquierda):** Es dónde se ejecutan los códigos
+
+2.  **Files (parte inferior derecha):** Posee varias ventanas:
+
+    i)  [Files:]{.underline} Permite navegar por los distintos archivos del computador
+
+    ii) [Plots:]{.underline} Permite mostrar las visualizaciones que creemos
+
+    iii) [Packages:]{.underline} Podemos explorar las distintas librerías con las que trabajaremos
+
+    iv) [Help:]{.underline} Pestaña de ayuda
+
+3.  **Global Environment (parte superior derecha):** Es donde se cargan todos los archivos que importamos a R así como las variables que vayamos creando
+
+4.  **Script (parte superior izquierda):** Permite escribir los códigos para poder guardarlos y compartirlos. Es similar al do file en STATA. *CTRL + ENTER* permite correr el código de la línea seleccionada.
+
+![Fuente: Apuntes de clase curso Introducción a R para Ciencias Sociales](images/2. Componentes de Rstudio.png)
+
+## Operaciones Básicas {#sec-op_basicas}
+
+El signo \# permite escribir texto en el R script, el cual no será considerado cómo código al momento de ejecutar un comando:
+
+```{r}
+# Así puedo comentar líneas de comando
+```
+
+R se puede ocupar como calculadora para las principales operaciones matemáticas y operadores lógicos. Por ejemplo, al escribir en la consola 2+2 y apretar ENTER (CTRL + ENTER en el script) nos devolverá el resultado de 4:
+
+```{r}
+2+2
+```
+
+Alguna información relevante respecto de las operaciones es la siguiente:
+
+-   Si una línea termina con una operación, pasará a la siguiente línea para continuar.
+-   Los espacios dentro de una misma línea no se consideran relevantes.
+-   El operador lógico de "igual" se escribe: `==`. En general, se suele trabajar con estructuras de datos. La estructura más básica es el vector. Con la función: `c()` que se conoce como combinar, se pueden crear vectores.
+
+| Operador       | Sintaxis                       |
+|----------------|--------------------------------|
+| Suma           | \+                             |
+| Resta          | \-                             |
+| División       | /                              |
+| Multiplicación | \*                             |
+| \^             | Exponente                      |
+| %%             | Módulo (Resto de una división) |
+| %/%            | División Entera                |
+
+: Operaciones Matemáticas
+
+| Operador              | Sintaxis |
+|-----------------------|----------|
+| Mayor                 | \>       |
+| Menor                 | \<       |
+| Igual                 | ==       |
+| Distinto              | !=       |
+| Mayor o igual         | \>=      |
+| Menor o igual         | \<=      |
+| En (Contiene a)       | %in%     |
+| No en (No contiene a) | !(%in%)  |
+
+: Operadores Lógicos
+
+### Ejemplos de Aplicación
+
+```{r}
+#Operaciones matemáticas básicas
+
+1 + 2 + 3
+1 +2 *      3
+4.4 / 2.2
+3 ^ 2
+(1+2)* #si una linea termina con una operacion, "pasará" a la siguiente linea para continuar
+  3
+
+#Operadores lógicos
+
+2 > 3
+3 > 3
+3 >= 3
+3 == 3
+2 != 3
+
+```
+
+## Operaciones con Vectores
+
+Se pueden realizar operaciones matemáticas con vectores al igual que como se realizan con números.
+
+R entrega mensajes de error y advertencia. Ejemplo de esto último ocurre cuando se realizan operaciones con vectores de distintas dimensiones, en donde el vector más corto se vuelve a operacionalizar con las componentes restantes del vector más largo en orden lógico (izquierda a derecha).
+
+```{r, warning=TRUE}
+c(1,2,3) + c(2,3,4)
+```
+
+```{r, warning=TRUE, echo=TRUE}
+c(1,2,3,4) + c(2,3,4)
+```
+
+En efecto, vemos que en el segundo caso lo que hace R es el siguiente proceso: $$Z = X + Y =\{x_1+y_1,x_2+y_2,x_3+y_3,x_4+y_1\}$$ donde $X$ es un vector tal que $X=\{x_1=1,x_2=2,x_3=3,x_4=4\}$ e $Y$ es otro vector tal que $Y=\{y_1=2,y_2=3,y_3=4\}$
+
+También se puede trabajar con datos de carácter. La forma de indicar que un dato es *string* (carácter) es escribiendo el texto entrecomillas: `""`
+
+```{r}
+"Esto es un caracter"
+```
+
+La función `class()` permite conocer qué tipo de dato es el objeto indicado, es decir, conocer su clase
+
+```{r}
+class(c(1,2,3))
+```
+
+```{r}
+class("Esto es un caracter")
+```
+
+Con la función `c()` se pueden crear vectores de datos de carácter, al igual que cómo se realiza con números. También se pueden crear vectores con los valores lógicos: `TRUE`, `FALSE` y `NA`.
+
+```{r}
+c('Hola','Adios')
+class(c('Hola','Adios'))
+```
+
+```{r}
+c(TRUE,FALSE,NA)
+class(c(TRUE,FALSE,NA))
+```
+
+Es importante señalar que los vectores solo admiten un tipo de dato, es decir, no se puede combinar en un solo vector datos numéricos y lógicos, por ejemplo. Si se combinan, R hará la transformación correspondiente a un solo tipo de dato.
+
+```{r, warning=TRUE}
+c(2,TRUE)
+class(c(2,TRUE))
+```
+
+```{r, warning=TRUE}
+c(1,'Hola',FALSE)
+class(c(1,'Hola',FALSE))
+```
+
+## Creación de Variables
+
+La creación de variables se operacionaliza con el siguiente símbolo: `<-` o bien *ALT + -*
+
+Por ejemplo, asignar a x el valor 1 se escribe así: `x <- 1`. La forma rápida de escribir el símbolo de creación es a través de: *ALT + -*:
+
+```{r}
+x <- 1
+y <- 2
+```
+
+Para ver más atajos, se puede buscar en herramientas -\> *Keyboard shortcuts quick reference*. Las variables creadas se muestran en *Global environment*. También se pueden sobrescribir las variables si se ejecuta un código posterior a la primera creación de la variable.
+
+Con la función `c()` se pueden generar vectores combinados en función de las variables creadas. La creación de variables también puede incluir operaciones de variables ya creadas (por ejemplo, `sumadexey <- x+y`):
+
+```{r}
+sumadexey <- x+y
+sumadexey
+```
+
+[**IMPORTANTE:**]{.underline} Al reescribir una variable, por ejemplo, x, se alterará el valor de la variable x, mas no el valor de la variable creada anteriormente `sumadexey`. Es decir, cambiar el valor de x no influye en los objetos ya creados (no es retroactivo). Técnicamente, esta característica se le conoce como que la asignación de valores no es **reactiva**.
+
+```{r}
+sumadexey <- x+y
+x <- 3
+x+y
+sumadexey
+```
+
+### Eliminación de Variables
+
+Se pueden eliminar variables con la función `rm()`que significa *remove*
+
+```{r}
+rm(x)
+```
+
+Si se quiere eliminar todo lo que está en *Global environment* se puede ocupar la siguiente función: `rm(list=ls())`
+
+```{r}
+x <- 3
+z <- 5
+rm(list=ls())
+```
+
+## Trabajo con Objetos
+
+En la siguiente sección se estudia cómo aprovechar la facilidad de trabajar con objetos en R.
+
+Para crear un vector ocupamos el comando de creación:
+
+```{r}
+vector1 <- c(0,2,4,6,8,10,12,12,14,16,18,20)
+```
+
+Para devolver el valor en la posición 5 del vector, realizamos la siguiente operación:
+
+```{r}
+vector1[5]
+```
+
+Es clave entender la funcionalidad del *corchete* `[]` aplicándolo a una variable x cualquiera:
+
+| Sintaxis | Valor que Entrega |
+|-------------------|-----------------------------------------------------|
+| \[n positivo\] | Valor de la componente del vector en la posición n |
+| \[n negativo\] | Valor de todas las componentes del vector excepto la posición n |
+| \[n:m\] | Valor de las componentes del vector desde la posición n hasta la m inclusive |
+| == n | Operador lógico para cada componente del vector que indica si se cumple la condición (=n) |
+| \[x==n\] | Extrae todos los valores del vector que cumplen la condición (valores igual a n) |
+| \[x!=n\] | Extrae todos los valores del vector que cumplen la condición (valores distintos a n) |
+
+: Funcionalidad del \[\]
+
+```{r}
+
+vector1[-1] #extraer todos los números de vector1 menos el que está en la posición 1
+
+vector1[2:4] #extraer los números entre la posición 2 y 4 (incluyéndolos) de vector1
+
+vector1[c(1,3,5)] #extraer los números en las posiciones 1, 3 y 5 de vector1
+
+vector1 == 12 #vector con operadores lógicos para condición
+
+vector1[vector1==12] #extraer todos los números de vector1 iguales a 12
+
+vector1[vector1!=12] #extraer todos los números de vector1 distintos a 12
+```

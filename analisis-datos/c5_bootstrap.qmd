@@ -1,0 +1,24 @@
+# Inferencia Estadística {#sec-data-import}
+
+## Introducción
+
+Working with data provided by R packages is a great way to learn data science tools, but you want to apply what you've learned to your own data at some point. In this chapter, you'll learn the basics of reading data files into R.
+
+Specifically, this chapter will focus on reading plain-text rectangular files. We'll start with practical advice for handling features like column names, types, and missing data. You will then learn about reading data from multiple files at once and writing data from R to a file. Finally, you'll learn how to handcraft data frames in R.
+
+### Librerías a utilizar
+
+In this chapter, you'll learn how to load flat files in R with the **readr** package, which is part of the core tidyverse.
+
+```{r}
+#| label: setup
+#| message: false
+
+library(tidyverse)
+```
+
+## Resumen
+
+In this chapter, you've learned how to load CSV files with `read_csv()` and to do your own data entry with `tibble()` and `tribble()`. You've learned how csv files work, some of the problems you might encounter, and how to overcome them. We'll come to data import a few times in this book: @sec-import-spreadsheets from Excel and Google Sheets, @sec-import-databases will show you how to load data from databases, @sec-arrow from parquet files, @sec-rectangling from JSON, and @sec-scraping from websites.
+
+We're just about at the end of this section of the book, but there's one important last topic to cover: how to get help. So in the next chapter, you'll learn some good places to look for help, how to create a reprex to maximize your chances of getting good help, and some general advice on keeping up with the world of R.

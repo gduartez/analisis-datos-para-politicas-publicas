@@ -1,0 +1,15 @@
+{
+  "hash": "d406d7835070b54d3d77ebc6d89194c5",
+  "result": {
+    "engine": "knitr",
+    "markdown": "# Visualizar {#sec-data-import}\n\n## Introducción\n\nWorking with data provided by R packages is a great way to learn data science tools, but you want to apply what you've learned to your own data at some point. In this chapter, you'll learn the basics of reading data files into R.\n\nSpecifically, this chapter will focus on reading plain-text rectangular files. We'll start with practical advice for handling features like column names, types, and missing data. You will then learn about reading data from multiple files at once and writing data from R to a file. Finally, you'll learn how to handcraft data frames in R.\n\n### Librerías a utilizar\n\nIn this chapter, you'll learn how to load flat files in R with the **readr** package, which is part of the core tidyverse.\n\n\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(tidyverse)\n```\n:::\n\n\n\n\n\n## Resumen\n\nIn this chapter, you've learned how to load CSV files with `read_csv()` and to do your own data entry with `tibble()` and `tribble()`. You've learned how csv files work, some of the problems you might encounter, and how to overcome them. We'll come to data import a few times in this book: @sec-import-spreadsheets from Excel and Google Sheets, @sec-import-databases will show you how to load data from databases, @sec-arrow from parquet files, @sec-rectangling from JSON, and @sec-scraping from websites.\n\nWe're just about at the end of this section of the book, but there's one important last topic to cover: how to get help. So in the next chapter, you'll learn some good places to look for help, how to create a reprex to maximize your chances of getting good help, and some general advice on keeping up with the world of R.\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

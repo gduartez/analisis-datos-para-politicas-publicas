@@ -1,0 +1,71 @@
+{
+  "intro.qmd": {
+    "intro.html": "d506538f"
+  },
+  "index.qmd": {
+    "index.html": "b8d94357"
+  },
+  "c1_importar.qmd": {
+    "c1_importar.html": "689436e0"
+  },
+  "c2_transformar.qmd": {
+    "c2_transformar.html": "c611df6d"
+  },
+  "c3_visualizar.qmd": {
+    "c3_visualizar.html": "fb4e2ed7"
+  },
+  "c4_comunicar.qmd": {
+    "c4_comunicar.html": "1d60cc3d"
+  },
+  "c5_bootstrap.qmd": {
+    "c5_bootstrap.html": "9193cbb3"
+  },
+  "c6_inferencia.qmd": {
+    "c6_inferencia.html": "d15cbdb4"
+  },
+  "c7_regresion1.qmd": {
+    "c7_regresion1.html": "03b8047f"
+  },
+  "c8_regresion2.qmd": {
+    "c8_regresion2.html": "a7737a30"
+  },
+  "p1_tidyverse.qmd": {
+    "p1_tidyverse.html": "4b4696c2"
+  },
+  "p2_estadistica-aplicada.qmd": {
+    "p2_estadistica-aplicada.html": "07153888"
+  },
+  "c0_R.qmd": {
+    "c0_R.html": "02ae8d36"
+  },
+  "c0_repaso_estadistico.qmd": {
+    "c0_repaso_estadistico.html": "47a76382"
+  },
+  "p0_nivelacion.qmd": {
+    "p0_nivelacion.html": "a8eab0dd"
+  },
+  "c0_basics.qmd": {
+    "c0_basics.html": "709a803e"
+  },
+  "c0_descriptivo.qmd": {
+    "c0_descriptivo.html": "c33fa274"
+  },
+  "c0_probabilidad.qmd": {
+    "c0_probabilidad.html": "c3ddb9e0"
+  },
+  "p0_intror.qmd": {
+    "p0_intror.html": "8412373e"
+  },
+  "c0_instr.qmd": {
+    "c0_instr.html": "b6b861a7"
+  },
+  "p1_nivelacion.qmd": {
+    "p1_nivelacion.html": "b957597c"
+  },
+  "p2_tidyverse.qmd": {
+    "p2_tidyverse.html": "96947ecc"
+  },
+  "p3_estadistica-aplicada.qmd": {
+    "p3_estadistica-aplicada.html": "28fe2706"
+  }
+}

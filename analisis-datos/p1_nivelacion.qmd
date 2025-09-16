@@ -1,0 +1,15 @@
+# Nivelación Estadística {#sec-nivelacion}
+
+En la actualidad, cada vez es más intensivo el uso de los datos para la toma de decisiones, ya sea para describir, explicar o predecir un fenómeno. Específicamente, los algoritmos de Machine Learning se basan en gran medida en modelos estadísticos. Por lo tanto, tener conocimiento sobre los fundamentos de la probabilidad y la estadística es esencial dentro de la labor de cualquier analista de datos que busque utilizar la información disponible de manera fiable, independientemente de si están involucrados en un análisis exploratorio de datos o en la creación de modelos de predicción más sofisticados. 
+
+En este apartado, se enseñarán de forma resumida, conceptos normalmente cubiertos en un curso universitario introductorio de probabilidad y estadística. Esto, con el fin de asegurar un nivel base de conocimientos para todas/os las/os estudiantes del programa.
+
+La nivelación se realizará con el fin entregar los conocimientos fundamentales que servirán de base para la segunda unidad del módulo 2 del Diplomado de Ciencia de Datos para Políticas Públicas, en el que se abordarán los conceptos de inferencia estadística y modelos de regresión lineal (entre otros).
+
+Cada uno de los conceptos será revisado tanto desde una perspectiva teórica como práctica, con un énfasis particular en esta última. Cuando sea posible, se empleará el lenguaje de programación R para las demostraciones y ejercicios
+
+Como objetivos específicos de este apartado se busca:
+
+- Fortalecer la comprensión de los fundamentos teóricos de probabilidad y la estadística entre las y los estudiantes, permitiéndoles aplicar conceptos clave en la resolución de problemas prácticos.
+- Fomentar la integración de la teoría estadística con la práctica mediante el uso de R, facilitando así la aplicación de métodos estadísticos en un lenguaje común que sirva de base para el resto de los cursos del diplomado.
+
