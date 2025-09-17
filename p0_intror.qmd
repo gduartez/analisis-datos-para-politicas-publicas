@@ -12,6 +12,15 @@ Al hacer clic en *Run Code*, se ejecutarán todas las líneas de código (aquell
 
 ![Resultado al hacer clic en "Run Code"](images/results_run_code.png)
 
-De la imagen anterior, vemos que al hacer clic en *Run Code*, `R` realiza la ejecución del comando y entrega el resultado correspondiente (en este caso, ejecuta la suma: 2 + 2). Es relevante considerar dos cosas al momento de ejecutar código en línea:
+De la imagen anterior, vemos que al hacer clic en *Run Code*, `R` realiza la ejecución del comando y entrega el resultado correspondiente (en este caso, ejecuta la suma: 2 + 2). Es relevante considerar lo siguiente al momento de ejecutar **código en línea**:
 
-1.  El código se ejecutará en lenguaje R
+1.  El código se ejecutará en lenguaje `R`.
+2.  El código es **editable**, por lo que las líneas de códigos pueden arrojar error si es que hay algo que `R` no reconoce. Es recomendable actualizar la página si es que un error persiste y se desconoce el origen.
+
+![](images/run_code_error.png)
+
+3.  Puedes apretar ENTER para crear nuevas líneas de código y el botón de actualizar código ![](images/code_f5.png){width="33"} en la parte superior derecha si quieres volver al código original. También puedes copiar ![](images/code_copy.png){width="31" height="24"} el código para pegarlo en tu consola o script local de `Rstudio:`
+
+    ![](images/code_lines.png)
+
+4.  Para versiones más largas de código es recomendable trabajarlo a nivel local que ocupar los pedazos (*chunks)* de código en línea.

@@ -25,7 +25,7 @@ El segundo paso para poder trabajar con `R` es descargar el **entorno de trabajo
 
 Si bien existen varias alternativas, en el caso de `R` el IDE más utilizado y diseñado para explotar de manera más versatil su potencial es `Rstudio`[^c0_instr-1].
 
-[^c0_instr-1]: Recientemente se lanzó otro IDE llamado Positron. Sin embargo, en la actualidad sigue siendo un IDE en desarrollo y versión beta, por lo que si solo se pretende trabajar con R, Rstudio sigue siendo una mejor opción. Para más detalle ver: <https://positron.posit.co/start.html>
+[^c0_instr-1]: Recientemente POSIT lanzó otro IDE llamado *Positron*. Si bien su lanzamiento ya dejó de estar en una versión beta, para personas que recien se inician en la programación puede resultar un poco abrumadora su interfaz. No obstante, puede ser muy útil para quienes manejen otros lenguajes de programación y busquen un IDE optimizado para la ciencia de datos. Para más información ver: <https://positron.posit.co/welcome.html>
 
 Para descargarlo, basta con acceder al siguiente link y seguir las instrucciones de instalación que vienen por defecto
 
@@ -43,7 +43,9 @@ Si seguiste correctamente los pasos anteriores **¡Felicitaciones!** ya tienes t
 
 Al abrir `Rstudio` por primera vez, verás el panel que se muestra a continuación, el cual puede sonar un poco intimidante en un inicio, pero con el tiempo ya te irás famialirizando con él.
 
-En el siguiente capítulo, veremos algunas operaciones básicas que puedes realizar con R, tales como sumar o restar valores, crear vectores o conjuntos de datos y otros procesos básicos.
+![Inicio de Rstudio](images/rstudio_console.png)
+
+En el siguiente capítulo, veremos algunas operaciones básicas que puedes realizar con `R`, tales como sumar o restar valores, crear vectores o conjuntos de datos y otros procesos básicos.
 
 ## Posibles Problemas
 

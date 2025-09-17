@@ -10,9 +10,10 @@ book:
   date-format: long
   page-footer:
     left: |
-      Este libro está diseñado para ser utilizado como material de apoyo del curso Análisis
-      de Datos y Estadística Computacional del Diplomado en Ciencia de Datos para Políticas
-      Públicas de la UAI. Cualquier error es de exclusiva responsabilidad del autor.
+      Este libro está diseñado para ser utilizado como material de apoyo de los cursos
+      de Ciencia de Datos para Políticas Públicas en los que
+      participa como profesor Gabriel Duarte Z.
+      Cualquier error es de exclusiva responsabilidad del autor.
     right: |
       Este libro fue construido mediante <a href="https://quarto.org/">Quarto</a>.
   cover-image: portada1.png
@@ -56,6 +57,8 @@ format:
     # code-tools: true
     number-depth: 4
     toc-depth: 4
+    code-summary: "Quiero ver el código"
+    code-block-border-left: "#31BAE9"
     css:
     - include/webex.css
     include-after-body: include/webex.js
@@ -66,9 +69,9 @@ format:
 editor: visual
 
 webr: 
-  show-startup-message: false     # Display status of webR initialization
+  show-startup-message: true     # Display status of webR initialization
 #  show-header-message: false     # Check to see if COOP&COEP headers are set for speed.
-#  packages: ['ggplot2', 'dplyr'] # Pre-install dependencies
+# packages: ['tidyverse', 'scales'] # Pre-install dependencies
 #  base-url: ''                   # Base URL used for specifying where R WebAssembly binaries should be located
 #  home-dir: '/home/rstudio'      # Customize where the working directory is
 #  channel-type: 'post-message'   # Specify communication channel
